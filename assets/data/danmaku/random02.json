@@ -1,0 +1,12 @@
+{
+  "generate_random": {
+    "angle_start": 0,
+    "angle_end": 360,
+    "speed": 12,
+    "speed_variation": 4,
+    "total_bullets": 600,
+    "type": "fixed",
+    "frame_start": 1,
+    "frame_end": 180
+  }
+}

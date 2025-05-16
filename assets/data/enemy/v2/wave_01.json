@@ -67,7 +67,7 @@
     "frame_interval": 30,
     "enemy": {
       "type": "Green_rabbit_enemy",
-      "hp": 200.0,
+      "hp": 300.0,
       "x": 640,
       "y": 10,
       "rewards": {
@@ -81,6 +81,16 @@
     "fire_plan": [
       {
         "shoot_logic": "circle01.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
+      },
+      {
+        "shoot_logic": "circle03.json",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -119,6 +129,16 @@
           "b": 0,
           "a": 255
         }
+      },
+      {
+        "shoot_logic": "circle03.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
       }
     ],
     "move": "top_attack_return02.json"
@@ -150,6 +170,16 @@
           "b": 0,
           "a": 255
         }
+      },
+      {
+        "shoot_logic": "circle03.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
       }
     ],
     "move": "top_attack_return01.json"
@@ -161,7 +191,7 @@
 
     "enemy": {
       "type": "Red_enemy",
-      "hp": 50.0,
+      "hp": 60.0,
       "x": 325,
       "y": 1595
     },
@@ -186,7 +216,7 @@
     "frame_interval": 50,
     "enemy": {
       "type": "Red_enemy",
-      "hp": 50.0,
+      "hp": 60.0,
       "x": 1595,
       "y": 1595
     },

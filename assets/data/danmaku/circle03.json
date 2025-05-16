@@ -1,0 +1,434 @@
+[
+  {
+    "frame": 1,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 151,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 151,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 151,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 151,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 151,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 151,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 181,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 181,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 181,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 181,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 181,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 181,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 211,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 211,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 211,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 211,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 211,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 211,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 241,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 241,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 241,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 241,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 241,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 241,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 271,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 271,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 271,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 271,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 271,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 271,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 301,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 301,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 301,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 301,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 301,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 301,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 331,
+    "angle": 100.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 331,
+    "angle": 132.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 331,
+    "angle": 164.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 331,
+    "angle": 196.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 331,
+    "angle": 228.0,
+    "speed": 3.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 331,
+    "angle": 260.0,
+    "speed": 3.0,
+    "type": "fixed"
+  }
+]

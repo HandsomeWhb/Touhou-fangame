@@ -49,7 +49,7 @@ void Danmaku_manager::is_hit_player(Player* player_ptr) {
 	Circle_box circle_box = Circle_box(player_ptr->circle_box.radius+25,0,0,0,player_ptr->circle_box.position_x,player_ptr->circle_box.position_y);
 	for (auto it = enemy_danmaku_ptrs.begin(); it != enemy_danmaku_ptrs.end(); it++) {
 		if ((**it).collision_box.is_collision(circle_box)) {
-			player_ptr->add_graze(0.5);
+			player_ptr->add_graze(0.33);
 			player_ptr->add_score(1000);
 		}
 	}
@@ -102,7 +102,7 @@ void Danmaku_manager::update_all_danmaku(Player* player_ptr, Enemy_manager* enem
 	if (debug) {
 		show_all_danmaku_box( window_ptr);
 	}
-	if (frame%6==0) {
+	if (frame%2==0) {
 		is_hit_player(player_ptr);
 	}
 	frame++;

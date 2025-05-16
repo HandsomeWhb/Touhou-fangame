@@ -5,6 +5,7 @@
 #include <filesystem>
 #include <fstream>
 #include "image.h"
+#include <random>
 #include <nlohmann/json.hpp>
 struct Move_command;
 struct Danmaku_command;
