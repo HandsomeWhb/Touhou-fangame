@@ -1,0 +1,22 @@
+[
+  {
+    "frame": 10,
+    "angle": 0.0,
+    "speed": 3.0,
+    "position_x": 0.0,
+    "position_y": 0.0,
+    "aim_offset_x": 0.0,
+    "aim_offset_y": 0.0,
+    "exist_time": 9999
+  },
+  {
+    "frame": 60,
+    "angle": 0.0,
+    "speed": 3.0,
+    "position_x": 0.0,
+    "position_y": 0.0,
+    "aim_offset_x": 0.0,
+    "aim_offset_y": 0.0,
+    "exist_time": 9999
+  }
+]

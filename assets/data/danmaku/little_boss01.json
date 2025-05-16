@@ -1,0 +1,542 @@
+[
+  {
+    "frame": 1,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 61,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 61,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 61,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 121,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 121,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 121,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 181,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 181,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 181,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 241,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 241,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 241,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 301,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 301,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 301,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 361,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 361,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 361,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 421,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 421,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 421,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 481,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 481,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 481,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 541,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 541,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 541,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 601,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 601,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 601,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 661,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 661,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 661,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 721,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 721,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 721,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 781,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 781,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 781,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 841,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 841,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 841,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 901,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 901,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 901,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 961,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 961,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 961,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1021,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1021,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1021,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1081,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1081,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1081,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1141,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1141,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1141,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1201,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1201,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1201,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1261,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1261,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1261,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1321,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1321,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1321,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1381,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1381,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1381,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1441,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1441,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1441,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1501,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1501,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1501,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1561,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1561,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1561,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1621,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1621,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1621,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1681,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1681,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1681,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1741,
+    "angle": -15.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1741,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "aim"
+  },
+  {
+    "frame": 1741,
+    "angle": 15.0,
+    "speed": 4.0,
+    "type": "aim"
+  }
+]

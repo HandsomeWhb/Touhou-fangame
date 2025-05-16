@@ -1,0 +1,17 @@
+[
+  {
+    "frame": 2,
+    "angle": 90.0,
+    "speed": 3.0
+  },
+  {
+    "frame": 80,
+    "angle": 0.0,
+    "speed": 3.0
+  },
+  {
+    "frame": 100,
+    "angle": 180.0,
+    "speed": 3
+  }
+]
