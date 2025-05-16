@@ -1,2 +1,3 @@
 # Touhou-fangame
 
+1
