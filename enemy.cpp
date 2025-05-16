@@ -458,6 +458,12 @@ void creat_wave(Enemy_manager* enemy_manager_ptr, Falling_object_manager* fallin
                 it->type = danmaku->type + "_" + it->type;
                 it->color = danmaku->color;
                 it->trigger_frame = danmaku->start_frame + it->trigger_frame;
+                int x = it->position_x;
+                int y = it->position_y;
+                float rad = danmaku->angle * 3.1415 / 180;
+                it->position_x= x * cos(rad) - y * sin(rad);
+                it->position_y = x * sin(rad) + y * cos(rad);
+                it->angle += danmaku->angle;
             }
             result.insert(result.end(), temp.begin(),temp.end());
         }
@@ -508,6 +514,7 @@ void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, F
         if (wave_json.contains("fire_plan")) {
             for (const auto& d : wave_json["fire_plan"]) {
                 Danmaku_data danmaku_data;
+                danmaku_data.angle= d.value("danmaku_offset_angle", 0);
                 danmaku_data.start_frame = d.value("danmaku_start_frame", 0);
                 danmaku_data.shoot_logic = d.value("shoot_logic", "");
                 danmaku_data.type = d.value("type", "Circle");

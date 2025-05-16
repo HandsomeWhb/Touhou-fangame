@@ -83,6 +83,7 @@ struct Enemy_data {
 struct Danmaku_data {
     std::string shoot_logic;
     std::string type;
+    float angle;
     sf::Color color;
     int start_frame;
 };

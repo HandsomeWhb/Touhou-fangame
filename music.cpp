@@ -18,6 +18,9 @@ void Music_manager::init(const std::string& music_folder_path) {
 }
 
 void Music_manager::clear_all_music() {
+    for (auto m : musics) {
+        delete m;
+    }
     musics.clear();
 }
 std::string Music_manager::music_folder = "";
@@ -31,6 +34,7 @@ Music* Music_manager::add_music(const string& path) {
 void Music_manager::delete_music(const string& path) {
     for (auto it = musics.begin(); it != musics.end(); ) {
         if ((*it)->full_path == music_folder + path) {
+            delete* it;
             it = musics.erase(it);
             return;
         }
@@ -41,15 +45,12 @@ void Music_manager::delete_music(const string& path) {
     cout << music_folder << path << "É¾³ýÊ§°Ü" << endl;
 }
 Music* Music_manager::search_music(const string& path) {
-    for (auto it = musics.begin(); it != musics.end(); ) {
-        if ((*it)->full_path == music_folder + path) {
-            return (*it)->music;
-        }
-        else {
-            ++it;
-        }
+    for (auto m : musics) {
+        if (m->full_path == music_folder + path)
+            return m->music;
     }
     return nullptr;
+
 }
 
 void Music_manager::load_all_music() {

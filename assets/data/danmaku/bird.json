@@ -1,0 +1,326 @@
+[
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 0.0,
+    "position_y": 0.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 0.0,
+    "position_y": -48.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 0.0,
+    "position_y": -96.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 0.0,
+    "position_y": -144.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 0.0,
+    "position_y": -192.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 0.0,
+    "position_y": -240.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 0.0,
+    "position_y": 48.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 0.0,
+    "position_y": 96.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 48.0,
+    "position_y": 0.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 86.0,
+    "position_y": 0.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 66.0,
+    "position_y": -25.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 100.0,
+    "position_y": -30,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -100.0,
+    "position_y": -30,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 96.0,
+    "position_y": -48.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 96.0,
+    "position_y": -90.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 136.0,
+    "position_y": -48.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 136.0,
+    "position_y": -90.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 166.0,
+    "position_y": -60.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 166.0,
+    "position_y": -90.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 166.0,
+    "position_y": -120.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 166.0,
+    "position_y": -150.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 186.0,
+    "position_y": -90.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 186.0,
+    "position_y": -110.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -166.0,
+    "position_y": -60.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -166.0,
+    "position_y": -90.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -166.0,
+    "position_y": -120.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -166.0,
+    "position_y": -150.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -186.0,
+    "position_y": -90.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -186.0,
+    "position_y": -110.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -48.0,
+    "position_y": 0.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -86.0,
+    "position_y": 0.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -66.0,
+    "position_y": -25.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -96.0,
+    "position_y": -48.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -96.0,
+    "position_y": -90.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -136.0,
+    "position_y": -48.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": -136.0,
+    "position_y": -90.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  }
+]
