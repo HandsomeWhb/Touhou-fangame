@@ -31,3 +31,6 @@
 *.out
 *.app
 x64/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
