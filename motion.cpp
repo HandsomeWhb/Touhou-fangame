@@ -131,7 +131,7 @@ void Danmaku_action_manager::load_all_danmaku_action() {
             string type = settings.value("type", "fixed");
             int frame_start = settings.value("frame_start", 0);
             int frame_end = settings.value("frame_end", 300);
-
+            bool remove_on_death = settings.value("remove_on_death", false);
             // 随机引擎
             random_device rd;
             mt19937 gen(rd());
@@ -149,7 +149,7 @@ void Danmaku_action_manager::load_all_danmaku_action() {
                 sf::Color color(255, 255, 255, 255); // 默认白色
                 float px = 0, py = 0, ax = 0, ay = 0;
                 int exist_time = 9999;
-                action_ptr->add_danmaku_list(trigger_frame, type, color, angle, final_speed, px, py, ax, ay, exist_time);
+                action_ptr->add_danmaku_list(trigger_frame, type, color, angle, final_speed, px, py, ax, ay, exist_time,remove_on_death);
             }
 
             add_danmaku_action(action_ptr);
@@ -170,6 +170,7 @@ void Danmaku_action_manager::load_all_danmaku_action() {
             float aim_offset_x = item.value("aim_offset_x", 0.0f) * Image_manager::Screen_height / 1600;
             float aim_offset_y = item.value("aim_offset_y", 0.0f) * Image_manager::Screen_height / 1600;
             int exist_time = item.value("exist_time", 9999);
+            bool remove_on_death = item.value("remove_on_death",false);
             sf::Color color(255, 255, 255, 255);
 
             if (item.contains("color") && item["color"].is_object()) {
@@ -181,7 +182,7 @@ void Danmaku_action_manager::load_all_danmaku_action() {
             }
 
             danmaku_action_temp_ptr->add_danmaku_list(trigger_frame, type, color, angle, speed,
-                position_x, position_y, aim_offset_x, aim_offset_y, exist_time);
+                position_x, position_y, aim_offset_x, aim_offset_y, exist_time,remove_on_death);
         }
 
         add_danmaku_action(danmaku_action_temp_ptr);
@@ -193,7 +194,7 @@ void Danmaku_action_manager::load_all_danmaku_action() {
 
 
 Danmaku_action::Danmaku_action() {}
-void Danmaku_action::add_danmaku_list(int trigger_frame, std::string type, sf::Color color, float angle, float speed, float position_x, float position_y , float aim_offset_x , float aim_offset_y , int exist_time ) {
-    danmaku_list_ptr.push_back(new Danmaku_command{ trigger_frame, type, angle,speed,position_x,position_y,aim_offset_x,aim_offset_y,exist_time,color });
+void Danmaku_action::add_danmaku_list(int trigger_frame, std::string type, sf::Color color, float angle, float speed, float position_x, float position_y , float aim_offset_x , float aim_offset_y , int exist_time,bool remove_on_death) {
+    danmaku_list_ptr.push_back(new Danmaku_command{ trigger_frame, type, angle,speed,position_x,position_y,aim_offset_x,aim_offset_y,exist_time,remove_on_death,color });
 }
 

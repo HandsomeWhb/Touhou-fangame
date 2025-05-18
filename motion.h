@@ -10,6 +10,7 @@
 struct Move_command;
 struct Danmaku_command;
 class Motion;
+class Enemy;
 class Move_action {
 public:
     std::string file_name;
@@ -35,7 +36,7 @@ public:
     std::string file_name;
     std::vector<Danmaku_command*> danmaku_list_ptr;
     Danmaku_action();
-    void add_danmaku_list(int trigger_frame, std::string type, sf::Color color, float angle, float speed, float position_x = 0, float position_y = 0, float aim_offset_x = 0, float aim_offset_y = 0, int exist_time = 9999);
+    void add_danmaku_list(int trigger_frame, std::string type, sf::Color color, float angle, float speed, float position_x = 0, float position_y = 0, float aim_offset_x = 0, float aim_offset_y = 0, int exist_time = 9999,bool remove_on_death=false);
     
 };
 
@@ -59,7 +60,9 @@ struct Danmaku_command {
     float aim_offset_x = 0;
     float aim_offset_y = 0;
     int exist_time = 9999;
+    bool remove_on_death = false;
     sf::Color color;
+    Enemy* enemy_ptr = nullptr;
 };
 struct Move_command {
     int trigger_frame;
@@ -84,8 +87,10 @@ struct Danmaku_data {
     std::string shoot_logic;
     std::string type;
     float angle;
+    float speed;
     sf::Color color;
     int start_frame;
+    std::string remove_on_death;
 };
 
 

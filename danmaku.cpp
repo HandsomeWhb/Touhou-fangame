@@ -9,6 +9,14 @@ Danmaku_manager::Danmaku_manager( Player* player_ptr,float x1, float y1, float x
 	this->x2 = x2;
 	this->y2 = y2;
 }
+void Danmaku_manager::clear_enemy_reference(Enemy* enemy) {
+	for (auto it:enemy_danmaku_ptrs) {
+		if (it->enemy_ptr == enemy) {
+			it->enemy_ptr = nullptr;
+		}
+	}
+}
+
 void Danmaku_manager::add_danmaku(Danmaku* danmaku_ptr) {
 	if (danmaku_ptr->is_hit_enemy) {
 		add_enemy_danmaku(danmaku_ptr);
@@ -135,7 +143,6 @@ void Danmaku_manager::is_outside(){
 		else {
 			(**it).is_outside = false;
 			if ((**it).exist_time < 0) {
-	
 				delete* it;
 				it = player_danmaku_ptrs.erase(it);
 			}
@@ -150,12 +157,18 @@ void Danmaku_manager::is_outside(){
 			it = enemy_danmaku_ptrs.erase(it); 
 		}
 		else {
-			(**it).is_outside = false;
-			if ((**it).exist_time < -5 ) {
+			if((**it).remove_on_death==true&&(**it).enemy_ptr==nullptr){
 				delete* it;
 				it = enemy_danmaku_ptrs.erase(it);
 			}
-			else { ++it; }
+			else {
+				(**it).is_outside = false;
+				if ((**it).exist_time < -5) {
+					delete* it;
+					it = enemy_danmaku_ptrs.erase(it);
+				}
+				else { ++it; }
+			}
 		}
 	}
 
@@ -169,7 +182,7 @@ void Danmaku_manager::clear_enemy_danmaku() {
 }
 
 //默认方向向下
-Danmaku::Danmaku(Move_api* move_api_ptr, float speed, float position_x, float position_y, float angle, float hurt_ratio ,int exist_time, float aim_offset_x , float aim_offset_y, bool is_hit_enemy , bool is_hit_player ){
+Danmaku::Danmaku(Move_api* move_api_ptr, float speed, float position_x, float position_y, float angle, float hurt_ratio ,int exist_time, float aim_offset_x , float aim_offset_y, bool remove_on_death, bool is_hit_enemy , bool is_hit_player){
 	this->move_api_ptr = move_api_ptr;
 	this->hurt_ratio = hurt_ratio;
 	this->aim_offset_x = aim_offset_x;
@@ -182,6 +195,7 @@ Danmaku::Danmaku(Move_api* move_api_ptr, float speed, float position_x, float po
 	this->dy = speed*cos(pi * ( angle) / 180) * Image_manager::Screen_height / 1600;
 	this->angle = angle;
 	this->exist_time = exist_time;
+	this->remove_on_death = remove_on_death;
 
 }
 bool Danmaku::is_line() { return false; }
@@ -306,26 +320,30 @@ void circle_move::move(Danmaku* danmaku_ptr, float enemy_x, float enemy_y) {
 
 
 
-Circle::Circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio , int exist_time, float aim_offset_x , float aim_offset_y , bool is_hit_enemy , bool is_hit_player)
-	: Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player){
+Circle::Circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio , int exist_time,
+	float aim_offset_x , float aim_offset_y , bool remove_on_death, bool is_hit_enemy , bool is_hit_player)
+	: Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player){
 	load_sprite(Image_manager::cut_image("etama.png", 16 * 3, 16 * 3, 0, 48, 16, 64), 8.7, 8.5, color);
 	collision_box.add_circle(16, 1, 2);
 }
 
-Bomb_circle::Bomb_circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, float aim_offset_x, float aim_offset_y, bool is_hit_enemy, bool is_hit_player)
-	: Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Bomb_circle::Bomb_circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, 
+	float aim_offset_x, float aim_offset_y, bool remove_on_death, bool is_hit_enemy, bool is_hit_player)
+	: Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	load_sprite(Image_manager::cut_image("player00b.png", 96 * 2, 96 * 2, 0, 0, 96, 96), 48, 48, color);
 	collision_box.add_circle(64, 0, 0);
 }
 
-Small_circle::Small_circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, float aim_offset_x, float aim_offset_y, bool is_hit_enemy, bool is_hit_player)
-	: Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Small_circle::Small_circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, 
+	float aim_offset_x, float aim_offset_y, bool remove_on_death, bool is_hit_enemy, bool is_hit_player)
+	: Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	load_sprite(Image_manager::cut_image("etama.png", 16 , 16 , 0, 48, 16, 64), 10, 10, color);
 	collision_box.add_circle(4, 2, 2);
 }
 
-Ellips::Ellips(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, float aim_offset_x, float aim_offset_y, bool is_hit_enemy, bool is_hit_player)
-	: Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Ellips::Ellips(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, 
+	float aim_offset_x, float aim_offset_y, bool remove_on_death, bool is_hit_enemy, bool is_hit_player)
+	: Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	load_sprite(Image_manager::cut_image("etama.png", 8 * 3, 16 * 3, 4, 64, 12, 80), 4.8, 8.2, color);
 	collision_box.add_circle(6, 2, -0);
 	collision_box.add_circle(6, 2, -7);
@@ -333,7 +351,9 @@ Ellips::Ellips(Move_api* move_api_ptr, sf::Color color, float speed, float posit
 }
 
 
-Square::Square(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, float aim_offset_x, float aim_offset_y, bool is_hit_enemy, bool is_hit_player) : Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Square::Square(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time,
+	float aim_offset_x, float aim_offset_y, bool remove_on_death, bool is_hit_enemy, bool is_hit_player) :
+	Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	load_sprite(Image_manager::cut_image("etama6.png", 16*2.5, 16*2.5, 0, 240, 15, 255), 9, 9, color);
 	collision_box.add_circle(8, -4, -4);
 	collision_box.add_circle(8, 8, 8);
@@ -342,7 +362,9 @@ Square::Square(Move_api* move_api_ptr, sf::Color color, float speed, float posit
 }
 
 
-Star::Star(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, float aim_offset_x, float aim_offset_y, bool is_hit_enemy, bool is_hit_player) : Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Star::Star(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, 
+	float aim_offset_x, float aim_offset_y, bool remove_on_death, bool is_hit_enemy, bool is_hit_player) : 
+	Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	load_sprite(Image_manager::cut_image("etama6.png", 32 * 2.5, 32 * 2.5, 0, 0, 32, 32), 17, 17.5, color);
 	collision_box.add_circle(18, 2 ,1);
 	collision_box.add_circle(6, 2, 23);
@@ -353,13 +375,17 @@ Star::Star(Move_api* move_api_ptr, sf::Color color, float speed, float position_
 }
 
 
-Laser::Laser(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio , int exist_time, float aim_offset_x , float aim_offset_y , bool is_hit_enemy , bool is_hit_player)	: Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Laser::Laser(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio , int exist_time, 
+	float aim_offset_x , float aim_offset_y , bool remove_on_death, bool is_hit_enemy , bool is_hit_player)	: 
+	Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	load_sprite(Image_manager::cut_image("etama.png", 16 * 3, 2000, 1, 1, 15, 15), 7, 14, color);
 	for (int i = 0; i < 166; i++) {
 		collision_box.add_circle(12, 0, i * 18);
 	}
 }
-Ellipse_trace::Ellipse_trace(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, float aim_offset_x, float aim_offset_y, bool is_hit_enemy, bool is_hit_player) : Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Ellipse_trace::Ellipse_trace(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time,
+	float aim_offset_x, float aim_offset_y, bool remove_on_death, bool is_hit_enemy, bool is_hit_player) : 
+	Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	Sprite sprite= Image_manager::cut_image("yukari_danmaku.png", 16 * 3, 64 * 3, 0,0, 16, 64);
 	load_sprite(sprite, 8.5, 0, color);
 	collision_box.add_circle(2, 0, -2);
@@ -377,63 +403,94 @@ Ellipse_trace::Ellipse_trace(Move_api* move_api_ptr, sf::Color color, float spee
 		collision_box.add_circle(3, 0, -91-i*3);
 	}
 }
-Spike::Spike(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, float aim_offset_x, float aim_offset_y, bool is_hit_enemy, bool is_hit_player) : Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Spike::Spike(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time,
+	float aim_offset_x, float aim_offset_y, bool remove_on_death , bool is_hit_enemy, bool is_hit_player) : 
+	Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	load_sprite(Image_manager::cut_image("player01_danmaku.png", 16 * 2.5, 50 * 2.5, 5, 192, 21, 242), 9,25, color);
 	collision_box.add_circle(20, 0, -10);
 }
-Spike_1::Spike_1(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, float aim_offset_x, float aim_offset_y, bool is_hit_enemy, bool is_hit_player) : Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Spike_1::Spike_1(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, 
+	float aim_offset_x, float aim_offset_y, bool remove_on_death, bool is_hit_enemy, bool is_hit_player) : 
+	Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	load_sprite(Image_manager::cut_image("player01.png", 16 * 2.5, 48 * 2.5, 128, 144, 144, 192), 8, 24, color);
 	collision_box.add_circle(20, 0, -10);
 }
-Laser_1::Laser_1(Move_api* move_api_ptr,float power, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, float aim_offset_x, float aim_offset_y, bool is_hit_enemy, bool is_hit_player) : Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, is_hit_enemy, is_hit_player) {
+Laser_1::Laser_1(Move_api* move_api_ptr,float power, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio, int exist_time, 
+	float aim_offset_x, float aim_offset_y, bool remove_on_death, bool is_hit_enemy, bool is_hit_player) :
+	Danmaku(move_api_ptr, speed, position_x, position_y, angle, hurt_ratio, exist_time, aim_offset_x, aim_offset_y, remove_on_death, is_hit_enemy, is_hit_player) {
 	Image_manager::search_image("player01_danmaku.png")->setRepeated(true);
-	load_sprite(Image_manager::cut_image("player01_danmaku.png", 16*3+power*32/128 , Image_manager::Screen_height, 86, 0, 117, int(Image_manager::Screen_height/255)*255), 15, int(Image_manager::Screen_height / 255) * 255, color);
+	load_sprite(Image_manager::cut_image("player01_danmaku.png", 16*3+power*32/128 , Image_manager::Screen_height, 86, 0, 117, 
+		int(Image_manager::Screen_height/255)*255), 15, int(Image_manager::Screen_height / 255) * 255, color);
 	collision_box.add_circle((16 * 3 + power * 32 / 128)/2, 0, 100);
 }
 bool Laser_1::is_line() { return true; }
+
+
+REGISTER_DANMAKU(Circle, [](Move_api* m, Danmaku_command& cmd) {
+	return new Circle(m, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1,
+		cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y, cmd.remove_on_death);
+	});
+
+REGISTER_DANMAKU(Small_circle, [](Move_api* m, Danmaku_command& cmd) {
+	return new Small_circle(m, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1,
+		cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y, cmd.remove_on_death);
+	});
+
+REGISTER_DANMAKU(Square, [](Move_api* m, Danmaku_command& cmd) {
+	return new Square(m, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1,
+		cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y, cmd.remove_on_death);
+	});
+
+REGISTER_DANMAKU(Star, [](Move_api* m, Danmaku_command& cmd) {
+	return new Star(m, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1,
+		cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y, cmd.remove_on_death);
+	});
+
+REGISTER_DANMAKU(Ellipse, [](Move_api* m, Danmaku_command& cmd) {
+	return new Ellips(m, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1,
+		cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y, cmd.remove_on_death);
+	});
+
+REGISTER_DANMAKU(Laser, [](Move_api* m, Danmaku_command& cmd) {
+	return new Laser(m, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1,
+		cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y, cmd.remove_on_death);
+	});
+
+REGISTER_DANMAKU(Ellipse_trace, [](Move_api* m, Danmaku_command& cmd) {
+	return new Ellipse_trace(m, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1,
+		cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y, cmd.remove_on_death);
+	});
+
+REGISTER_DANMAKU(Spike, [](Move_api* m, Danmaku_command& cmd) {
+	return new Spike(m, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1,
+		cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y, cmd.remove_on_death);
+	});
+
+REGISTER_DANMAKU(Spike_1, [](Move_api* m, Danmaku_command& cmd) {
+	return new Spike_1(m, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1,
+		cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y, cmd.remove_on_death);
+	});
+
+
+
 Danmaku* create_danmaku(Danmaku_command& cmd) {
 	size_t pos = cmd.type.rfind('_');
-	//截取下划线之前的部分
 	std::string first_part = cmd.type.substr(0, pos);
-	//截取下划线之后的部分
 	std::string second_part = cmd.type.substr(pos + 1);
 
-	Move_api* move_ptr=nullptr;
-	if (second_part == "fixed") {
-		move_ptr = new fixed_move();
+	Move_api* move_ptr = nullptr;
+	if (second_part == "fixed") move_ptr = new fixed_move();
+	else if (second_part == "aim") move_ptr = new aim_move();
+	else if (second_part == "track") move_ptr = new track_move();
+	else return nullptr;
+
+	auto& factory = get_danmaku_factory();
+	auto it = factory.find(first_part);
+	if (it != factory.end()) {
+		Danmaku* temp = it->second(move_ptr, cmd);
+		temp->enemy_ptr = cmd.enemy_ptr;
+		return temp;
 	}
-	if (second_part == "aim") {
-		move_ptr = new aim_move();
-	}
-	if (second_part == "track") {
-		move_ptr = new track_move();
-	}
-	if (first_part == "Circle") {
-		return new Circle(move_ptr,cmd.color,cmd.speed,cmd.position_x,cmd.position_y,cmd.angle,1,cmd.exist_time,cmd.aim_offset_x,cmd.aim_offset_y);
-	}
-	else if (first_part == "Small_circle") {
-		return new Small_circle(move_ptr, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1, cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y);
-	}
-	else if (first_part == "Square") {
-		return new Square(move_ptr, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1, cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y);
-	}
-	else if (first_part == "Star") {
-		return new Star(move_ptr, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1, cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y);
-	}
-	else if (first_part == "Ellipse") {
-		return new Ellips(move_ptr, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1, cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y);
-	}
-	else if (first_part == "Laser") {
-		return new Laser(move_ptr, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1, cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y);
-	}//敌人弹幕,不建议加入玩家
-	else if (first_part == "Ellipse_trace") {
-		return new Ellipse_trace(move_ptr, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1, cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y);
-	}//玩家弹幕,不建议加入敌人
-	else if (first_part == "Spike") {
-		return new Spike(move_ptr, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1, cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y);
-	}//玩家弹幕,不建议加入敌人
-	else if (first_part == "Spike_1") {
-		return new Spike_1(move_ptr, cmd.color, cmd.speed, cmd.position_x, cmd.position_y, cmd.angle, 1, cmd.exist_time, cmd.aim_offset_x, cmd.aim_offset_y);
-	}//玩家弹幕,不建议加入敌人
 	return nullptr;
 }
+

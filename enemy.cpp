@@ -12,9 +12,10 @@ Enemy_manager::Enemy_manager(Player* player_ptr, float x1, float y1, float x2, f
     this->y2 = y2;
     this->player_ptr = player_ptr;
 }
-void Enemy_manager::is_collision_player() {
+void Enemy_manager::is_collision_player(Danmaku_manager* danmaku_manager_ptr) {
     for (auto it = enemies.begin(); it != enemies.end(); ) {
         if ((**it).circle_box.is_collision(player_ptr->circle_box)&&!(player_ptr->is_god_mode)) {
+            danmaku_manager_ptr->clear_enemy_reference(*it);
             delete* it;
             it = enemies.erase(it);
             player_ptr->on_death();
@@ -44,7 +45,7 @@ void Enemy_manager::update(sf::RenderWindow* window_ptr,Danmaku_manager* danmaku
     is_out_side();
     is_collision(danmaku_manager_ptr, damage);
     if (frame_count % 6 == 0) {
-        is_collision_player();
+        is_collision_player(danmaku_manager_ptr);
        
     }
     is_enemy = false;
@@ -70,6 +71,7 @@ void Enemy_manager::is_collision(Danmaku_manager* danmaku_manager_ptr,float dama
     for (auto it = enemies.begin(); it != enemies.end();) {
         danmaku_manager_ptr->is_hit_enemy(*it,damage);
         if ((*it)->hp <= 0) {
+            danmaku_manager_ptr->clear_enemy_reference(*it);
             delete* it;
             it=enemies.erase(it);
             //µÐÈËËÀÍöÒôÐ§
@@ -181,6 +183,7 @@ void Enemy::shoot(Danmaku_manager* danmaku_manager_ptr) {
         while (motion.fire_plan_ptr != motion.fire_plan.end()&&motion.frame_count == motion.fire_plan_ptr->trigger_frame) {
             motion.fire_plan_ptr->position_x += begin_position_x;
             motion.fire_plan_ptr->position_y += begin_position_y;
+            motion.fire_plan_ptr->enemy_ptr = this;
             (danmaku_manager_ptr->enemy_danmaku_ptrs).push_back(create_danmaku(*(motion.fire_plan_ptr)));
                 motion.fire_plan_ptr++;
         }
@@ -194,8 +197,8 @@ void Enemy::add_move_plan(int trigger_frame, float angle, float speed) {
     motion.move_plan.push_back({ trigger_frame,angle,speed });
 }
 void Enemy::add_fire_plan(int trigger_frame, string type, float angle, float speed,
-    float position_x , float position_y, sf::Color color, float aim_offset_x, float aim_offset_y, int exist_time) {
-    motion.fire_plan.push_back({ trigger_frame,type,angle,speed,position_x,position_y ,aim_offset_x,aim_offset_y,exist_time,color });
+    float position_x , float position_y, sf::Color color, float aim_offset_x, float aim_offset_y, int exist_time,bool remove_on_death) {
+    motion.fire_plan.push_back({ trigger_frame,type,angle,speed,position_x,position_y ,aim_offset_x,aim_offset_y,exist_time,remove_on_death,color });
 }
 void Enemy::add_rewards(int bomb_up, int health_up, int big_power, int power, int blue_point) {
     motion.rewards={ bomb_up, health_up, big_power, power, blue_point };
@@ -413,6 +416,7 @@ void load_enemies_from_file_v1(const string& filename, Enemy_manager* enemy_mana
                 float pos_y = fire.value("y", 0.0f) * Image_manager::Screen_height / 1600;
                 float aim_offset_x = fire.value("aim_offset_x", 0.0f) * Image_manager::Screen_height / 1600;
                 float aim_offset_y = fire.value("aim_offset_y", 0.0f) * Image_manager::Screen_height / 1600;
+                bool remove_on_death = fire.value("remove_on_death", false);
                 int exist_time = fire.value("exist_time", 9999);
                 auto color_json = fire["color"];
                 sf::Color color(
@@ -420,7 +424,7 @@ void load_enemies_from_file_v1(const string& filename, Enemy_manager* enemy_mana
                     color_json.value("g", 255),
                     color_json.value("b", 255)
                 );
-                enemy->add_fire_plan(frame, fire_type, angle, speed, pos_x, pos_y,color,aim_offset_x,aim_offset_y,exist_time);
+                enemy->add_fire_plan(frame, fire_type, angle, speed, pos_x, pos_y,color,aim_offset_x,aim_offset_y,exist_time,remove_on_death);
             }
             sort(enemy->motion.fire_plan.begin(), enemy->motion.fire_plan.end(), compare_by_trigger_count);
             enemy->motion.fire_plan_ptr = enemy->motion.fire_plan.begin();
@@ -455,6 +459,15 @@ void creat_wave(Enemy_manager* enemy_manager_ptr, Falling_object_manager* fallin
         for (auto danmaku = danmaku_list.begin(); danmaku != danmaku_list.end(); danmaku++) {
             vector<Danmaku_command> temp=Danmaku_action_manager::search_danmaku_command(danmaku->shoot_logic);
             for (auto it = temp.begin(); it != temp.end(); it++) {
+                if (danmaku->speed >= 0) {
+                    it->speed = danmaku->speed;
+                }
+                if (danmaku->remove_on_death == "true") {
+                    it->remove_on_death = true;
+                }
+                if (danmaku->remove_on_death == "false") {
+                    it->remove_on_death = false;
+                }
                 it->type = danmaku->type + "_" + it->type;
                 it->color = danmaku->color;
                 it->trigger_frame = danmaku->start_frame + it->trigger_frame;
@@ -514,10 +527,12 @@ void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, F
         if (wave_json.contains("fire_plan")) {
             for (const auto& d : wave_json["fire_plan"]) {
                 Danmaku_data danmaku_data;
+                danmaku_data.remove_on_death= d.value("remove_on_death", "");
                 danmaku_data.angle= d.value("danmaku_offset_angle", 0);
                 danmaku_data.start_frame = d.value("danmaku_start_frame", 0);
                 danmaku_data.shoot_logic = d.value("shoot_logic", "");
                 danmaku_data.type = d.value("type", "Circle");
+                danmaku_data.speed = d.value("global_speed", -100);
                 const auto& c = d["color"];
                 danmaku_data.color.r = c.value("r", 255);
                 danmaku_data.color.g = c.value("g", 255);

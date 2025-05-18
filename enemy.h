@@ -44,7 +44,7 @@ public:
     void take_damage(float damage);
     void on_death();
     void add_move_plan(int trigger_frame, float angle, float speed);
-    void add_fire_plan(int trigger_frame, std::string type, float angle, float speed, float position_x, float position_y, sf::Color color,float aim_offset_x,float aim_offset_y,int exist_time);
+    void add_fire_plan(int trigger_frame, std::string type, float angle, float speed, float position_x, float position_y, sf::Color color,float aim_offset_x,float aim_offset_y,int exist_time,bool remove_on_death);
     void add_rewards(int bomb_up, int health_up, int big_power, int power, int blue_point);
 };
 struct Appearance_list {
@@ -70,7 +70,7 @@ public:
     void is_collision(Danmaku_manager* danmaku_manager_ptr, float damage);
     void add_enemy_list(int frame_count, Enemy* enemy_ptr);
     void is_out_side();
-    void is_collision_player();
+    void is_collision_player(Danmaku_manager* danmaku_manager_ptr);
     void hurt_all_enemy(float damage);
     void show_all_enemy(sf::RenderWindow* window_ptr, Danmaku_manager* danmaku_manager_ptr);
     Enemy* search_close_enemy(float x,float y);

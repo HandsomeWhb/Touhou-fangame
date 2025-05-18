@@ -223,7 +223,10 @@ void Player::update(sf::RenderWindow* window_ptr) {
 			is_god_mode = false;
 		}
 	}
+
+	//ÎŞµĞ×´Ì¬£¬²âÊÔÊ±¿ª
 	is_god_mode = true;
+
 	if(is_using_bomb){
 		window_ptr->draw(bomb_sprite);
 		if (bomb_counter < 80) {

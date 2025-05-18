@@ -3,6 +3,12 @@
 #include "enemy.h"
 #include "player.h"
 #define pi 3.14159
+#define REGISTER_DANMAKU(name, constructor) \
+    static bool reg_##name = []() { \
+        get_danmaku_factory()[#name] = constructor; \
+        return true; \
+    }()
+
 class Enemy;
 class Player;
 class Move_api;
@@ -23,10 +29,12 @@ public:
 	float angle = 0;
 	int exist_time=9999;
 	bool is_outside=false;
+	Enemy* enemy_ptr = nullptr;
+	bool remove_on_death = false;
 	float aim_offset_x = 0, aim_offset_y = 0;
 	Move_api* move_api_ptr;
 	float hurt_ratio = 1;
-	Danmaku(Move_api* move_api_ptr,float speed, float position_x, float position_y, float angle, float hurt_ratio =1,int exist_time = 9999,float aim_offset_x=0,float aim_offset_y=0,bool is_hit_enemy = false, bool is_hit_player = true);
+	Danmaku(Move_api* move_api_ptr,float speed, float position_x, float position_y, float angle, float hurt_ratio =1,int exist_time = 9999,float aim_offset_x=0,float aim_offset_y=0, bool remove_on_death = false,bool is_hit_enemy = false, bool is_hit_player = true);
 	virtual ~Danmaku();
 	virtual bool is_line();
 	virtual bool is_once();
@@ -55,6 +63,7 @@ public:
 	void is_outside();
 	//Çå¿Õµ¯Ä»·½·¨
 	void clear_enemy_danmaku();
+	void clear_enemy_reference(Enemy* enemy);
 	void update_all_danmaku(Player* player_ptr, Enemy_manager* enemy_manager_ptr, sf::RenderWindow* window_ptr, bool debug=false);
 	Danmaku_manager( Player* player_ptr, float x1, float y1, float x2, float y2);
 };
@@ -84,55 +93,60 @@ public:
 	circle_move(Player* player_ptr);
 	void move(Danmaku* danmaku_ptr, float enemy_x, float enemy_y) override;
 };
+using DanmakuConstructor = std::function<Danmaku* (Move_api*, Danmaku_command&)>;
+inline std::unordered_map<std::string, DanmakuConstructor>& get_danmaku_factory() {
+	static std::unordered_map<std::string, DanmakuConstructor> instance;
+	return instance;
+}
 
 
 
 class Circle :public Danmaku {
 public:
-	Circle(Move_api* move_api_ptr, sf::Color color,float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Circle(Move_api* move_api_ptr, sf::Color color,float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 };
 class Bomb_circle:public Danmaku {
 public:
-	Bomb_circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Bomb_circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 	bool is_once() override;
 };
 class Small_circle :public Danmaku {
 public:
-	Small_circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0 ,float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Small_circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0 ,float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 };
 class Ellips :public Danmaku {
 public:
-	Ellips(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Ellips(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 };
 
 class Square :public Danmaku {
 public:
-	Square(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Square(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 };
 class Star :public Danmaku {
 public:
-	Star(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Star(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 };
 
 class Laser :public Danmaku {
 public:
-	Laser(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Laser(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle=0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 };
 class Ellipse_trace :public Danmaku {
 public:
-	Ellipse_trace(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Ellipse_trace(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 };
 class Spike :public Danmaku {
 public:
-	Spike(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Spike(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 };
 class Spike_1 :public Danmaku {
 public:
-	Spike_1(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Spike_1(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 };
 class Laser_1 :public Danmaku {
 public:
-	Laser_1(Move_api* move_api_ptr, float power, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool is_hit_enemy = false, bool is_hit_player = true);
+	Laser_1(Move_api* move_api_ptr, float power, sf::Color color, float speed, float position_x, float position_y, float angle = 0, float hurt_ratio = 1, int exist_time = 9999, float aim_offset_x = 0, float aim_offset_y = 0, bool remove_on_death = false, bool is_hit_enemy = false, bool is_hit_player = true);
 	bool is_line() override;
 };
 Danmaku* create_danmaku(Danmaku_command& cmd);
