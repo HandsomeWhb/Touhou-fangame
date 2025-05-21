@@ -174,8 +174,12 @@ void Danmaku_manager::is_outside(){
 
 }
 //Çå¿Õµ¯Ä»·½·¨
-void Danmaku_manager::clear_enemy_danmaku() {
+void Danmaku_manager::clear_enemy_danmaku(bool creat_reward) {
 	for (auto ptr : enemy_danmaku_ptrs) {
+		if (creat_reward) {
+			game_bridge.falling_object_manager_ptr->add_falling_object(
+				create_falling_object("Spell_card", 0, 0, ptr->collision_box.center_x, ptr->collision_box.center_y));
+		}
 		delete ptr;
 	}
 	enemy_danmaku_ptrs.clear();

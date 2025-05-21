@@ -332,7 +332,6 @@ void game_start(RenderWindow* window_ptr, string role)
 	/*main_menu.add_button();*/
 	/*main_menu.show_page();*/
 	//320,48,1600,1520
-	Game_bridge game_bridge;
 	Enemy_manager enemy_manager;
 	Player* player_ptr = nullptr;
 	Falling_object_manager falling_object_manager;
@@ -396,6 +395,7 @@ void game_start(RenderWindow* window_ptr, string role)
 			danmaku_manager.update_all_danmaku(player_ptr, &enemy_manager,  window_ptr, false);
 			enemy_manager.update(window_ptr, &danmaku_manager, player_ptr->damage);
 			falling_object_manager.update(window_ptr);
+			Display_manager::update();
 		}
 		else {
 			sf::RectangleShape dark_overlay(sf::Vector2f(Screen_width, Screen_height));
@@ -405,14 +405,14 @@ void game_start(RenderWindow* window_ptr, string role)
 			enemy_manager.show_all_enemy(window_ptr, &danmaku_manager);
 			falling_object_manager.show_all_object(window_ptr);
 			window_ptr->draw(dark_overlay);
+			Display_manager::show();
 			pause_page(window_ptr, pause_option, is_paused,role);
-	
 		}
 
 		window_ptr->draw(Image_manager::custom_image("front.png", 0, 0, start_x, 1, 0, 226, 31, 256));
 		window_ptr->draw(Image_manager::custom_image("front.png", 0.625, 0, 1, 1, 0, 226, 31, 256));
 		test.once_page();
-		window_ptr->draw(Image_manager::custom_image("power_strip.png", 0.755, 0.230, 0.755 + 0.23 * player_ptr->power / 128, 0.264));
+		window_ptr->draw(Image_manager::custom_image("power_strip.png", 0.755, 0.230, 0.755 + 0.20 * player_ptr->power / 128, 0.264));
 		show_game_font(window_ptr, player_ptr->power >= 128 ? "MAX" : to_string(player_ptr->power), 0.755, 0.233, 0.025);
 		show_game_font(window_ptr, to_string(int(player_ptr->graze)), 0.755, 0.270, 0.025);
 		show_game_font(window_ptr, to_string(player_ptr->blue_point) + "/" + to_string(player_ptr->goal_point), 0.755, 0.305, 0.025);
@@ -437,6 +437,7 @@ void init_window(RenderWindow& window, unsigned int& width, unsigned int& height
 	height = GetSystemMetrics(SM_CYSCREEN);
 	window.create(VideoMode({width, height}), L"东方游戏v1.0", sf::Style::None);
 	window.setFramerateLimit(60);
+	Display_manager::init(&window);
 }
 
 void init_resources(unsigned int width, unsigned int height) {
@@ -530,19 +531,120 @@ void role_select(int type, Page& menu, RenderWindow* window_ptr) {
 		window_ptr->display();
 	}
 }
+void show_option_page(Page& menu, RenderWindow* window_ptr) {
+	int option = 0;
+	int sound_volumn = Music_manager::sound_volumn;
+	int music_volumn = Music_manager::music_volumn;
+	int once_change = 5;
+	while ((*window_ptr).isOpen()) {
+		window_ptr->clear();
+		if ((*Music_manager::search_music("menu.mp3")).getStatus() != Music::Status::Playing) {
+			Music_manager::play_music("menu.mp3");
+		}
+		window_ptr->draw(Image_manager::custom_image("bg1.png"));
+		while (const optional event = (*window_ptr).pollEvent()) {
+			if (event->is<Event::Closed>()) {
+				cout << "窗口关闭" << endl;
+				(*window_ptr).close();
+			}
+			if ((event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::W)
+				|| (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Up)) {
+				option = (option - 1) % 4;
+				cout << "向上移动选项,现在是第" << to_string(option + 1) << "个按钮" << endl;
+				Music_manager::play_music("button1.mp3");
+			}
+			if ((event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::S)
+				|| (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Down)) {
+				option = (option + 1) % 4;
+				cout << "向下移动选项,现在是第" << to_string(option + 1) << "个按钮" << endl;
+				Music_manager::play_music("button1.mp3");
+			}
+
+			if ((event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::A)
+				|| (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Left)) {
+				if (option == 0) {
+					if (music_volumn - once_change >= 0) {
+						music_volumn -= once_change;
+					}
+					Music_manager::play_music("button1.mp3");
+				}
+				if (option == 1) {
+					if (sound_volumn - once_change >= 0) {
+						sound_volumn -= once_change;
+					}
+					Music_manager::play_music("button1.mp3");
+				}
+				
+			}
+			if ((event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::D)
+				|| (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Right)) {
+				if (option == 0) {
+					if (music_volumn + once_change <= 100) {
+						music_volumn += once_change;
+					}
+					Music_manager::play_music("button1.mp3");
+				}
+				if (option == 1) {
+					if (sound_volumn + once_change <= 100) {
+						sound_volumn += once_change;
+					}
+					Music_manager::play_music("button1.mp3");
+				}
+			}
+			if ((event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::K)
+				|| (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::X)) {
+				Music_manager::play_music("button1.mp3");
+				menu.show_page();
+			}
+			if ((event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::J)
+				|| (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Z)) {
+				if (option == 0) {
+					Music_manager::music_volumn = music_volumn;
+					Music_manager::pause_music("menu.mp3");
+					Music_manager::play_music("button1.mp3");
+				}
+				if (option == 1) {
+					Music_manager::sound_volumn = sound_volumn;
+					Music_manager::play_music("button1.mp3");
+				}
+				if (option == 2) {
+					Music_manager::sound_volumn = 50;
+					Music_manager::music_volumn = 50;
+					sound_volumn = Music_manager::sound_volumn;
+					music_volumn = Music_manager::music_volumn;
+					Music_manager::pause_music("menu.mp3");
+					Music_manager::play_music("button1.mp3");
+				}
+				if (option == 3) {
+					Music_manager::play_music("button1.mp3");
+					menu.show_page();
+				}
+			}
+		}
+		show_game_font(window_ptr,to_string((int)music_volumn)+"%",0.5,0.10,0.08);
+		show_game_font(window_ptr, to_string((int)sound_volumn) + "%", 0.5, 0.30, 0.08);
+		window_ptr->draw(Image_manager::custom_image("music_volumn_"+string((option==0?"":"un"))+"select.png", 0.15, 0.07, 0.46, 0.22));
+		window_ptr->draw(Image_manager::custom_image("sound_volumn_" + string((option == 1 ? "" : "un")) + "select.png", 0.15, 0.27, 0.43, 0.42));
+		window_ptr->draw(Image_manager::custom_image("reset_" + string((option == 2 ? "" : "un")) + "select.png", 0.15, 0.5, 0.41, 0.65));
+		window_ptr->draw(Image_manager::custom_image("quit_" + string((option == 3 ? "" : "un")) + "select.png", 0.15, 0.7, 0.40, 0.835));
+		window_ptr->display();
+	}
+}
 void build_main_menu(Page& menu, Page& introduction, Page& result, RenderWindow* window) {
 	menu.add_image(Image_manager::custom_image("main_menu.png"));
 	menu.add_image(Image_manager::custom_image("title02.png", 0.65, 0, 0.95, 1.1));
-	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("start_unselect.png", 0.1, 0.3, 0.25, 0.38),
-		Image_manager::custom_image("start_select.png", 0.1, 0.3, 0.25, 0.38), [window, &menu] {role_select(1, menu,window); }, true);
-	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("extrastart_unselect.png", 0.05, 0.39, 0.35, 0.48),
-		Image_manager::custom_image("extrastart_select.png", 0.05, 0.39, 0.35, 0.48), [window, &menu] {role_select(9999, menu, window); });
-	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("introduction_unselect.png", 0.1, 0.49, 0.45, 0.585),
-		Image_manager::custom_image("introduction_select.png", 0.1, 0.49, 0.45, 0.585), [&introduction]() { introduction.show_page(); });
-	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("result_unselect.png", 0.12, 0.595, 0.30, 0.685),
-		Image_manager::custom_image("result_select.png", 0.12, 0.595, 0.30, 0.685), [&result]() { result.show_page(); });
-	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("quit_unselect.png", 0.1, 0.7, 0.26, 0.79),
-		Image_manager::custom_image("quit_select.png", 0.1, 0.7, 0.26, 0.79), [window]() { window->close(); });
+	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("start_unselect.png", 0.1, 0.2, 0.25, 0.28),
+		Image_manager::custom_image("start_select.png", 0.1, 0.2, 0.25, 0.28), [window, &menu] {role_select(1, menu,window); }, true);
+	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("extrastart_unselect.png", 0.05, 0.29, 0.35, 0.38),
+		Image_manager::custom_image("extrastart_select.png", 0.05, 0.29, 0.35, 0.38), [window, &menu] {role_select(9999, menu, window); });
+	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("introduction_unselect.png", 0.1, 0.39, 0.45, 0.485),
+		Image_manager::custom_image("introduction_select.png", 0.1, 0.39, 0.45, 0.485), [&introduction]() { introduction.show_page(); });
+	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("result_unselect.png", 0.12, 0.495, 0.30, 0.585),
+		Image_manager::custom_image("result_select.png", 0.12, 0.495, 0.30, 0.585), [&result]() { result.show_page(); });
+	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("option_unselect.png", 0.12, 0.585, 0.32, 0.685),
+		Image_manager::custom_image("option_select.png", 0.12, 0.585, 0.32, 0.685), [window, &menu]() {show_option_page(menu,window); });
+	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("quit_unselect.png", 0.1, 0.69, 0.26, 0.78),
+		Image_manager::custom_image("quit_select.png", 0.1, 0.69, 0.26, 0.78), [window]() { window->close(); });
 }
 
 void build_introduction(Page& intro, Page& main_menu) {

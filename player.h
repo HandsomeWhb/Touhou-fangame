@@ -15,6 +15,7 @@ public:
 	bool is_game_over=false;
 	bool will_use_bomb=false;
 	bool is_using_bomb=false;
+	bool is_first_full_power = true;
 	int god_mode_counter=0;
 	int bomb_counter=0;
 	bool able_use_bomb=true;

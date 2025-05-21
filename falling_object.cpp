@@ -8,10 +8,9 @@ Falling_object::Falling_object(){
 Falling_object::Falling_object(float dx, float dy, float position_x, float position_y){
 	this->dx = dx;
 	this->dy = dy;
-	this->image_manager_ptr = image_manager_ptr;
 }
 void Falling_object::load_img(std::string path, float width, float height, float start_x, float start_y, float end_x, float end_y) {
-	this->sprite=image_manager_ptr->cut_image(path,width,height,start_x,start_y,end_x,end_y);
+	this->sprite=Image_manager::cut_image(path,width,height,start_x,start_y,end_x,end_y);
 }
 void Falling_object::move(Player* player_ptr) {
 	circle_box.move(dx, dy);
@@ -42,7 +41,7 @@ Falling_object_manager::Falling_object_manager(Player* player_ptr, float x1, flo
 	this->y2 = y2;
 }
 void Falling_object_manager::add_falling_object(Falling_object* falling_object_ptr) {
-	falling_object_ptrs.push_back(falling_object_ptr);
+	temp.push_back(falling_object_ptr);
 }
 void Falling_object_manager::is_outside() {
 	for (auto it = falling_object_ptrs.begin(); it != falling_object_ptrs.end(); ) {
@@ -50,7 +49,7 @@ void Falling_object_manager::is_outside() {
 			delete* it;
 			it = falling_object_ptrs.erase(it);
 		}
-		else if((**it).circle_box.position_y < y1){
+		else if((**it).circle_box.position_y < y1&&!(**it).is_absorb){
 			(**it).dy = 0.5 * Image_manager::Screen_height / 1600;
 			++it;
 		}
@@ -94,12 +93,14 @@ void Falling_object_manager::is_absorb() {
 	}
 }
 void Falling_object_manager::update(sf::RenderWindow* window_ptr) {
+	falling_object_ptrs.insert(falling_object_ptrs.end(),temp.begin(),temp.end());
+	temp.clear();
 	is_outside();
 	is_absorb();
 	for (auto it = falling_object_ptrs.begin(); it != falling_object_ptrs.end();it++ ) {
 		(**it).move(player_ptr);
 		window_ptr->draw((**it).sprite);
-		//(**it).circle_box.draw(window_ptr);
+		/*(**it).circle_box.draw(window_ptr);*/
 	}
 	is_collision();
 }
@@ -160,11 +161,20 @@ void Health_up::on_pick(Player* player_ptr) {
 Full_power::Full_power(float dx, float dy, float position_x, float position_y)
 	:Falling_object(dx, dy, position_x, position_y) {
 	this->circle_box = Circle_box(22.f, 0, 0, 0, position_x, position_y);
-	load_img("etama2.png", 48, 48, 48, 64, 80, 80);
+	load_img("etama2.png", 48, 48, 64, 64, 80, 80);
 	sprite.setPosition({ position_x-24, position_y-24 });
 }
 void Full_power::on_pick(Player* player_ptr) {
 	player_ptr->add_power(128);
+}
+Spell_card::Spell_card(float dx, float dy, float position_x, float position_y)
+	:Falling_object(dx, dy, position_x, position_y) {
+	this->circle_box = Circle_box(16.f, 0, 0, 0, position_x, position_y);
+	load_img("etama2.png", 48, 48, 96, 64, 112, 80);
+	sprite.setPosition({ position_x - 24, position_y - 24 });
+}
+void Spell_card::on_pick(Player* player_ptr) {
+	player_ptr->add_score(1000);
 }
 Falling_object* create_falling_object(string name, float dx, float dy, float position_x, float position_y) {
 	if (name == "Power") {
@@ -184,6 +194,9 @@ Falling_object* create_falling_object(string name, float dx, float dy, float pos
 	}
 	else if (name == "Full_power") {
 		return new Full_power(dx, dy, position_x, position_y);
+	}
+	else if (name == "Spell_card") {
+		return new Spell_card(dx, dy, position_x, position_y);
 	}
 	return nullptr; // 如果名字不匹配，返回空指针
 }

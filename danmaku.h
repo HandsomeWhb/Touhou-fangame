@@ -62,7 +62,7 @@ public:
 	//检测是否出界,是则删除
 	void is_outside();
 	//清空弹幕方法
-	void clear_enemy_danmaku();
+	void clear_enemy_danmaku(bool create_reward=false);
 	void clear_enemy_reference(Enemy* enemy);
 	void update_all_danmaku(Player* player_ptr, Enemy_manager* enemy_manager_ptr, sf::RenderWindow* window_ptr, bool debug=false);
 	Danmaku_manager( Player* player_ptr, float x1, float y1, float x2, float y2);

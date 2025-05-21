@@ -18,3 +18,4 @@ public:
 	Game_bridge();
 	Game_bridge(Player* player_ptr, Enemy_manager* enemy_manager_ptr, Danmaku_manager* danmaku_manager_ptr, Falling_object_manager* falling_object_manager_ptr, sf::RenderWindow* window_ptr);
 };
+extern Game_bridge game_bridge;

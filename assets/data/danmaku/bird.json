@@ -13,7 +13,7 @@
     "angle": 0.0,
     "speed": 6.0,
     "position_x": 0.0,
-    "position_y": -48.0,
+    "position_y": -40.0,
     "exist_time": 9999,
     "type": "fixed"
   },
@@ -22,7 +22,7 @@
     "angle": 0.0,
     "speed": 6.0,
     "position_x": 0.0,
-    "position_y": -96.0,
+    "position_y": -80.0,
     "exist_time": 9999,
     "type": "fixed"
   },
@@ -31,7 +31,7 @@
     "angle": 0.0,
     "speed": 6.0,
     "position_x": 0.0,
-    "position_y": -144.0,
+    "position_y": -120.0,
     "exist_time": 9999,
     "type": "fixed"
   },
@@ -40,7 +40,16 @@
     "angle": 0.0,
     "speed": 6.0,
     "position_x": 0.0,
-    "position_y": -192.0,
+    "position_y": -160.0,
+    "exist_time": 9999,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 6.0,
+    "position_x": 0.0,
+    "position_y": -200.0,
     "exist_time": 9999,
     "type": "fixed"
   },
@@ -58,7 +67,7 @@
     "angle": 0.0,
     "speed": 6.0,
     "position_x": 0.0,
-    "position_y": 48.0,
+    "position_y": 40.0,
     "exist_time": 9999,
     "type": "fixed"
   },
@@ -67,7 +76,7 @@
     "angle": 0.0,
     "speed": 6.0,
     "position_x": 0.0,
-    "position_y": 96.0,
+    "position_y": 80.0,
     "exist_time": 9999,
     "type": "fixed"
   },

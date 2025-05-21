@@ -1,7 +1,7 @@
 [
   {
-    "num": 2101,
-    "appear_frame": 1,
+    "num": 1,
+    "appear_frame": 2101,
     "frame_interval": 0,
     "enemy": {
       "type": "Red_rabbit_enemy",

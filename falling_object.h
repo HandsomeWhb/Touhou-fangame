@@ -9,7 +9,6 @@ public:
 	sf::Sprite sprite = sf::Sprite(texture);
 	float dot_radius = 0;
 	bool is_absorb = false;
-	Image_manager* image_manager_ptr;
 	Falling_object();
 	Falling_object(float dx, float dy, float position_x, float position_y);
 	void load_img(std::string path, float width, float height, float start_x, float start_y, float end_x, float end_y);
@@ -18,6 +17,7 @@ public:
 };
 class Falling_object_manager {
 public:
+	std::vector<Falling_object*> temp;
 	std::vector<Falling_object*> falling_object_ptrs;
 	float x1, y1, x2, y2;
 	Player* player_ptr;
@@ -58,6 +58,11 @@ public:
 class Full_power :public Falling_object {
 public:
 	Full_power(float dx, float dy, float position_x, float position_y);
+	void on_pick(Player* player_ptr) override;
+};
+class Spell_card :public Falling_object {
+public:
+	Spell_card(float dx, float dy, float position_x, float position_y);
 	void on_pick(Player* player_ptr) override;
 };
 Falling_object* create_falling_object(std::string name, float dx, float dy, float position_x, float position_y);

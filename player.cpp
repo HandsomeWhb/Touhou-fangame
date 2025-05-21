@@ -25,13 +25,12 @@ Player::Player(float normal_speed, float low_speed, float dot_radius, float norm
 }
 void Player::add_power(int power_num) {
 	if (power + power_num >= 128) {
-		this->power = 128;
-		damage = 2 * start_damage;
-		is_full_power = true;
 		if (power != 128) {
 			full_power();
 		}
-		
+		this->power = 128;
+		damage = 2 * start_damage;
+		is_full_power = true;
 	}
 	else {
 		this->power += power_num;
@@ -99,8 +98,9 @@ void Player::add_health(int num) {
 	Music_manager::play_music("se_extend.wav");
 }
 void Player::full_power() {
-	danmaku_manager_ptr->clear_enemy_danmaku();
-	Music_manager::play_music("se_powerup.wav",50);
+	Display_manager::add(Image_manager::custom_image("full_power.png", 0.245,0.23,0.505,0.28),180);
+	danmaku_manager_ptr->clear_enemy_danmaku(true);
+	Music_manager::play_music("se_powerup.wav",100);
 }
 void Player::on_death(){
 	Music_manager::play_music("se_slash.wav", 100);
@@ -212,7 +212,6 @@ Animation* Player::search_animation_ptr(string name) {
 void Player::update(sf::RenderWindow* window_ptr) {
 	handle_input();
 	animation_ptr->update();
-	
 	if (!is_human) {
 		circle_box.draw(window_ptr);
 	}
@@ -223,7 +222,10 @@ void Player::update(sf::RenderWindow* window_ptr) {
 			is_god_mode = false;
 		}
 	}
-
+	if (is_full_power == true && is_first_full_power == true) {
+		absorb_radius = 6000;
+		is_first_full_power = false;
+	}
 	//ÎÞµÐ×´Ì¬£¬²âÊÔÊ±¿ª
 	is_god_mode = true;
 

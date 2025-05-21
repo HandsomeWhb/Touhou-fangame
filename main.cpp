@@ -7,6 +7,7 @@ RenderWindow window;
 Page main_menu=Page(&window, "button1.mp3", "menu.mp3");
 Page introduction(&window, "button1.mp3", "menu.mp3");
 Page result(&window, "button1.mp3", "menu.mp3");
+
 int main() {
 	unsigned int width, height;
 	init_window(window, width, height);

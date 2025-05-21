@@ -5,3 +5,4 @@ Game_bridge::Game_bridge(Player* player_ptr, Enemy_manager* enemy_manager_ptr, D
 	 Screen_height = window_ptr->getSize().y;
 }
 Game_bridge::Game_bridge() {}
+Game_bridge game_bridge;

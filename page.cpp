@@ -193,6 +193,7 @@ Sprite use_game_font(RenderWindow* window_ptr, char a, float x, float y, float s
 	case 'z': return  Image_manager::custom_image("ascii.png", x, y, x + size, y + size, 160, 112, 176, 128); break;
 	case ':': return  Image_manager::custom_image("ascii.png", x, y, x + size, y + size, 160, 48, 176, 64); break;
 	case '^': return  Image_manager::custom_image("ascii.png", x, y, x + size, y + size, 208, 32, 224, 48); break;
+	case '%': return  Image_manager::custom_image("ascii.png", x, y, x + size, y + size, 80, 32, 96, 48); break;
 	case '+': return  Image_manager::custom_image("front.png", x, y - 0.015, x + size, y + size, 64, 80, 80, 96); break;
 	case '-': return  Image_manager::custom_image("front.png", x, y - 0.015, x + size, y + size, 80, 80, 96, 96); break;
 	

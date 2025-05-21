@@ -4,6 +4,7 @@
 using namespace std;
 using namespace sf;
 using namespace filesystem;
+
 Music_::Music_(const string& full_path) {
     this->full_path = full_path;
     this->music = new Music(full_path);
@@ -11,7 +12,8 @@ Music_::Music_(const string& full_path) {
 Music_::~Music_() {
     delete music;
 }
-
+float Music_manager::music_volumn=50;
+float Music_manager::sound_volumn=50;
 void Music_manager::init(const std::string& music_folder_path) {
     music_folder = music_folder_path;
     load_all_music();
@@ -86,6 +88,12 @@ void Music_manager::play_music(const string& path, int volumn) {
     if (ptr == nullptr) {
         cout << "ÕÒ²»µ½ÒôÀÖ:" << music_folder << path << endl;
         ptr = search_music("error.wav");
+    }
+    if ((ptr->getDuration()).asSeconds()>=15) {
+        volumn = volumn * music_volumn / 100;
+    }
+    else {
+        volumn = volumn * sound_volumn / 100;
     }
     (*ptr).setVolume(volumn);
     (*ptr).play();

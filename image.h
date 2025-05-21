@@ -34,3 +34,20 @@ public:
     static void clear_all_images();
     
 };
+class Display_manager {
+public:
+    struct display_item {
+        sf::Sprite sprite;
+        int frames_left;
+        display_item(const sf::Sprite& sp, int frames);
+    };
+
+    static void init(sf::RenderWindow* win);
+    static void add(const sf::Sprite& sprite, int frames);
+    static void update();
+    static void show();
+
+private:
+    static sf::RenderWindow* window;
+    static std::vector<display_item> items;
+};

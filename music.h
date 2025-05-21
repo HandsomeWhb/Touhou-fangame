@@ -14,7 +14,8 @@ class Music_manager {
 public:
     static std::string music_folder;
     static std::vector<Music_*> musics;
-
+    static float music_volumn;
+    static float sound_volumn;
     static void init(const std::string& music_folder_path);
     static void clear_all_music(); // 释放资源，相当于析构
     static sf::Music* add_music(const std::string& path);

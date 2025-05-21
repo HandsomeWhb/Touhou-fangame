@@ -132,6 +132,41 @@ void Image_manager::load_all_image() {
     cout << "Í¼Æ¬ËØ²Ä¼ÓÔØÍê±Ï" << endl;
     return;
 }
+sf::RenderWindow* Display_manager::window = nullptr;
+std::vector<Display_manager::display_item> Display_manager::items;
+Display_manager::display_item::display_item(const sf::Sprite& sp, int frames)
+    : sprite(sp), frames_left(frames) {}
+void Display_manager::init(sf::RenderWindow* win) {
+    window = win;
+}
+void Display_manager::add(const sf::Sprite& sprite, int frames) {
+    items.emplace_back(sprite, frames);
+}
+void Display_manager::update() {
+    if (!window) return;
+    for (auto it = items.begin(); it != items.end();) {
+        window->draw(it->sprite);
+        it->frames_left--;
+        if (it->frames_left <= 0) {
+            it = items.erase(it);
+        }
+        else {
+            ++it;
+        }
+    }
+}
+void Display_manager::show() {
+    if (!window) return;
+    for (auto it = items.begin(); it != items.end();) {
+        window->draw(it->sprite);
+        if (it->frames_left <= 0) {
+            it = items.erase(it);
+        }
+        else {
+            ++it;
+        }
+    }
+}
 
 /*
 VideoMode desktopMode = VideoMode::getDesktopMode();
