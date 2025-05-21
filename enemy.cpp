@@ -183,6 +183,8 @@ void Enemy::shoot(Danmaku_manager* danmaku_manager_ptr) {
         while (motion.fire_plan_ptr != motion.fire_plan.end()&&motion.frame_count == motion.fire_plan_ptr->trigger_frame) {
             motion.fire_plan_ptr->position_x += begin_position_x;
             motion.fire_plan_ptr->position_y += begin_position_y;
+            motion.fire_plan_ptr->backbone_x += begin_position_x;
+            motion.fire_plan_ptr->backbone_y += begin_position_y;
             motion.fire_plan_ptr->enemy_ptr = this;
             (danmaku_manager_ptr->enemy_danmaku_ptrs).push_back(create_danmaku(*(motion.fire_plan_ptr)));
                 motion.fire_plan_ptr++;
@@ -197,8 +199,8 @@ void Enemy::add_move_plan(int trigger_frame, float angle, float speed) {
     motion.move_plan.push_back({ trigger_frame,angle,speed });
 }
 void Enemy::add_fire_plan(int trigger_frame, string type, float angle, float speed,
-    float position_x , float position_y, sf::Color color, float aim_offset_x, float aim_offset_y, int exist_time,bool remove_on_death) {
-    motion.fire_plan.push_back({ trigger_frame,type,angle,speed,position_x,position_y ,aim_offset_x,aim_offset_y,exist_time,remove_on_death,color });
+    float position_x , float position_y, sf::Color color, float aim_offset_x, float aim_offset_y, int exist_time,bool remove_on_death,float backbone_x,float backbone_y,bool use_backbone_rotation) {
+    motion.fire_plan.push_back({ trigger_frame,type,color,angle,speed,position_x,position_y ,aim_offset_x,aim_offset_y,exist_time,remove_on_death,backbone_x,backbone_y,use_backbone_rotation });
 }
 void Enemy::add_rewards(int bomb_up, int health_up, int big_power, int power, int blue_point) {
     motion.rewards={ bomb_up, health_up, big_power, power, blue_point };
@@ -424,7 +426,7 @@ void load_enemies_from_file_v1(const string& filename, Enemy_manager* enemy_mana
                     color_json.value("g", 255),
                     color_json.value("b", 255)
                 );
-                enemy->add_fire_plan(frame, fire_type, angle, speed, pos_x, pos_y,color,aim_offset_x,aim_offset_y,exist_time,remove_on_death);
+                enemy->add_fire_plan(frame, fire_type, angle, speed, pos_x, pos_y,color,aim_offset_x,aim_offset_y,exist_time,remove_on_death,0,0,false);
             }
             sort(enemy->motion.fire_plan.begin(), enemy->motion.fire_plan.end(), compare_by_trigger_count);
             enemy->motion.fire_plan_ptr = enemy->motion.fire_plan.begin();
@@ -471,6 +473,8 @@ void creat_wave(Enemy_manager* enemy_manager_ptr, Falling_object_manager* fallin
                 it->type = danmaku->type + "_" + it->type;
                 it->color = danmaku->color;
                 it->trigger_frame = danmaku->start_frame + it->trigger_frame;
+                it->position_x += danmaku->offset_position_x;
+                it->position_y += danmaku->offset_position_y;
                 int x = it->position_x;
                 int y = it->position_y;
                 float rad = danmaku->angle * 3.1415 / 180;
@@ -533,6 +537,8 @@ void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, F
                 danmaku_data.shoot_logic = d.value("shoot_logic", "");
                 danmaku_data.type = d.value("type", "Circle");
                 danmaku_data.speed = d.value("global_speed", -100);
+                danmaku_data.offset_position_x= d.value("offset_position_x", 0);
+                danmaku_data.offset_position_y = d.value("offset_position_y", 0);
                 const auto& c = d["color"];
                 danmaku_data.color.r = c.value("r", 255);
                 danmaku_data.color.g = c.value("g", 255);

@@ -391,7 +391,7 @@ void Player::handle_input() {
 	}
 }
 
-Reimu::Reimu(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
+Reimu::Reimu(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 4.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
 	0.03 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.95 * game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
 	load_img("human_stand", 20, "player00.png", 4, 32 * 3, 48 * 3, 0, 0, 32, 48, false);

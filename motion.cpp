@@ -160,7 +160,36 @@ void Danmaku_action_manager::load_all_danmaku_action() {
         Danmaku_action* danmaku_action_temp_ptr = new Danmaku_action();
         danmaku_action_temp_ptr->file_name = filename;
 
-        for (auto& item : config) {
+        // 先尝试读取骨干相关字段，兼容旧格式
+        float backbone_x = 0.0f;
+        float backbone_y = 0.0f;
+        bool use_backbone_rotation = false;
+
+        if (config.contains("backbone_x")) {
+            backbone_x = config.value("backbone_x", 0.0f) * Image_manager::Screen_height / 1600;
+        }
+        if (config.contains("backbone_y")) {
+            backbone_y = config.value("backbone_y", 0.0f) * Image_manager::Screen_height / 1600;
+        }
+        if (config.contains("use_backbone_rotation")) {
+            use_backbone_rotation = config.value("use_backbone_rotation", false);
+        }
+
+        // 弹幕列表的提取，兼容旧格式(根节点数组)或新格式(包含danmakus字段)
+        nlohmann::json danmaku_list;
+        if (config.is_array()) {
+            danmaku_list = config;
+        }
+        else if (config.contains("danmakus") && config["danmakus"].is_array()) {
+            danmaku_list = config["danmakus"];
+        }
+        else {
+            // 这里可以打印错误，或者跳过当前文件
+            cout << "弹幕文件格式异常，未找到弹幕数组" << endl;
+            continue;
+        }
+
+        for (auto& item : danmaku_list) {
             int trigger_frame = item.value("frame", 0);
             string type = item.value("type", "fixed");
             float angle = item.value("angle", 0.0f);
@@ -170,7 +199,7 @@ void Danmaku_action_manager::load_all_danmaku_action() {
             float aim_offset_x = item.value("aim_offset_x", 0.0f) * Image_manager::Screen_height / 1600;
             float aim_offset_y = item.value("aim_offset_y", 0.0f) * Image_manager::Screen_height / 1600;
             int exist_time = item.value("exist_time", 9999);
-            bool remove_on_death = item.value("remove_on_death",false);
+            bool remove_on_death = item.value("remove_on_death", false);
             sf::Color color(255, 255, 255, 255);
 
             if (item.contains("color") && item["color"].is_object()) {
@@ -181,8 +210,10 @@ void Danmaku_action_manager::load_all_danmaku_action() {
                 color.a = color_json.value("a", 255);
             }
 
+            // 调用时传入骨干参数，兼容旧格式骨干默认0，旋转默认false
             danmaku_action_temp_ptr->add_danmaku_list(trigger_frame, type, color, angle, speed,
-                position_x, position_y, aim_offset_x, aim_offset_y, exist_time,remove_on_death);
+                position_x, position_y, aim_offset_x, aim_offset_y, exist_time, remove_on_death,
+                backbone_x, backbone_y, use_backbone_rotation);
         }
 
         add_danmaku_action(danmaku_action_temp_ptr);
@@ -194,7 +225,10 @@ void Danmaku_action_manager::load_all_danmaku_action() {
 
 
 Danmaku_action::Danmaku_action() {}
-void Danmaku_action::add_danmaku_list(int trigger_frame, std::string type, sf::Color color, float angle, float speed, float position_x, float position_y , float aim_offset_x , float aim_offset_y , int exist_time,bool remove_on_death) {
-    danmaku_list_ptr.push_back(new Danmaku_command{ trigger_frame, type, angle,speed,position_x,position_y,aim_offset_x,aim_offset_y,exist_time,remove_on_death,color });
+void Danmaku_action::add_danmaku_list(int trigger_frame, std::string type, sf::Color color, float angle, float speed, float position_x, 
+    float position_y , float aim_offset_x , float aim_offset_y , int exist_time,bool remove_on_death, float backbone_x , float backbone_y ,
+    bool use_backbone_rotation ) {
+    danmaku_list_ptr.push_back(new Danmaku_command{ trigger_frame, type,color, angle,speed,position_x,position_y,
+        aim_offset_x,aim_offset_y,exist_time,remove_on_death,backbone_x,backbone_y,use_backbone_rotation });
 }
 

@@ -1,0 +1,64 @@
+[
+  {
+    "num": 1,
+    "appear_frame": 121,
+    "frame_interval": 0,
+    "enemy": {
+      "type": "Red_rabbit_enemy",
+      "hp": 4000.0,
+      "x": 960,
+      "y": 10,
+      "rewards": {
+        "power": 0,
+        "big_power": 0,
+        "bomb_up": 1,
+        "health_up": 0,
+        "blue_point": 2
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 50,
+        "shoot_logic": "bird_aim.json",
+        "offset_position_x": 0,
+        "offset_position_y": 200,
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "a": 192
+        }
+      },
+      {
+        "danmaku_offset_angle": -30,
+        "danmaku_start_frame": 50,
+        "offset_position_x": 100,
+        "offset_position_y": 40,
+        "shoot_logic": "bird_aim.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "a": 192
+        }
+      },
+      {
+        "danmaku_offset_angle": 30,
+        "danmaku_start_frame": 50,
+        "offset_position_x": -100,
+        "offset_position_y": 40,
+        "shoot_logic": "bird_aim.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "a": 192
+        }
+      }
+    ],
+    "move": "little_boss01.json"
+  }
+]

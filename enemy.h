@@ -44,7 +44,7 @@ public:
     void take_damage(float damage);
     void on_death();
     void add_move_plan(int trigger_frame, float angle, float speed);
-    void add_fire_plan(int trigger_frame, std::string type, float angle, float speed, float position_x, float position_y, sf::Color color,float aim_offset_x,float aim_offset_y,int exist_time,bool remove_on_death);
+    void add_fire_plan(int trigger_frame, std::string type, float angle, float speed, float position_x, float position_y, sf::Color color,float aim_offset_x,float aim_offset_y,int exist_time,bool remove_on_death,float backbone_x,float backbone_y,bool use_backbone_rotation);
     void add_rewards(int bomb_up, int health_up, int big_power, int power, int blue_point);
 };
 struct Appearance_list {

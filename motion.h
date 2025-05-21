@@ -36,7 +36,9 @@ public:
     std::string file_name;
     std::vector<Danmaku_command*> danmaku_list_ptr;
     Danmaku_action();
-    void add_danmaku_list(int trigger_frame, std::string type, sf::Color color, float angle, float speed, float position_x = 0, float position_y = 0, float aim_offset_x = 0, float aim_offset_y = 0, int exist_time = 9999,bool remove_on_death=false);
+    void add_danmaku_list(int trigger_frame, std::string type, sf::Color color, float angle, float speed, float position_x = 0,
+        float position_y = 0, float aim_offset_x = 0, float aim_offset_y = 0, int exist_time = 9999,bool remove_on_death=false,
+        float backbone_x = 0, float backbone_y = 0, bool use_backbone_rotation = false);
     
 };
 
@@ -53,6 +55,7 @@ public:
 struct Danmaku_command {
     int trigger_frame;
     std::string type;
+    sf::Color color;
     float angle;
     float speed;
     float position_x = 0;
@@ -61,7 +64,9 @@ struct Danmaku_command {
     float aim_offset_y = 0;
     int exist_time = 9999;
     bool remove_on_death = false;
-    sf::Color color;
+    float backbone_x = 0;
+    float backbone_y = 0;
+    bool use_backbone_rotation = false;
     Enemy* enemy_ptr = nullptr;
 };
 struct Move_command {
@@ -88,6 +93,8 @@ struct Danmaku_data {
     std::string type;
     float angle;
     float speed;
+    float offset_position_x;
+    float offset_position_y;
     sf::Color color;
     int start_frame;
     std::string remove_on_death;

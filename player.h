@@ -40,7 +40,7 @@ public:
 	int goal_point=100;
 	int health_num;
 	int bomb_num;
-	int power=0;
+	int power=96;
 	float graze=0;
 	int score=0;
 	int highscore = 0;

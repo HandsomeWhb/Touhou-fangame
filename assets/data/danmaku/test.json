@@ -7,7 +7,8 @@
     "position_y": 0.0,
     "aim_offset_x": 0.0,
     "aim_offset_y": 0.0,
-    "exist_time": 9999
+    "exist_time": 9999,
+      "type": "aim"
   },
   {
     "frame": 60,
@@ -17,6 +18,7 @@
     "position_y": 0.0,
     "aim_offset_x": 0.0,
     "aim_offset_y": 0.0,
-    "exist_time": 9999
+    "exist_time": 9999,
+    "type": "aim"
   }
 ]
