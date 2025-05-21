@@ -69,6 +69,7 @@
     "fire_plan": [
       {
         "danmaku_start_frame": 61,
+        "remove_on_death": "true",
         "shoot_logic": "random01.json",
         "type": "Circle",
         "color": {
@@ -102,6 +103,7 @@
       {
         "danmaku_start_frame": 50,
         "shoot_logic": "random02.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -134,6 +136,7 @@
       {
         "danmaku_start_frame": 50,
         "shoot_logic": "random02.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -166,6 +169,7 @@
       {
         "danmaku_start_frame": 61,
         "shoot_logic": "circle_spin_cw.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -177,6 +181,7 @@
       {
         "danmaku_start_frame": 61,
         "shoot_logic": "circle_spin_ccw.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -209,6 +214,7 @@
       {
         "danmaku_start_frame": 50,
         "shoot_logic": "circle_spin_cw.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -241,6 +247,7 @@
       {
         "danmaku_start_frame": 50,
         "shoot_logic": "circle_spin_ccw.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,

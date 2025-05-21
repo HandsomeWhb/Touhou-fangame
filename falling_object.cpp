@@ -196,7 +196,9 @@ Falling_object* create_falling_object(string name, float dx, float dy, float pos
 		return new Full_power(dx, dy, position_x, position_y);
 	}
 	else if (name == "Spell_card") {
-		return new Spell_card(dx, dy, position_x, position_y);
+		Falling_object*  temp= new Spell_card(dx, dy, position_x, position_y);
+		temp->is_absorb = true;
+		return temp;
 	}
 	return nullptr; // 如果名字不匹配，返回空指针
 }

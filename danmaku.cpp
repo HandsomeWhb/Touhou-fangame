@@ -54,7 +54,7 @@ void Danmaku_manager::is_hit_enemy(Enemy* enemy_ptr,float damage){
 
 }
 void Danmaku_manager::is_hit_player(Player* player_ptr) {
-	Circle_box circle_box = Circle_box(player_ptr->circle_box.radius+25,0,0,0,player_ptr->circle_box.position_x,player_ptr->circle_box.position_y);
+	Circle_box circle_box = Circle_box(player_ptr->circle_box.radius+35,0,0,0,player_ptr->circle_box.position_x,player_ptr->circle_box.position_y);
 	for (auto it = enemy_danmaku_ptrs.begin(); it != enemy_danmaku_ptrs.end(); it++) {
 		if ((**it).collision_box.is_collision(circle_box)) {
 			player_ptr->add_graze(0.33);
@@ -67,6 +67,7 @@ void Danmaku_manager::is_hit_player(Player* player_ptr) {
 				player_ptr->on_death();
 				delete* it;
 				it = enemy_danmaku_ptrs.erase(it);
+				break;
 			}
 			else {
 				++it;
@@ -158,6 +159,8 @@ void Danmaku_manager::is_outside(){
 		}
 		else {
 			if((**it).remove_on_death==true&&(**it).enemy_ptr==nullptr){
+				game_bridge.falling_object_manager_ptr->add_falling_object(
+							create_falling_object("Spell_card", 0, 0, (**it).collision_box.center_x, (**it).collision_box.center_y));
 				delete* it;
 				it = enemy_danmaku_ptrs.erase(it);
 			}

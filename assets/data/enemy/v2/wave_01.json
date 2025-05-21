@@ -81,6 +81,7 @@
     "fire_plan": [
       {
         "shoot_logic": "circle01.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -91,6 +92,7 @@
       },
       {
         "shoot_logic": "circle03.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -122,6 +124,7 @@
     "fire_plan": [
       {
         "shoot_logic": "circle01.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -132,6 +135,7 @@
       },
       {
         "shoot_logic": "circle03.json",
+        "remove_on_death": "true",
         "type": "Circle",
         "color": {
           "r": 255,

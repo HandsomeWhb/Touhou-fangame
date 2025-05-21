@@ -408,7 +408,6 @@ void game_start(RenderWindow* window_ptr, string role)
 			Display_manager::show();
 			pause_page(window_ptr, pause_option, is_paused,role);
 		}
-
 		window_ptr->draw(Image_manager::custom_image("front.png", 0, 0, start_x, 1, 0, 226, 31, 256));
 		window_ptr->draw(Image_manager::custom_image("front.png", 0.625, 0, 1, 1, 0, 226, 31, 256));
 		test.once_page();
@@ -422,6 +421,7 @@ void game_start(RenderWindow* window_ptr, string role)
 		show_game_font(window_ptr, string(10 - to_string(player_ptr->highscore).length(), '0') + to_string(player_ptr->highscore), 0.755, 0.034, 0.03);
 		show_game_font(window_ptr, "0/2500", 0.755, 0.340, 0.025);
 		show_game_font(window_ptr, to_string(int(get_fps())) + "fps", 0.85, 0.93, 0.03);
+		
 		window_ptr->display();
 		if (player_ptr->is_game_over) {
 			Music_manager::stop_music("th08_17.mp3");
@@ -646,7 +646,6 @@ void build_main_menu(Page& menu, Page& introduction, Page& result, RenderWindow*
 	menu.add_button(Text_manager::custom_text(L""), Image_manager::custom_image("quit_unselect.png", 0.1, 0.69, 0.26, 0.78),
 		Image_manager::custom_image("quit_select.png", 0.1, 0.69, 0.26, 0.78), [window]() { window->close(); });
 }
-
 void build_introduction(Page& intro, Page& main_menu) {
 	intro.add_image(Image_manager::custom_image("bg1.png"));
 	intro.add_image(Image_manager::custom_image("youmu2.png", 0, 0.2, 0.3, 1));

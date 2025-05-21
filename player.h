@@ -11,9 +11,10 @@ class Player {
 public:
 	std::vector<Animation*> animation_ptrs;
 	bool is_human;
+	bool is_death = false;
 	bool is_god_mode=false;
 	bool is_game_over=false;
-	bool will_use_bomb=false;
+	bool will_clear_enemy=false;
 	bool is_using_bomb=false;
 	bool is_first_full_power = true;
 	int god_mode_counter=0;

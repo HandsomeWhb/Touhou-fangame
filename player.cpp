@@ -5,7 +5,7 @@ using namespace std;
 using namespace sf;
 Player::Player() {}
 Player::Player(float normal_speed, float low_speed, float dot_radius, float normal_absorb_radius, float start_damage, float x1, float y1,
-	float x2, float y2, int attack_speed, int health_num, int bomb_num,  Game_bridge* game_bridge_ptr){
+	float x2, float y2, int attack_speed, int health_num, int bomb_num, Game_bridge* game_bridge_ptr) {
 	this->normal_speed = normal_speed * Image_manager::Screen_height / 1600;
 	this->low_speed = low_speed * Image_manager::Screen_height / 1600;
 	this->dot_radius = dot_radius * Image_manager::Screen_height / 1600;
@@ -33,10 +33,15 @@ void Player::add_power(int power_num) {
 		is_full_power = true;
 	}
 	else {
-		this->power += power_num;
-		is_full_power = false;
-		if (power > 64) {
-			damage = start_damage + power * start_damage / 64;
+		if (power + power_num >= 0) {
+			this->power += power_num;
+			is_full_power = false;
+			damage = start_damage + power * start_damage / 128;
+		}
+		else {
+			this->power = 0;
+			is_full_power = false;
+			damage = start_damage;
 		}
 	}
 }
@@ -67,10 +72,12 @@ void Player::add_bomb(int num) {
 	Music_manager::play_music("se_item01.wav", 60);
 }
 void Player::use_bomb(int num) {
-	if (bomb_num >= 1&&able_use_bomb) {
-		bomb_num -= 1;
+	cout << "尝试使用炸弹" << bomb_num << "个,应该扣除"<<num<<"个" << endl;
+	if (bomb_num >= num && able_use_bomb) {
+		bomb_num -= num;
+		cout << "剩余炸弹" << bomb_num << "个"<< endl;
 		able_use_bomb = false;
-		danmaku_manager_ptr->clear_enemy_danmaku();
+		will_clear_enemy = true;
 		//播放动画
 		if (is_human) {
 			bomb_sprite = bomb_sprite0;
@@ -79,17 +86,13 @@ void Player::use_bomb(int num) {
 			bomb_sprite = bomb_sprite1;
 		}
 		bomb_sprite.setColor(sf::Color(255, 255, 255, 0));
-		if(will_use_bomb == false){
-			Music_manager::play_music("se_gun00.wav",50);
-		}
-		else {
-			will_use_bomb = false;
-		}
+		Music_manager::play_music("se_gun00.wav", 50);
 		normal_absorb_radius += 2000;
 		is_god_mode = true;
 		is_using_bomb = true;
 	}
 	else {
+		cout << "使用炸弹失败" << endl;
 		return;
 	}
 }
@@ -98,34 +101,65 @@ void Player::add_health(int num) {
 	Music_manager::play_music("se_extend.wav");
 }
 void Player::full_power() {
-	Display_manager::add(Image_manager::custom_image("full_power.png", 0.245,0.23,0.505,0.28),180);
+	Display_manager::add(Image_manager::custom_image("full_power.png", 0.245, 0.23, 0.505, 0.28), 180);
 	danmaku_manager_ptr->clear_enemy_danmaku(true);
-	Music_manager::play_music("se_powerup.wav",100);
+	Music_manager::play_music("se_powerup.wav", 100);
 }
-void Player::on_death(){
+void Player::on_death() {
+	sf::Clock clock;
+	bool is_death = true;
 	Music_manager::play_music("se_slash.wav", 100);
-	health_num -= 1;
-	is_god_mode = true;
-	will_use_bomb = true;
-	bomb_num = 3;
-	if (health_num < 0) {
-		game_over();
+	while (clock.getElapsedTime().asMilliseconds() < 300 && is_death) {
+		while (const optional event = game_bridge.window_ptr->pollEvent()) {
+			if (event->is<Event::Closed>()) {
+				game_bridge.window_ptr->close();
+			}
+			if ((event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::L)
+				|| (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::X)) {
+				if (bomb_num > 1) {
+					use_bomb(2);
+					is_death = false;
+				}
+				else if (bomb_num == 1) {
+					use_bomb(1);
+					is_death = false;
+				}
+				break;
+			}
+		}
+		sf::sleep(sf::milliseconds(5));
 	}
-	add_power(-power/2);
-	graze = 0;
+
+	if (is_death) {
+		able_use_bomb = false;
+		counter1 = 0;
+		health_num -= 1;
+		is_god_mode = true;
+		bomb_num = 3;
+		if (health_num < 0) {
+			game_over();
+		}
+		add_power(-16);
+		game_bridge.falling_object_manager_ptr->add_falling_object(create_falling_object("Big_power", 0, -get_random_offset(20, 50)/10.f, circle_box.position_x + get_random_offset(-200, 200), circle_box.position_y - get_random_offset(150, 300)));
+		for (int i = 0; i < 5; i++) {
+			game_bridge.falling_object_manager_ptr->add_falling_object(create_falling_object("Power", 0, -get_random_offset(20, 50)/10.f, circle_box.position_x + get_random_offset(-200, 200), circle_box.position_y - get_random_offset(150, 300)));
+		}
+		will_clear_enemy = true;
+	}
 }
-void Player::game_over(){
+
+void Player::game_over() {
 	is_game_over = true;
 }
 void Player::add_score(int num) {
-	score += num * (1 + graze * 2 / 1000)/10;
+	score += num * (1 + graze * 2 / 1000) / 10;
 	if (highscore / 10 < score) {
 		highscore = score * 10;
 	}
 }
-void Player::load_img(string name, float frame_time, string path, int img_num, float width, float height, float start_x, float start_y, float interval_x, float interval_y, bool is_reverse){
-	animation_ptrs.push_back(new Animation(name, frame_time,  path, img_num, width, height, start_x, start_y, interval_x, interval_y, is_reverse));
-	this->circle_box = Circle_box(dot_radius, 0, 0, 0, Image_manager::Screen_width*38/100, Image_manager::Screen_height*3/4);
+void Player::load_img(string name, float frame_time, string path, int img_num, float width, float height, float start_x, float start_y, float interval_x, float interval_y, bool is_reverse) {
+	animation_ptrs.push_back(new Animation(name, frame_time, path, img_num, width, height, start_x, start_y, interval_x, interval_y, is_reverse));
+	this->circle_box = Circle_box(dot_radius, 0, 0, 0, Image_manager::Screen_width * 38 / 100, Image_manager::Screen_height * 3 / 4);
 }
 bool Player::able_collect() {
 	if (is_full_power) {
@@ -147,42 +181,42 @@ bool Morisa::able_collect() {
 void Player::shoot() {
 	Danmaku* danmaku = new Square(new fixed_move(), Color::Red, 40, circle_box.position_x, circle_box.position_y, -180);
 	danmaku_manager_ptr->add_player_danmaku(danmaku);
-	if(power>=8){
+	if (power >= 8) {
 		if (Enemy_manager::is_enemy) {
-			danmaku = new Square(new track_move(), Color::Blue,80,circle_box.position_x+30, circle_box.position_y+5,0,0.3);
+			danmaku = new Square(new track_move(), Color::Blue, 80, circle_box.position_x + 30, circle_box.position_y + 5, 0, 0.3);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
-			danmaku = new Square(new track_move(), Color::Blue, 80, circle_box.position_x - 30, circle_box.position_y+5,0, 0.3);
+			danmaku = new Square(new track_move(), Color::Blue, 80, circle_box.position_x - 30, circle_box.position_y + 5, 0, 0.3);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
 		else {
-			danmaku = new Square(new fixed_move(), Color::Blue, 80, circle_box.position_x+30, circle_box.position_y+5, -160, 0.3);
+			danmaku = new Square(new fixed_move(), Color::Blue, 80, circle_box.position_x + 30, circle_box.position_y + 5, -160, 0.3);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
-			danmaku = new Square(new fixed_move(), Color::Blue, 80, circle_box.position_x-30, circle_box.position_y+5, -200, 0.3);
+			danmaku = new Square(new fixed_move(), Color::Blue, 80, circle_box.position_x - 30, circle_box.position_y + 5, -200, 0.3);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
 	}
-	if(power>=48){
-		 danmaku = new Square(new fixed_move(), Color::Red, 40, circle_box.position_x, circle_box.position_y, -170);
+	if (power >= 48) {
+		danmaku = new Square(new fixed_move(), Color::Red, 40, circle_box.position_x, circle_box.position_y, -170);
 		danmaku_manager_ptr->add_player_danmaku(danmaku);
-		 danmaku = new Square(new fixed_move(), Color::Red, 40, circle_box.position_x, circle_box.position_y, -190);
+		danmaku = new Square(new fixed_move(), Color::Red, 40, circle_box.position_x, circle_box.position_y, -190);
 		danmaku_manager_ptr->add_player_danmaku(danmaku);
 	}
 	if (power >= 128) {
 		if (Enemy_manager::is_enemy) {
-			danmaku = new Square(new track_move(), Color::Blue, 80, circle_box.position_x +50, circle_box.position_y+30, 0,0.3);
+			danmaku = new Square(new track_move(), Color::Blue, 80, circle_box.position_x + 50, circle_box.position_y + 30, 0, 0.3);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
-			danmaku = new Square(new track_move(), Color::Blue, 80, circle_box.position_x - 50, circle_box.position_y+30, 0,0.3);
+			danmaku = new Square(new track_move(), Color::Blue, 80, circle_box.position_x - 50, circle_box.position_y + 30, 0, 0.3);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
 		else {
-			danmaku = new Square(new fixed_move(), Color::Blue, 80, circle_box.position_x+50, circle_box.position_y+30, -150,0.3);
+			danmaku = new Square(new fixed_move(), Color::Blue, 80, circle_box.position_x + 50, circle_box.position_y + 30, -150, 0.3);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
-			danmaku = new Square(new fixed_move(), Color::Blue, 80, circle_box.position_x -50, circle_box.position_y + 30, -210,0.3);
+			danmaku = new Square(new fixed_move(), Color::Blue, 80, circle_box.position_x - 50, circle_box.position_y + 30, -210, 0.3);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
 	}
-	Music_manager::play_music("se_damage01.wav",15);
-	
+	Music_manager::play_music("se_damage01.wav", 15);
+
 }
 void Player::move(float dir_x, float dir_y, bool is_human) {
 	float len = sqrt(dir_x * dir_x + dir_y * dir_y);
@@ -196,7 +230,7 @@ void Player::move(float dir_x, float dir_y, bool is_human) {
 	}
 	else {
 		speed = low_speed;
-	} 
+	}
 
 	circle_box.move(dir_x * speed, dir_y * speed);
 }
@@ -215,9 +249,9 @@ void Player::update(sf::RenderWindow* window_ptr) {
 	if (!is_human) {
 		circle_box.draw(window_ptr);
 	}
-	if(is_god_mode){
+	if (is_god_mode) {
 		god_mode_counter += 1;
-		if (god_mode_counter >= 240) {
+		if (god_mode_counter >= 210) {
 			god_mode_counter = 0;
 			is_god_mode = false;
 		}
@@ -227,9 +261,12 @@ void Player::update(sf::RenderWindow* window_ptr) {
 		is_first_full_power = false;
 	}
 	//无敌状态，测试时开
-	is_god_mode = true;
-
-	if(is_using_bomb){
+	//is_god_mode = true;
+	if (will_clear_enemy) {
+		danmaku_manager_ptr->clear_enemy_danmaku();
+		will_clear_enemy = false;
+	}
+	if (is_using_bomb) {
 		window_ptr->draw(bomb_sprite);
 		if (bomb_counter < 80) {
 			bomb_sprite.setColor(sf::Color(255, 255, 255, bomb_counter * 3));
@@ -238,7 +275,7 @@ void Player::update(sf::RenderWindow* window_ptr) {
 			bomb_sprite.setColor(sf::Color(255, 255, 255, 560 - bomb_counter * 4));
 		}
 		bomb_sprite.move({ 0,-7 });
-		
+
 		//持续效果
 		bomb_continuous(window_ptr);
 		//一次性效果
@@ -247,12 +284,12 @@ void Player::update(sf::RenderWindow* window_ptr) {
 		if (bomb_counter >= 120) {
 			bomb_counter = 0;
 			bomb_sprite.move({ 0,940 });
-			is_using_bomb= false;
-			normal_absorb_radius-=2000;
+			is_using_bomb = false;
+			normal_absorb_radius -= 2000;
 		}
 	}
 	window_ptr->draw(sprite);
-	
+
 }
 void Player::add_graze(float num) {
 	graze += num;
@@ -275,19 +312,23 @@ void Player::handle_input() {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Z) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::J)) {
 		if (counter > attack_speed) {
 			shoot();
-			counter =counter% attack_speed;
+			counter = counter % attack_speed;
 		}
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::L) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::X)||will_use_bomb) {
-		if (counter1 > 180||will_use_bomb) {
-			if (will_use_bomb) {
-				add_bomb(1);
-			}
-			able_use_bomb = true;
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::L) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::X)) {
+		if (able_use_bomb) {
 			use_bomb(1);
 			counter1 = 0;
 		}
 	}
+
+	if (counter1 > 240 && !is_using_bomb) {
+		able_use_bomb = true;
+	}
+	else {
+		able_use_bomb = false;
+	}
+
 	counter += 1;
 	counter1 += 1;
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) {
@@ -309,7 +350,7 @@ void Player::handle_input() {
 		}
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
-		y -=1;
+		y -= 1;
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down)) {
 		y += 1;
@@ -334,7 +375,7 @@ void Player::handle_input() {
 	if (this->circle_box.position_y > y2 && y == 1) {
 		y = 0;
 	}
-	if ((this->circle_box.position_y < ((y2 - y1) / 4 + y1))&&(able_collect())) {
+	if ((this->circle_box.position_y < ((y2 - y1) / 4 + y1)) && (able_collect())) {
 		absorb_radius = 2000;
 	}
 	else {
@@ -348,7 +389,6 @@ void Player::handle_input() {
 	else {
 		sprite.setPosition({ circle_box.position_x - 2,circle_box.position_y - 20 });
 	}
-
 }
 
 Reimu::Reimu(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
@@ -360,29 +400,29 @@ Reimu::Reimu(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.125
 	load_img("youkai_stand", 20, "player00.png", 4, 32 * 3, 48 * 3, 128, 0, 32, 48, false);
 	load_img("youkai_left", 20, "player00.png", 3, 32 * 3, 48 * 3, 128, 96, 32, 48, false);
 	load_img("youkai_right", 20, "player00.png", 3, 32 * 3, 48 * 3, 128, 96, 32, 48, true);
-	bomb_sprite0 = Image_manager::custom_image("face_rm00.png",0.125,0.43,0.4,1.35);
+	bomb_sprite0 = Image_manager::custom_image("face_rm00.png", 0.125, 0.43, 0.4, 1.35);
 	bomb_sprite1 = Image_manager::custom_image("face_yk00.png", 0.125, 0.43, 0.4, 1.35);
 }
-void Reimu::bomb_effect(sf::RenderWindow* window_ptr){
+void Reimu::bomb_effect(sf::RenderWindow* window_ptr) {
 	if (bomb_counter == 0) {
 		Danmaku* danmaku;
 		if (is_human) {
 			Player* temp = this;
 			int num = 18;
 			for (int i = 0; i < num; i++) {
-				danmaku = new Bomb_circle(new circle_move(temp), { 255,255,255,128 }, 60, circle_box.position_x, circle_box.position_y, i*20,8.f/damage,180);
+				danmaku = new Bomb_circle(new circle_move(temp), { 255,255,255,128 }, 60, circle_box.position_x, circle_box.position_y, i * 20, 8.f / damage, 180);
 				danmaku_manager_ptr->add_player_danmaku(danmaku);
 			}
 		}
 	}
 }
-void Reimu::bomb_continuous(sf::RenderWindow* window_ptr){
-	static Sprite temp_sprite=Image_manager::custom_image("etama4.png");
+void Reimu::bomb_continuous(sf::RenderWindow* window_ptr) {
+	static Sprite temp_sprite = Image_manager::custom_image("etama4.png");
 	static bool is_initialize = false;
 	float scale;
 	int alpha;
 	if (!is_initialize) {
-		temp_sprite.setOrigin({128,128});
+		temp_sprite.setOrigin({ 128,128 });
 		temp_sprite.setPosition({ circle_box.position_x,circle_box.position_y });
 		temp_sprite.setScale({ 2.0f * 1600 / Image_manager::Screen_height,2.0f * 1600 / Image_manager::Screen_height });
 		is_initialize = true;
@@ -393,15 +433,15 @@ void Reimu::bomb_continuous(sf::RenderWindow* window_ptr){
 		if (bomb_counter <= 60) {
 			alpha = 45 + bomb_counter * 3.5;
 		}
-		else if (bomb_counter>60&&bomb_counter<=100) {
+		else if (bomb_counter > 60 && bomb_counter <= 100) {
 			alpha = 255;
 		}
 		else {
 			alpha = 255 - 12 * (bomb_counter - 100);
 		}
-		temp_sprite.setColor({255,255,255,(uint8_t)alpha});
+		temp_sprite.setColor({ 255,255,255,(uint8_t)alpha });
 		scale = bomb_counter * 6.f / 120;
-		window_ptr->draw(Image_manager::scale_sprite(temp_sprite, (scale>=1.8?1.8:scale) + 1));
+		window_ptr->draw(Image_manager::scale_sprite(temp_sprite, (scale >= 1.8 ? 1.8 : scale) + 1));
 	}
 	danmaku_manager_ptr->clear_enemy_danmaku();
 	if (bomb_counter == 119) {
@@ -411,7 +451,7 @@ void Reimu::bomb_continuous(sf::RenderWindow* window_ptr){
 void move_to_target(sf::Sprite& sprite, sf::Vector2f now, sf::Vector2f target, float speed) {
 	sf::Vector2f direction = target - now;
 	float length = std::sqrt(direction.x * direction.x + direction.y * direction.y);
-	if (length <= 20) return; 
+	if (length <= 20) return;
 	sf::Vector2f unit_dir = direction / length;
 	sf::Vector2f velocity = unit_dir * speed;
 	sprite.move(velocity);
@@ -422,13 +462,13 @@ void Morisa::bomb_effect(sf::RenderWindow* window_ptr) {
 	}
 }
 void Morisa::bomb_continuous(sf::RenderWindow* window_ptr) {
-	static Sprite temp_sprite = Image_manager::custom_image("player01b.png",0,0,1,1,0,0,256,128);
+	static Sprite temp_sprite = Image_manager::custom_image("player01b.png", 0, 0, 1, 1, 0, 0, 256, 128);
 	static Sprite temp_sprite1 = Image_manager::custom_image("player01.png", 0, 0, 1, 1, 64, 144, 128, 210);
 	static Sprite temp_sprite2 = Image_manager::custom_image("player01.png", 0, 0, 1, 1, 192, 144, 224, 176);
 	static float scale = 1600 / Image_manager::Screen_height;
 	float alpha;
 	if (bomb_counter <= 40) {
-		alpha = bomb_counter * 1.f / 50+0.2;
+		alpha = bomb_counter * 1.f / 50 + 0.2;
 	}
 	else if (bomb_counter <= 90) {
 		alpha = 1;
@@ -438,23 +478,23 @@ void Morisa::bomb_continuous(sf::RenderWindow* window_ptr) {
 	}
 	if (is_human) {
 		sf::View view = window_ptr->getDefaultView();
-		float offset_x = (rand() % 7 - 3) * 6.0f; 
-		float offset_y = (rand() % 7- 3) * 6.0f;
+		float offset_x = (rand() % 7 - 3) * 6.0f;
+		float offset_y = (rand() % 7 - 3) * 6.0f;
 		view.move({ offset_x, offset_y });
 		if (bomb_counter == 0) {
-			temp_sprite.setScale({10*scale,5*scale});
+			temp_sprite.setScale({ 10 * scale,5 * scale });
 			temp_sprite.setOrigin({ 0,64 });
-			 normal_speed/=5 ;
+			normal_speed /= 5;
 		}
-		temp_sprite.setPosition({circle_box.position_x,circle_box.position_y});
-		temp_sprite.setColor({ 255,255,255,(uint8_t)(255*alpha/8)});
+		temp_sprite.setPosition({ circle_box.position_x,circle_box.position_y });
+		temp_sprite.setColor({ 255,255,255,(uint8_t)(255 * alpha / 8) });
 		window_ptr->draw(Image_manager::rotate_sprite(temp_sprite, 250));
 		window_ptr->draw(Image_manager::rotate_sprite(temp_sprite, 290));
-		temp_sprite.setColor({ 255,255,255,(uint8_t)(255 * alpha/4) });
+		temp_sprite.setColor({ 255,255,255,(uint8_t)(255 * alpha / 4) });
 		window_ptr->draw(Image_manager::rotate_sprite(temp_sprite, 260));
 		window_ptr->draw(Image_manager::rotate_sprite(temp_sprite, 280));
-		temp_sprite.setColor({ 255,255,255,(uint8_t)(255 * alpha*1.5/2 )});
-		window_ptr->draw(Image_manager::rotate_sprite(temp_sprite,270));
+		temp_sprite.setColor({ 255,255,255,(uint8_t)(255 * alpha * 1.5 / 2) });
+		window_ptr->draw(Image_manager::rotate_sprite(temp_sprite, 270));
 		window_ptr->setView(view);
 		if (bomb_counter == 119) {
 			normal_speed *= 5;
@@ -474,18 +514,18 @@ void Morisa::bomb_continuous(sf::RenderWindow* window_ptr) {
 			temp_sprite2.setPosition({ circle_box.position_x,circle_box.position_y });
 			temp_sprite2.setScale({ 4.0f * 1600 / Image_manager::Screen_height,4.0f * 1600 / Image_manager::Screen_height });
 		}
-		move_to_target(temp_sprite1, temp_sprite1.getPosition(), { (float)((0.625 + start_x) * Image_manager::Screen_width / 2), (float)(Image_manager::Screen_height / 2)}, 20);
-		move_to_target(temp_sprite2, temp_sprite2.getPosition(), { (float)((0.625 + start_x) * Image_manager::Screen_width / 2), (float)(Image_manager::Screen_height / 2) },20);
-		
+		move_to_target(temp_sprite1, temp_sprite1.getPosition(), { (float)((0.625 + start_x) * Image_manager::Screen_width / 2), (float)(Image_manager::Screen_height / 2) }, 20);
+		move_to_target(temp_sprite2, temp_sprite2.getPosition(), { (float)((0.625 + start_x) * Image_manager::Screen_width / 2), (float)(Image_manager::Screen_height / 2) }, 20);
+
 		for (int i = 0; i < num; i++) {
 			float degree = i * 36 + (bomb_counter % 36);
 			float rad = (degree + 90) * 3.1415926f / 180.0f;
-			danmaku = new Spike_1(new fixed_move(), {255,255,255,255}, 30, (0.625+start_x)*Image_manager::Screen_width/2-sin(rad)*200, Image_manager::Screen_height / 2- cos(rad) * 200, degree, 30.f / damage, 180);
+			danmaku = new Spike_1(new fixed_move(), { 255,255,255,255 }, 30, (0.625 + start_x) * Image_manager::Screen_width / 2 - sin(rad) * 200, Image_manager::Screen_height / 2 - cos(rad) * 200, degree, 30.f / damage, 180);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 			danmaku = new Spike_1(new fixed_move(), { 255,255,255,255 }, 30, (0.625 + start_x) * Image_manager::Screen_width / 2 + sin(rad) * 200, Image_manager::Screen_height / 2 + cos(rad) * 200, degree, 30.f / damage, 180);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
-		temp_sprite1.setRotation(degrees(bomb_counter*6));
+		temp_sprite1.setRotation(degrees(bomb_counter * 6));
 		window_ptr->draw(temp_sprite1);
 		window_ptr->draw(temp_sprite2);
 	}
@@ -509,8 +549,8 @@ Remilia::Remilia(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0
 	load_img("human_left", 20, "player02.png", 3, 32 * 3, 48 * 3, 128, 48, 32, 48, false);
 	load_img("human_right", 20, "player02.png", 3, 32 * 3, 48 * 3, 128, 48, 32, 48, true);
 	load_img("youkai_stand", 20, "player02.png", 4, 48 * 3, 48 * 3, 0, 96, 48, 48, false);
-	load_img("youkai_left", 20, "player02.png", 4, 48 * 3, 48 * 3, 48, 144, 48, 48,  false);
-	load_img("youkai_right", 20, "player02.png", 4, 48 * 3, 48 * 3, 48, 144, 48, 48,  true);
+	load_img("youkai_left", 20, "player02.png", 4, 48 * 3, 48 * 3, 48, 144, 48, 48, false);
+	load_img("youkai_right", 20, "player02.png", 4, 48 * 3, 48 * 3, 48, 144, 48, 48, true);
 	bomb_sprite0 = Image_manager::custom_image("face_sk00.png", 0.125, 0.43, 0.4, 1.35);
 	bomb_sprite1 = Image_manager::custom_image("face_rs00.png", 0.125, 0.43, 0.4, 1.35);
 }
@@ -527,7 +567,7 @@ Yuyuko::Yuyuko(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.1
 	bomb_sprite1 = Image_manager::custom_image("face_yy00.png", 0.125, 0.43, 0.4, 1.35);
 }
 void Reimu::shoot() {
-	static int counter=0;
+	static int counter = 0;
 	Danmaku* danmaku = nullptr;
 	if (is_human) {
 		danmaku = new Square(new fixed_move(), Color::Red, 40, circle_box.position_x, circle_box.position_y, -180);
@@ -560,21 +600,21 @@ void Reimu::shoot() {
 			danmaku = new Ellipse_trace(new fixed_move(), Color::Yellow, 40, circle_box.position_x, circle_box.position_y - 64 * 3, 180, 1.8);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
-		if (power >= 8&&counter%3==0) {
+		if (power >= 8 && counter % 3 == 0) {
 			danmaku = new Ellipse_trace(Enemy_manager::is_enemy ? static_cast<Move_api*>(new track_move()) :
-				static_cast<Move_api*>(new fixed_move()), Color::Blue, 80, circle_box.position_x - 30-16*3, circle_box.position_y-64*3 + 5, 180, 0.7);
+				static_cast<Move_api*>(new fixed_move()), Color::Blue, 80, circle_box.position_x - 30 - 16 * 3, circle_box.position_y - 64 * 3 + 5, 180, 0.7);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 			danmaku = new Ellipse_trace(Enemy_manager::is_enemy ? static_cast<Move_api*>(new track_move()) :
-				static_cast<Move_api*>(new fixed_move()), Color::Blue, 80, circle_box.position_x + 30+16*3, circle_box.position_y - 64 * 3 + 5, 180, 0.7);
+				static_cast<Move_api*>(new fixed_move()), Color::Blue, 80, circle_box.position_x + 30 + 16 * 3, circle_box.position_y - 64 * 3 + 5, 180, 0.7);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
-		if (power >= 48 && counter % 2== 0) {
-			danmaku = new Ellipse_trace(new fixed_move(), Color::Yellow, 60, circle_box.position_x - 16 * 3, circle_box.position_y - 64 * 3, 180,1.8);
+		if (power >= 48 && counter % 2 == 0) {
+			danmaku = new Ellipse_trace(new fixed_move(), Color::Yellow, 60, circle_box.position_x - 16 * 3, circle_box.position_y - 64 * 3, 180, 1.8);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
-			danmaku = new Ellipse_trace(new fixed_move(), Color::Yellow, 60, circle_box.position_x + 16 * 3, circle_box.position_y - 64 * 3, 180,1.8);
+			danmaku = new Ellipse_trace(new fixed_move(), Color::Yellow, 60, circle_box.position_x + 16 * 3, circle_box.position_y - 64 * 3, 180, 1.8);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
-		if (power >= 128&& counter % 3 == 0) {
+		if (power >= 128 && counter % 3 == 0) {
 			danmaku = new Ellipse_trace(Enemy_manager::is_enemy ? static_cast<Move_api*>(new track_move()) :
 				static_cast<Move_api*>(new fixed_move()), Color::Blue, 80, circle_box.position_x - 50 - 16 * 3, circle_box.position_y - 64 * 3 + 30, 180, 0.7);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
@@ -591,16 +631,16 @@ void Morisa::shoot() {
 	static int counter = 0;
 	Danmaku* danmaku = nullptr;
 	if (is_human) {
-		danmaku = new Spike(new fixed_move(), {255,255,255,255}, 80, circle_box.position_x, circle_box.position_y-20,180);
+		danmaku = new Spike(new fixed_move(), { 255,255,255,255 }, 80, circle_box.position_x, circle_box.position_y - 20, 180);
 		danmaku_manager_ptr->add_player_danmaku(danmaku);
 		if (power >= 48 && counter % 4 == 0) {
-			danmaku = new Spike_1(new fixed_move(), { 255,255,255,255 }, 40, circle_box.position_x, circle_box.position_y - 144, 180,4);
+			danmaku = new Spike_1(new fixed_move(), { 255,255,255,255 }, 40, circle_box.position_x, circle_box.position_y - 144, 180, 4);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
 		if (power >= 8) {
-			danmaku = new Spike(new fixed_move(), { 255,255,255,128 }, 80, circle_box.position_x+30, circle_box.position_y, 180);
+			danmaku = new Spike(new fixed_move(), { 255,255,255,128 }, 80, circle_box.position_x + 30, circle_box.position_y, 180);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
-			danmaku = new Spike(new fixed_move(), { 255,255,255,128 }, 80, circle_box.position_x-30, circle_box.position_y, 180);
+			danmaku = new Spike(new fixed_move(), { 255,255,255,128 }, 80, circle_box.position_x - 30, circle_box.position_y, 180);
 			danmaku_manager_ptr->add_player_danmaku(danmaku);
 		}
 		if (power >= 128) {
@@ -611,8 +651,8 @@ void Morisa::shoot() {
 		}
 	}
 	else {
-			danmaku = new Laser_1(new line_move(), power, { 255,255,255,255 }, 80, circle_box.position_x, circle_box.position_y +90, 180,1+power*3.5f/128);
-			danmaku_manager_ptr->add_player_danmaku(danmaku);
+		danmaku = new Laser_1(new line_move(), power, { 255,255,255,255 }, 80, circle_box.position_x, circle_box.position_y + 90, 180, 1 + power * 3.5f / 128);
+		danmaku_manager_ptr->add_player_danmaku(danmaku);
 	}
 	Music_manager::play_music("se_damage01.wav", 15);
 	counter++;
