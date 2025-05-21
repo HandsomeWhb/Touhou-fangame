@@ -26,7 +26,6 @@ public:
 	bool  is_hit_enemy;
 	float offset_x = 0;
 	float offset_y = 0;
-
 	float angle = 0;
 	float backbone_x = 0;
 	float backbone_y = 0;

@@ -21,7 +21,7 @@
         "danmaku_start_frame": 50,
         "shoot_logic": "bird_aim.json",
         "offset_position_x": 0,
-        "offset_position_y": 200,
+        "offset_position_y": 400,
         "type": "Circle",
         "color": {
           "r": 255,
@@ -33,8 +33,8 @@
       {
         "danmaku_offset_angle": -30,
         "danmaku_start_frame": 50,
-        "offset_position_x": 100,
-        "offset_position_y": 40,
+        "offset_position_x": 0,
+        "offset_position_y": 400,
         "shoot_logic": "bird_aim.json",
         "type": "Circle",
         "color": {
@@ -47,8 +47,8 @@
       {
         "danmaku_offset_angle": 30,
         "danmaku_start_frame": 50,
-        "offset_position_x": -100,
-        "offset_position_y": 40,
+        "offset_position_x": 0,
+        "offset_position_y": 400,
         "shoot_logic": "bird_aim.json",
         "type": "Circle",
         "color": {

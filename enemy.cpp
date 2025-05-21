@@ -480,6 +480,8 @@ void creat_wave(Enemy_manager* enemy_manager_ptr, Falling_object_manager* fallin
                 float rad = danmaku->angle * 3.1415 / 180;
                 it->position_x= x * cos(rad) - y * sin(rad);
                 it->position_y = x * sin(rad) + y * cos(rad);
+                it->backbone_x = danmaku->offset_position_x * cos(rad) - danmaku->offset_position_y * sin(rad);
+                it->backbone_y = danmaku->offset_position_x *sin(rad)+ danmaku->offset_position_y *cos(rad);
                 it->angle += danmaku->angle;
             }
             result.insert(result.end(), temp.begin(),temp.end());

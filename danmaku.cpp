@@ -256,13 +256,15 @@ void aim_move::move(Danmaku* danmaku_ptr, float player_x, float player_y) {
 			danmaku_ptr->angle += -atan2((danmaku_ptr->aim_offset_x + player_x - danmaku_ptr->backbone_x), (danmaku_ptr->aim_offset_y + player_y - danmaku_ptr->backbone_y)) * 180 / pi;
 			danmaku_ptr->dx = -danmaku_ptr->speed * sin(pi * (danmaku_ptr->angle) / 180) * Image_manager::Screen_height / 1600;
 			danmaku_ptr->dy = danmaku_ptr->speed * cos(pi * (danmaku_ptr->angle) / 180) * Image_manager::Screen_height / 1600;
-			float rad = atan2((danmaku_ptr->aim_offset_x + player_x - danmaku_ptr->backbone_x), (danmaku_ptr->aim_offset_y + player_y - danmaku_ptr->backbone_y));
-			float rotate_x = danmaku_ptr->collision_box.center_x - danmaku_ptr->backbone_x;
-			float rotate_y = danmaku_ptr->collision_box.center_y - danmaku_ptr->backbone_y;
+			
+			float rad = atan2((danmaku_ptr->aim_offset_x + player_x - danmaku_ptr->enemy_ptr->circle_box.position_x), (danmaku_ptr->aim_offset_y + player_y - danmaku_ptr->enemy_ptr->circle_box.position_y));
+			float rotate_x = danmaku_ptr->collision_box.center_x - danmaku_ptr->enemy_ptr->circle_box.position_x;
+			float rotate_y = danmaku_ptr->collision_box.center_y - danmaku_ptr->enemy_ptr->circle_box.position_y;
 			float rotated_x = rotate_x * cos(rad) + rotate_y * sin(rad);
 			float rotated_y = -rotate_x * sin(rad) + rotate_y * cos(rad);
-			float final_x = danmaku_ptr->backbone_x + rotated_x;
-			float final_y = danmaku_ptr->backbone_y + rotated_y;
+			float final_x = danmaku_ptr->enemy_ptr->circle_box.position_x + rotated_x;
+			float final_y = danmaku_ptr->enemy_ptr->circle_box.position_y + rotated_y;
+
 			danmaku_ptr->sprite.move({ final_x-danmaku_ptr->collision_box.center_x,final_y-danmaku_ptr->collision_box.center_y });
 			danmaku_ptr->collision_box.setPosition(final_x, final_y);
 
