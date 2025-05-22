@@ -35,7 +35,28 @@ json复制编辑{
 顺序可任意，没写的字段按默认值处理。
 
 ```
-json复制编辑[
+json复制代码{
+  "backbone_x": 400.0,                // 可选，骨干中心点的 x 坐标（相对敌人位置，单位像素）
+  "backbone_y": 300.0,                // 可选，骨干中心点的 y 坐标（用于自转参考点）
+  "use_backbone_rotation": true,      // 可选，是否启用骨干旋转（若 true，则 position 坐标会绕骨干旋转）
+
+  "danmakus": [
+    {
+      "frame": 0,                     // 必填，弹幕触发的帧数（第几帧发射该弹幕）
+      "type": "aim",                  // 可选，弹幕类型：fixed（固定角度）、aim（朝向玩家）、trace（追踪玩家）
+      "angle": 30.0,                  // 可选，发射角度（单位为度，正下为 0°，顺时针为正）
+      "speed": 4.5,                   // 可选，弹幕移动速度（每帧的像素位移）
+      "position_x": 100.0,            // 可选，弹幕起始 x 坐标（相对敌人位置）
+      "position_y": 0.0,              // 可选，弹幕起始 y 坐标（相对敌人位置）
+      "aim_offset_x": 0.0,            // 可选，瞄准时相对于玩家的偏移 x（只有 type 为 aim 或 trace 时有效）
+      "aim_offset_y": -20.0,          // 可选，瞄准时相对于玩家的偏移 y
+      "exist_time": 300,              // 可选，弹幕存在的帧数，超时后消失，默认 9999（接近永久）
+      "remove_on_death": true,        // 可选，若敌人死亡时该弹幕是否立即移除
+    },
+    ...
+  ]
+}//这一段是为了用弹幕设计图案的同时保证图案不散架而更新的,也可直接:
+[
   {
     "frame": 0,                 // *必须写，弹幕开始帧
     "type": "fixed",            // 默认 fixed，支持 "fixed", "aim", "trace"
@@ -50,6 +71,9 @@ json复制编辑[
   },
   ...
 ]
+
+
+
 ```
 
 ------
@@ -97,6 +121,8 @@ json复制编辑[
     "fire_plan": [
       {
         "remove_on_death": true,        // 优先级高于弹幕文件内配置
+        "offset_position_x":0,			//所有弹幕的偏移
+        "offset_position_y":0,
         "danmaku_offset_angle": 45,     // 整体旋转角度
         "danmaku_start_frame": 60,      // 第几帧发射弹幕
         "shoot_logic": "test.json",     // 使用的弹幕文件名
