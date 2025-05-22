@@ -1,0 +1,125 @@
+[
+  {
+    "num": 1,
+    "appear_frame": 2101,
+    "frame_interval": 0,
+    "enemy": {
+      "type": "Red_rabbit_enemy",
+      "hp": 4000.0,
+      "x": 960,
+      "y": 10,
+      "rewards": {
+        "power": 0,
+        "big_power": 0,
+        "bomb_up": 1,
+        "health_up": 0,
+        "blue_point": 2
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 50,
+        "shoot_logic": "little_boss01.json",
+        "type": "Star",
+        "global_speed":6, 
+        "color": {
+          "r": 145,
+          "g": 163,
+          "b": 244,
+          "a": 192
+        }
+      }
+    ],
+    "move": "little_boss01.json"
+  },
+  {
+    "num": 5,
+    "appear_frame": 2101,
+    "frame_interval": 360,
+    "enemy": {
+      "type": "Blue_rabbit_enemy",
+      "hp": 400.0,
+      "x": 440,
+      "y": 10,
+      "rewards": {
+        "power": 2,
+        "big_power": 0,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 2
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 61,
+        "shoot_logic": "laser_left.json",
+        "type": "Laser",
+        "remove_on_death": "true",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
+      },
+      {
+        "danmaku_start_frame": 31,
+        "remove_on_death": "true",
+        "shoot_logic": "circle_left.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 37,
+          "b": 7,
+          "a": 255
+        }
+      }
+    ],
+    "move": "top_attack_return03.json"
+  },
+  {
+    "num": 5,
+    "appear_frame": 2101,
+    "frame_interval": 360,
+    "enemy": {
+      "type": "Blue_rabbit_enemy",
+      "hp": 400.0,
+      "x": 1480,
+      "y": 10,
+      "rewards": {
+        "power": 2,
+        "big_power": 0,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 2
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 61,
+        "shoot_logic": "laser_right.json",
+        "remove_on_death": "true",
+        "type": "Laser",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
+      },
+      {
+        "danmaku_start_frame": 31,
+        "remove_on_death": "true",
+        "shoot_logic": "circle_right.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 37,
+          "b": 7,
+          "a": 255
+        }
+      }
+    ],
+    "move": "top_attack_return03.json"
+  }
+]
