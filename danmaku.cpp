@@ -26,7 +26,7 @@ void Danmaku_manager::add_danmaku(Danmaku* danmaku_ptr) {
 	}
 }
 void Danmaku_manager::add_enemy_danmaku(Danmaku* danmaku_ptr){
-	enemy_danmaku_ptrs.push_back(danmaku_ptr);
+	temp_enemy_danmaku.push_back(danmaku_ptr);
 }
 void Danmaku_manager::add_player_danmaku(Danmaku* danmaku_ptr){
 	player_danmaku_ptrs.push_back(danmaku_ptr);
@@ -90,6 +90,8 @@ void Danmaku_manager::show_all_danmaku(RenderWindow* window_ptr){
 }
 void Danmaku_manager::update_all_danmaku(Player* player_ptr, Enemy_manager* enemy_manager_ptr, RenderWindow* window_ptr,bool debug) {
 	static int frame = 0;
+	enemy_danmaku_ptrs.insert(enemy_danmaku_ptrs.end(), temp_enemy_danmaku.begin(), temp_enemy_danmaku.end());
+	temp_enemy_danmaku.clear();
 	for (auto it = player_danmaku_ptrs.begin(); it != player_danmaku_ptrs.end(); it++) {
 		if((**it).is_line()){
 			(**it).move(player_ptr->circle_box.position_x, (**it).sprite.getPosition().y);
@@ -128,7 +130,6 @@ void Danmaku_manager::show_all_danmaku_box(RenderWindow* window_ptr){
 //检测是否出界,是则删除
 void Danmaku_manager::is_outside(){
 	for (auto it = player_danmaku_ptrs.begin(); it != player_danmaku_ptrs.end(); ) {
-		
 		if ((**it).collision_box.center_x < x1-100 || (**it).collision_box.center_x > x2+100 ||
 			(**it).collision_box.center_y < y1-100 || (**it).collision_box.center_y > y2+100) {
 			(**it).is_outside = true;
@@ -151,7 +152,43 @@ void Danmaku_manager::is_outside(){
 		}
 	}
 	for (auto it = enemy_danmaku_ptrs.begin(); it != enemy_danmaku_ptrs.end(); ) {
-		if ((**it).collision_box.center_x < x1-100 || (**it).collision_box.center_x > x2+100 ||
+		if ((**it).is_rebound) {
+			if ((**it).remove_on_death == true && (**it).enemy_ptr == nullptr) {
+				game_bridge.falling_object_manager_ptr->add_falling_object(
+					create_falling_object("Spell_card", 0, 0, (**it).collision_box.center_x, (**it).collision_box.center_y));
+				delete* it;
+				it = enemy_danmaku_ptrs.erase(it);
+			}
+			else {
+				if ((**it).collision_box.center_x < x1 + ((**it).sprite.getGlobalBounds()).size.x / 2) {
+					(**it).dx = -(**it).dx;
+					(**it).collision_box.move(10, 0, (**it).angle);
+					(**it).sprite.setRotation(degrees(180 + (**it).angle));
+					(**it).sprite.move({ 10,0 });
+				}
+				if ((**it).collision_box.center_x > x2 - ((**it).sprite.getGlobalBounds()).size.x / 2) {
+					(**it).dx = -(**it).dx;
+					(**it).collision_box.move(-10, 0, (**it).angle);
+					(**it).sprite.setRotation(degrees(180 + (**it).angle));
+					(**it).sprite.move({ -10,0 });
+				}
+				if ((**it).collision_box.center_y < y1 + ((**it).sprite.getGlobalBounds()).size.y / 2) {
+					(**it).dy = -(**it).dy;
+					(**it).collision_box.move(0, 10, (**it).angle);
+					(**it).sprite.setRotation(degrees(180 + (**it).angle));
+					(**it).sprite.move({ 0,10 });
+				}
+				if ((**it).collision_box.center_y > y2 - ((**it).sprite.getGlobalBounds()).size.y / 2) {
+					(**it).dy = -(**it).dy;
+					(**it).collision_box.move(0, -10, (**it).angle);
+					(**it).sprite.setRotation(degrees(180 + (**it).angle));
+					(**it).sprite.move({ 0,-10 });
+				}
+				it++;
+			}
+			
+		}
+		else if ((**it).collision_box.center_x < x1-100 || (**it).collision_box.center_x > x2+100 ||
 			(**it).collision_box.center_y < y1-100 || (**it).collision_box.center_y > y2+100) {
 			(**it).is_outside = true;
 			delete* it;
@@ -189,6 +226,33 @@ void Danmaku_manager::clear_enemy_danmaku(bool creat_reward) {
 }
 
 //默认方向向下
+Danmaku::Danmaku(const Danmaku& other)
+	: collision_box(other.collision_box),
+	texture(other.texture),
+	sprite(other.sprite),
+	speed(other.speed),
+	dx(other.dx), dy(other.dy),
+	is_hit_player(other.is_hit_player),
+	is_hit_enemy(other.is_hit_enemy),
+	offset_x(other.offset_x),
+	offset_y(other.offset_y),
+	angle(other.angle),
+	backbone_x(other.backbone_x),
+	backbone_y(other.backbone_y),
+	use_backbone_rotation(other.use_backbone_rotation),
+	exist_time(other.exist_time),
+	is_outside(other.is_outside),
+	enemy_ptr(other.enemy_ptr),
+	remove_on_death(other.remove_on_death),
+	aim_offset_x(other.aim_offset_x),
+	aim_offset_y(other.aim_offset_y),
+	move_api_ptr(nullptr),
+	hurt_ratio(other.hurt_ratio),
+	is_rebound(other.is_rebound)
+{
+
+}
+
 Danmaku::Danmaku(Move_api* move_api_ptr, float speed, float position_x, float position_y, float angle,
 	float hurt_ratio ,int exist_time, float aim_offset_x , float aim_offset_y, bool remove_on_death, 
 	float backbone_x, float backbone_y, bool use_backbone_rotation ,bool is_hit_enemy , bool is_hit_playe){
@@ -237,6 +301,51 @@ void fixed_move::move(Danmaku* danmaku_ptr, float player_x, float player_y) {
 circle_move::circle_move(Player* player_ptr) :player_ptr(player_ptr){
 
 }
+split_move::split_move(int split_num, int split_danmaku_num, float angle_range):split_num(split_num),split_danmaku_num(split_danmaku_num),angle_range(angle_range) {
+
+}
+Danmaku* danmaku_split(Danmaku* danmaku_ptr, split_move* split_move_ptr,float angle_change) {
+	Danmaku* new_danmaku;
+	new_danmaku = new Danmaku(*danmaku_ptr);
+	new_danmaku->angle += angle_change;
+	new_danmaku->collision_box.angle = new_danmaku->angle;
+	new_danmaku->dx = -new_danmaku->speed * sin(pi * (new_danmaku->angle) / 180) * Image_manager::Screen_height / 1600;
+	new_danmaku->dy = new_danmaku->speed * cos(pi * (new_danmaku->angle) / 180) * Image_manager::Screen_height / 1600;
+	if (split_move_ptr->split_num == 1) {
+		new_danmaku->exist_time = 9999;
+	}
+	else {
+		new_danmaku->exist_time += split_move_ptr->counter;
+	}
+	new_danmaku->move_api_ptr = new split_move(split_move_ptr->split_num - 1, split_move_ptr->split_danmaku_num, split_move_ptr->angle_range);
+	return new_danmaku;
+}
+void split_move::move(Danmaku* danmaku_ptr, float player_x, float player_y) {
+	danmaku_ptr->collision_box.move(danmaku_ptr->dx, danmaku_ptr->dy, danmaku_ptr->angle);
+	danmaku_ptr->sprite.setRotation(degrees(180 + danmaku_ptr->angle));
+	danmaku_ptr->sprite.move({ danmaku_ptr->dx,danmaku_ptr->dy });
+	danmaku_ptr->exist_time -= 1;
+	counter += 1;
+	if (danmaku_ptr->exist_time == 5&&split_num>0) {
+		if (split_danmaku_num <= 2) {
+			game_bridge.danmaku_manager_ptr->add_enemy_danmaku(danmaku_split(danmaku_ptr,this,angle_range));
+			game_bridge.danmaku_manager_ptr->add_enemy_danmaku(danmaku_split(danmaku_ptr, this, -angle_range));
+		}
+		else {
+			float interval = 2 * angle_range / (split_danmaku_num - 1);
+			for (int i = 0; i < split_danmaku_num; i++) {
+				game_bridge.danmaku_manager_ptr->add_enemy_danmaku(danmaku_split(danmaku_ptr, this, -angle_range+interval*i));
+			}
+		}
+		danmaku_ptr->dx = 0;
+		danmaku_ptr->dy = 0;
+	}
+}
+
+
+
+
+
 void line_move::move(Danmaku* danmaku_ptr, float player_x, float player_y) {
 	danmaku_ptr->sprite.setPosition({ player_x,danmaku_ptr->sprite.getPosition().y });
 	danmaku_ptr->collision_box.setPosition(player_x, danmaku_ptr->sprite.getPosition().y);
@@ -509,11 +618,11 @@ Danmaku* create_danmaku(Danmaku_command& cmd) {
 	size_t pos = cmd.type.rfind('_');
 	std::string first_part = cmd.type.substr(0, pos);
 	std::string second_part = cmd.type.substr(pos + 1);
-
 	Move_api* move_ptr = nullptr;
 	if (second_part == "fixed") move_ptr = new fixed_move();
 	else if (second_part == "aim") move_ptr = new aim_move();
 	else if (second_part == "track") move_ptr = new track_move();
+	else if (second_part == "split") move_ptr = new split_move(cmd.split_num,cmd.split_danmaku_num,cmd.split_angle_range);
 	else return nullptr;
 
 	auto& factory = get_danmaku_factory();
@@ -521,6 +630,7 @@ Danmaku* create_danmaku(Danmaku_command& cmd) {
 	if (it != factory.end()) {
 		Danmaku* temp = it->second(move_ptr, cmd);
 		temp->enemy_ptr = cmd.enemy_ptr;
+		temp->is_rebound = cmd.is_rebound;
 		return temp;
 	}
 	return nullptr;

@@ -24,6 +24,7 @@ public:
 	float dx, dy;
 	bool  is_hit_player;
 	bool  is_hit_enemy;
+	bool  is_rebound=false;
 	float offset_x = 0;
 	float offset_y = 0;
 	float angle = 0;
@@ -37,6 +38,7 @@ public:
 	float aim_offset_x = 0, aim_offset_y = 0;
 	Move_api* move_api_ptr;
 	float hurt_ratio = 1;
+	Danmaku(const Danmaku& other);
 	Danmaku(Move_api* move_api_ptr,float speed, float position_x, float position_y, float angle,
 		float hurt_ratio =1,int exist_time = 9999,float aim_offset_x=0,float aim_offset_y=0, 
 		bool remove_on_death = false,float backbone_x=0,float backbone_y=0,bool use_backbone_rotation = false,
@@ -44,6 +46,7 @@ public:
 	virtual ~Danmaku();
 	virtual bool is_line();
 	virtual bool is_once();
+
 	void load_sprite(sf::Sprite sprite, float offset_x = 0, float offset_y = 0, sf::Color color = sf::Color::Red);
 	void move(float aim_x = 0, float aim_y = 0);
 };
@@ -51,6 +54,7 @@ class Danmaku_manager {
 public:
 
 	Player* player_ptr;
+	std::vector <Danmaku*> temp_enemy_danmaku;
 	std::vector <Danmaku*> enemy_danmaku_ptrs;
 	std::vector <Danmaku*> player_danmaku_ptrs;
 	float x1, y1;
@@ -91,6 +95,16 @@ class track_move :public Move_api {
 class line_move :public Move_api {
 	void move(Danmaku* danmaku_ptr, float player_x, float player_y) override;
 };
+class split_move :public Move_api {
+public:
+	int split_num = 0;//Á¬Ëø±¬Õ¨
+	int split_danmaku_num = 0;
+	float angle_range = 180;
+	float counter = 0;
+	split_move(int split_num, int split_danmaku_num, float angle_range);
+	void move(Danmaku* danmaku_ptr, float player_x, float player_y) override;
+};
+
 class circle_move :public Move_api {
 public:
 	Player* player_ptr;
@@ -98,13 +112,12 @@ public:
 	circle_move(Player* player_ptr);
 	void move(Danmaku* danmaku_ptr, float enemy_x, float enemy_y) override;
 };
+
 using DanmakuConstructor = std::function<Danmaku* (Move_api*, Danmaku_command&)>;
 inline std::unordered_map<std::string, DanmakuConstructor>& get_danmaku_factory() {
 	static std::unordered_map<std::string, DanmakuConstructor> instance;
 	return instance;
 }
-
-
 
 class Circle :public Danmaku {
 public:

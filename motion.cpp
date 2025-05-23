@@ -143,13 +143,13 @@ void Danmaku_action_manager::load_all_danmaku_action() {
             action_ptr->file_name = filename;
 
             for (int i = 0; i < total_bullets; ++i) {
-                int trigger_frame = frame_dist(gen);
-                float angle = angle_dist(gen);
-                float final_speed = speed_dist(gen);
+                Danmaku_command* temp=new Danmaku_command;
+                temp->trigger_frame = frame_dist(gen);
+                temp->angle = angle_dist(gen);
+                temp->speed= speed_dist(gen);
                 sf::Color color(255, 255, 255, 255); // 默认白色
-                float px = 0, py = 0, ax = 0, ay = 0;
-                int exist_time = 9999;
-                action_ptr->add_danmaku_list(trigger_frame, type, color, angle, final_speed, px, py, ax, ay, exist_time,remove_on_death);
+                temp->color = color;
+                action_ptr->add_danmaku_list(temp);
             }
 
             add_danmaku_action(action_ptr);
@@ -159,7 +159,7 @@ void Danmaku_action_manager::load_all_danmaku_action() {
         // 分支2：普通弹幕加载
         Danmaku_action* danmaku_action_temp_ptr = new Danmaku_action();
         danmaku_action_temp_ptr->file_name = filename;
-
+        
         // 先尝试读取骨干相关字段，兼容旧格式
         float backbone_x = 0.0f;
         float backbone_y = 0.0f;
@@ -190,16 +190,21 @@ void Danmaku_action_manager::load_all_danmaku_action() {
         }
 
         for (auto& item : danmaku_list) {
-            int trigger_frame = item.value("frame", 0);
-            string type = item.value("type", "fixed");
-            float angle = item.value("angle", 0.0f);
-            float speed = item.value("speed", 0.0f);
-            float position_x = item.value("position_x", 0.0f) * Image_manager::Screen_height / 1600;
-            float position_y = item.value("position_y", 0.0f) * Image_manager::Screen_height / 1600;
-            float aim_offset_x = item.value("aim_offset_x", 0.0f) * Image_manager::Screen_height / 1600;
-            float aim_offset_y = item.value("aim_offset_y", 0.0f) * Image_manager::Screen_height / 1600;
-            int exist_time = item.value("exist_time", 9999);
-            bool remove_on_death = item.value("remove_on_death", false);
+            Danmaku_command* temp = new Danmaku_command;
+            temp->trigger_frame = item.value("frame", 0);
+            temp->type = item.value("type", "fixed");
+            temp->angle = item.value("angle", 0.0f);
+            temp->speed = item.value("speed", 0.0f);
+            temp->position_x = item.value("position_x", 0.0f) * Image_manager::Screen_height / 1600;
+            temp->position_y = item.value("position_y", 0.0f) * Image_manager::Screen_height / 1600;
+            temp->aim_offset_x = item.value("aim_offset_x", 0.0f) * Image_manager::Screen_height / 1600;
+            temp->aim_offset_y = item.value("aim_offset_y", 0.0f) * Image_manager::Screen_height / 1600;
+            temp->exist_time = item.value("exist_time", 9999);
+            temp->split_danmaku_num= item.value("split_danmaku_num", 4);
+            temp->split_angle_range= item.value("split_angle_range", 180);
+            temp->split_num= item.value("split_num", 1);
+            temp->remove_on_death = item.value("remove_on_death", false);
+            temp->is_rebound = item.value("is_rebound", false);
             sf::Color color(255, 255, 255, 255);
 
             if (item.contains("color") && item["color"].is_object()) {
@@ -209,11 +214,12 @@ void Danmaku_action_manager::load_all_danmaku_action() {
                 color.b = color_json.value("b", 255);
                 color.a = color_json.value("a", 255);
             }
-
+            temp->color = color;
+            temp->backbone_x = backbone_x;
+            temp->backbone_y = backbone_y;
+            temp->use_backbone_rotation = use_backbone_rotation;
             // 调用时传入骨干参数，兼容旧格式骨干默认0，旋转默认false
-            danmaku_action_temp_ptr->add_danmaku_list(trigger_frame, type, color, angle, speed,
-                position_x, position_y, aim_offset_x, aim_offset_y, exist_time, remove_on_death,
-                backbone_x, backbone_y, use_backbone_rotation);
+            danmaku_action_temp_ptr->add_danmaku_list(temp);
         }
 
         add_danmaku_action(danmaku_action_temp_ptr);
@@ -230,5 +236,8 @@ void Danmaku_action::add_danmaku_list(int trigger_frame, std::string type, sf::C
     bool use_backbone_rotation ) {
     danmaku_list_ptr.push_back(new Danmaku_command{ trigger_frame, type,color, angle,speed,position_x,position_y,
         aim_offset_x,aim_offset_y,exist_time,remove_on_death,backbone_x,backbone_y,use_backbone_rotation });
+}
+void Danmaku_action::add_danmaku_list(Danmaku_command* danmaku_command_ptr) {
+    danmaku_list_ptr.push_back(danmaku_command_ptr);
 }
 

@@ -12,6 +12,8 @@ Enemy_manager::Enemy_manager(Player* player_ptr, float x1, float y1, float x2, f
     this->y2 = y2;
     this->player_ptr = player_ptr;
 }
+
+
 void Enemy_manager::is_collision_player(Danmaku_manager* danmaku_manager_ptr) {
     for (auto it = enemies.begin(); it != enemies.end(); ) {
         if ((**it).circle_box.is_collision(player_ptr->circle_box)&&!(player_ptr->is_god_mode)) {
@@ -25,6 +27,8 @@ void Enemy_manager::is_collision_player(Danmaku_manager* danmaku_manager_ptr) {
         }
     }
 }
+
+
 void Enemy_manager::is_out_side() {
     for (auto it = enemies.begin(); it != enemies.end(); ) {
         if ((**it).circle_box.position_x < x1 || (**it).circle_box.position_x > x2 ||
@@ -471,7 +475,12 @@ void creat_wave(Enemy_manager* enemy_manager_ptr, Falling_object_manager* fallin
                     it->remove_on_death = false;
                 }
                 it->type = danmaku->type + "_" + it->type;
-                it->color = danmaku->color;
+                if (danmaku->has_color) {
+                    it->color = danmaku->color;
+                }
+                if (danmaku->is_rebound.has_value()) {
+                    it->is_rebound = danmaku->is_rebound.value();
+                }
                 it->trigger_frame = danmaku->start_frame + it->trigger_frame;
                 it->position_x += danmaku->offset_position_x;
                 it->position_y += danmaku->offset_position_y;
@@ -541,11 +550,17 @@ void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, F
                 danmaku_data.speed = d.value("global_speed", -100);
                 danmaku_data.offset_position_x= d.value("offset_position_x", 0);
                 danmaku_data.offset_position_y = d.value("offset_position_y", 0);
-                const auto& c = d["color"];
-                danmaku_data.color.r = c.value("r", 255);
-                danmaku_data.color.g = c.value("g", 255);
-                danmaku_data.color.b = c.value("b", 255);
-                danmaku_data.color.a = c.value("a", 255);
+                if (d.contains("is_rebound")) {
+                    danmaku_data.is_rebound= d.value("is_rebound", false);
+                }
+                if (d.contains("color")) {
+                    const auto& c = d["color"];
+                    danmaku_data.color.r = c.value("r", 255);
+                    danmaku_data.color.g = c.value("g", 255);
+                    danmaku_data.color.b = c.value("b", 255);
+                    danmaku_data.color.a = c.value("a", 255);
+                    danmaku_data.has_color = true;
+                }
                 danmaku_list.push_back(danmaku_data);
             }
         }

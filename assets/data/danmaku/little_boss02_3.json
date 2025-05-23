@@ -1,0 +1,20 @@
+[
+  {
+    "frame": 1,
+    "speed": 4.0,
+    "angle": 0,
+    "position_x": 0.0,
+    "position_y": 0.0,
+    "exist_time": 120,
+    "split_num": 4,
+    "split_danmaku_num":8,
+    "split_angle_range": 180,
+    "type": "split",
+    "color": {
+      "r": 255,
+      "g": 80,
+      "b": 80,
+      "a": 255
+    }
+  }
+]
