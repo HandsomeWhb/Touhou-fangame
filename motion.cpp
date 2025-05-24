@@ -147,6 +147,7 @@ void Danmaku_action_manager::load_all_danmaku_action() {
                 temp->trigger_frame = frame_dist(gen);
                 temp->angle = angle_dist(gen);
                 temp->speed= speed_dist(gen);
+                temp->type = type;
                 sf::Color color(255, 255, 255, 255); // Ä¬ÈÏ°×É«
                 temp->color = color;
                 action_ptr->add_danmaku_list(temp);

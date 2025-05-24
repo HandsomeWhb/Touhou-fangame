@@ -1,0 +1,320 @@
+[
+  {
+    "num": 7,
+    "appear_frame": 200,
+    "frame_interval": 30,
+    "enemy": {
+      "type": "Blue_enemy",
+      "hp": 15.0,
+      "x": 1590,
+      "y": 320,
+      "rewards": {
+        "power": 1,
+        "big_power": 0,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 2
+      }
+    },
+    "fire_plan": [
+      {
+        "shoot_logic": "aim_5_20.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 147,
+          "b": 0,
+          "a": 255
+        }
+      }
+    ],
+    "move": "left.json"
+  },
+  {
+    "num": 7,
+    "appear_frame": 62,
+    "frame_interval": 30,
+    "enemy": {
+      "type": "Blue_enemy",
+      "hp": 15.0,
+      "x": 330,
+      "y": 280,
+      "rewards": {
+        "power": 1,
+        "big_power": 0,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 4
+      }
+    },
+    "fire_plan": [
+      {
+        "shoot_logic": "aim_5_20.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 147,
+          "b": 0,
+          "a": 255
+        }
+      }
+    ],
+    "move": "right.json"
+  },
+  {
+    "num": 1,
+    "appear_frame": 500,
+    "frame_interval": 30,
+    "enemy": {
+      "type": "Green_rabbit_enemy",
+      "hp": 400.0,
+      "x": 640,
+      "y": 10,
+      "rewards": {
+        "power": 0,
+        "big_power": 1,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 10
+      }
+    },
+    "fire_plan": [
+      {
+        "shoot_logic": "circle01.json",
+        "remove_on_death": "true",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
+      },
+      {
+        "shoot_logic": "circle03.json",
+        "remove_on_death": "true",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
+      }
+    ],
+    "move": "top_attack_return02.json"
+  },
+  {
+    "num": 1,
+    "appear_frame": 500,
+    "frame_interval": 30,
+    "enemy": {
+      "type": "Green_rabbit_enemy",
+      "hp": 400.0,
+      "x": 1280,
+      "y": 10,
+      "rewards": {
+        "power": 0,
+        "big_power": 1,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 10
+      }
+    },
+    "fire_plan": [
+      {
+        "shoot_logic": "circle01.json",
+        "remove_on_death": "true",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
+      },
+      {
+        "shoot_logic": "circle03.json",
+        "remove_on_death": "true",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
+      }
+    ],
+    "move": "top_attack_return02.json"
+  },
+  {
+    "num": 1,
+    "appear_frame": 500,
+    "frame_interval": 30,
+    "enemy": {
+      "type": "Green_rabbit_enemy",
+      "hp": 800.0,
+      "x": 960,
+      "y": 10,
+      "rewards": {
+        "power": 0,
+        "big_power": 1,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 15
+      }
+    },
+    "fire_plan": [
+      {
+        "shoot_logic": "circle01.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
+      },
+      {
+        "shoot_logic": "circle03.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 255
+        }
+      }
+    ],
+    "move": "top_attack_return01.json"
+  },
+  {
+    "num": 8,
+    "appear_frame": 840,
+    "frame_interval": 50,
+
+    "enemy": {
+      "type": "Red_enemy",
+      "hp": 100.0,
+      "x": 325,
+      "y": 1595,
+      "rewards": {
+        "power": 1,
+        "big_power": 0,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 4
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 50,
+        "shoot_logic": "aim_5_20.json",
+        "type": "Ellipse",
+        "color": {
+          "r": 60,
+          "g": 90,
+          "b": 229,
+          "a": 255
+        }
+      }
+    ],
+    "move": "up_from_left.json"
+  },
+  {
+    "num": 8,
+    "appear_frame": 840,
+    "frame_interval": 50,
+    "enemy": {
+      "type": "Red_enemy",
+      "hp": 100.0,
+      "x": 1595,
+      "y": 1595,
+      "rewards": {
+        "power": 1,
+        "big_power": 0,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 4
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 50,
+        "shoot_logic": "aim_5_20.json",
+        "type": "Ellipse",
+        "color": {
+          "r": 60,
+          "g": 90,
+          "b": 229,
+          "a": 255
+        }
+      }
+    ],
+    "move": "up_from_right.json"
+  },
+  {
+    "num": 1,
+    "appear_frame": 1500,
+    "frame_interval": 0,
+    "enemy": {
+      "type": "Green_enemy",
+      "hp": 800.0,
+      "x": 480,
+      "y": 5,
+      "rewards": {
+        "power": 0,
+        "big_power": 1,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 8
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 50,
+        "shoot_logic": "circle_left.json",
+        "type": "Star",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 240
+        }
+      }
+    ],
+    "move": "top_attack_return01.json"
+  },
+  {
+    "num": 1,
+    "appear_frame": 1500,
+    "frame_interval": 0,
+    "enemy": {
+      "type": "Green_enemy",
+      "hp": 800.0,
+      "x": 1440,
+      "y": 5,
+      "rewards": {
+        "power": 0,
+        "big_power": 1,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 8
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 50,
+        "shoot_logic": "circle_right.json",
+        "type": "Star",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "a": 240
+        }
+      }
+    ],
+    "move": "top_attack_return01.json"
+  }
+]

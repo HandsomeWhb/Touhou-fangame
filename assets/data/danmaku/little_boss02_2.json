@@ -4,7 +4,7 @@
     "speed": 3.0,
     "position_x": -250.0,
     "position_y": 260.0,
-    "exist_time": 800,
+    "exist_time": 600,
     "type": "track",
     "color": {
       "r": 255,
@@ -18,7 +18,7 @@
     "speed": 3.5,
     "position_x": -175.0,
     "position_y": 180.0,
-    "exist_time": 800,
+    "exist_time": 600,
     "type": "track",
     "color": {
       "r": 255,
@@ -32,7 +32,7 @@
     "speed": 4.0,
     "position_x": -100.0,
     "position_y": 120.0,
-    "exist_time": 800,
+    "exist_time": 600,
     "type": "track",
     "color": {
       "r": 255,
@@ -46,7 +46,7 @@
     "speed": 4.5,
     "position_x": 0.0,
     "position_y": 100.0,
-    "exist_time": 800,
+    "exist_time": 600,
     "type": "track",
     "color": {
       "r": 120,
@@ -60,7 +60,7 @@
     "speed": 5.0,
     "position_x": 100.0,
     "position_y": 120.0,
-    "exist_time": 800,
+    "exist_time": 600,
     "type": "track",
     "color": {
       "r": 100,
@@ -74,7 +74,7 @@
     "speed": 5.5,
     "position_x": 175.0,
     "position_y": 180.0,
-    "exist_time": 800,
+    "exist_time": 600,
     "type": "track",
     "color": {
       "r": 140,
@@ -88,7 +88,7 @@
     "speed": 6.0,
     "position_x": 250.0,
     "position_y": 260.0,
-    "exist_time": 800,
+    "exist_time": 600,
     "type": "track",
     "color": {
       "r": 200,

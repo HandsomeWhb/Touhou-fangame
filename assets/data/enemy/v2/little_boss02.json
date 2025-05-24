@@ -1,19 +1,19 @@
 [
   {
     "num": 1,
-    "appear_frame": 121,
+    "appear_frame": 7400,
     "frame_interval": 0,
     "enemy": {
       "type": "Red_rabbit_enemy",
-      "hp": 4000.0,
+      "hp": 35000.0,
       "x": 960,
       "y": 10,
       "rewards": {
         "power": 0,
         "big_power": 0,
-        "bomb_up": 1,
-        "health_up": 0,
-        "blue_point": 2
+        "bomb_up": 0,
+        "health_up": 1,
+        "blue_point": 20
       }
     },
     "fire_plan": [
@@ -34,8 +34,13 @@
         "type": "Circle"
       },
       {
-        "danmaku_start_frame": 5050,
+        "danmaku_start_frame": 800,
         "shoot_logic": "little_boss02_3.json",
+        "type": "Circle"
+      },
+      {
+        "danmaku_start_frame": 1750,
+        "shoot_logic": "little_boss02_1.json",
         "type": "Circle",
         "color": {
           "r": 255,
@@ -43,8 +48,18 @@
           "b": 0,
           "a": 192
         }
+      },
+      {
+        "danmaku_start_frame": 1750,
+        "shoot_logic": "little_boss02_2.json",
+        "type": "Circle"
+      },
+      {
+        "danmaku_start_frame": 2400,
+        "shoot_logic": "little_boss02_3.json",
+        "type": "Circle"
       }
     ],
-    "move": "little_boss01.json"
+    "move": "little_boss02.json"
   }
 ]

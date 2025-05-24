@@ -1,20 +1,118 @@
 [
   {
     "frame": 1,
-    "speed": 4.0,
-    "angle": 0,
-    "position_x": 0.0,
-    "position_y": 0.0,
-    "exist_time": 120,
-    "split_num": 4,
-    "split_danmaku_num":8,
-    "split_angle_range": 180,
+    "speed": 3.0,
+    "angle": 60,
+    "exist_time": 160,
     "type": "split",
+    "split_num": 3,
+    "split_danmaku_num": 6,
+    "split_angle_range": 180,
     "color": {
       "r": 255,
       "g": 80,
       "b": 80,
       "a": 255
     }
+  },
+  {
+    "frame": 1,
+    "speed": 3.0,
+    "angle": 40,
+    "exist_time": 160,
+    "type": "split",
+    "split_num": 3,
+    "split_danmaku_num": 6,
+    "split_angle_range": 180,
+    "color": {
+      "r": 255,
+      "g": 160,
+      "b": 60,
+      "a": 255
+    }
+  },
+  {
+    "frame": 1,
+    "speed": 3.0,
+    "angle": 20,
+    "exist_time": 160,
+    "type": "split",
+    "split_num": 3,
+    "split_danmaku_num": 6,
+    "split_angle_range": 180,
+    "color": {
+      "r": 255,
+      "g": 240,
+      "b": 100,
+      "a": 255
+    }
+  },
+  {
+    "frame": 1,
+    "speed": 3.0,
+    "angle": 0,
+    "exist_time": 160,
+    "type": "split",
+    "split_num": 3,
+    "split_danmaku_num": 6,
+    "split_angle_range": 180,
+    "color": {
+      "r": 120,
+      "g": 255,
+      "b": 120,
+      "a": 255
+    }
+  },
+  {
+    "frame": 1,
+    "speed": 3.0,
+    "angle": -20,
+    "exist_time": 160,
+    "type": "split",
+    "split_num": 3,
+    "split_danmaku_num": 6,
+    "split_angle_range": 180,
+    "color": {
+      "r": 100,
+      "g": 220,
+      "b": 255,
+      "a": 255
+    }
+  },
+  {
+    "frame": 1,
+    "speed": 3.0,
+    "angle": -40,
+    "exist_time": 160,
+    "type": "split",
+    "split_num": 3,
+    "split_danmaku_num": 6,
+    "split_angle_range": 180,
+    "color": {
+      "r": 140,
+      "g": 160,
+      "b": 255,
+      "a": 255
+    }
+  },
+  {
+    "frame": 1,
+    "speed": 3.0,
+    "angle": -60,
+    "exist_time": 160,
+    "type": "split",
+    "split_num": 3,
+    "split_danmaku_num": 6,
+    "split_angle_range": 180,
+    "color": {
+      "r": 200,
+      "g": 120,
+      "b": 255,
+      "a": 255
+    }
   }
 ]
+
+
+
+

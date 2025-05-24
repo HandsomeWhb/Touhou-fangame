@@ -118,20 +118,29 @@ void Enemy::on_death() {
             if (reward.count > 0) {
                 has_reward = true;
                 for (int i = 0; i < reward.count; ++i) {
-                    falling_object_manager_ptr->add_falling_object(create_falling_object(reward.type, get_random_offset(-2, 2), dy - 5, begin_position_x, begin_position_y));
+                    falling_object_manager_ptr->add_falling_object(create_falling_object(reward.type, get_random_offset(-2, 2), dy - 5, begin_position_x+ get_random_offset(-50, 50), begin_position_y + get_random_offset(30, 100)));
                 }
             }
         }
         if (!has_reward) {
 
             if (r % 2 == 0) {
-                falling_object_manager_ptr->add_falling_object(create_falling_object("Power", s, dy - 5, begin_position_x, begin_position_y));
+                falling_object_manager_ptr->add_falling_object(create_falling_object("Power", get_random_offset(-1, 1), dy - 5, begin_position_x + get_random_offset(-50, 50), begin_position_y + get_random_offset(30, 100)));
             }
             if (r % 3 == 0) {
-                falling_object_manager_ptr->add_falling_object(create_falling_object("Blue_point", s, dy - 5, begin_position_x, begin_position_y));
+                falling_object_manager_ptr->add_falling_object(create_falling_object("Blue_point", get_random_offset(-1, 1), dy - 5, begin_position_x + get_random_offset(-50, 50), begin_position_y + get_random_offset(30, 100)));
+            }
+            if (r % 5 == 0) {
+                falling_object_manager_ptr->add_falling_object(create_falling_object("Blue_point", get_random_offset(-1, 1), dy - 5, begin_position_x + get_random_offset(-50, 50), begin_position_y + get_random_offset(30, 100)));
+            }
+            if (r % 7 == 0) {
+                falling_object_manager_ptr->add_falling_object(create_falling_object("Blue_point", get_random_offset(-1, 1), dy - 5, begin_position_x + get_random_offset(-50, 50), begin_position_y + get_random_offset(30, 100)));
+            }
+            if (r % 11 == 0) {
+                falling_object_manager_ptr->add_falling_object(create_falling_object("Blue_point", get_random_offset(-1, 1), dy - 5, begin_position_x + get_random_offset(-50, 50), begin_position_y + get_random_offset(30, 100)));
             }
             if (r % 47 == 0) {
-                falling_object_manager_ptr->add_falling_object(create_falling_object("Big_power", s, dy - 5, begin_position_x, begin_position_y));
+                falling_object_manager_ptr->add_falling_object(create_falling_object("Big_power", get_random_offset(-1, 1), dy - 5, begin_position_x + get_random_offset(-50, 50), begin_position_y + get_random_offset(30, 100)));
             }
         }
         is_death = true;

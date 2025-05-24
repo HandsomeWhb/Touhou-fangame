@@ -153,7 +153,11 @@ void Danmaku_manager::is_outside(){
 	}
 	for (auto it = enemy_danmaku_ptrs.begin(); it != enemy_danmaku_ptrs.end(); ) {
 		if ((**it).is_rebound) {
-			if ((**it).remove_on_death == true && (**it).enemy_ptr == nullptr) {
+			if ((**it).exist_time < -5) {
+				delete* it;
+				it = enemy_danmaku_ptrs.erase(it);
+			}
+			else if ((**it).remove_on_death == true && (**it).enemy_ptr == nullptr) {
 				game_bridge.falling_object_manager_ptr->add_falling_object(
 					create_falling_object("Spell_card", 0, 0, (**it).collision_box.center_x, (**it).collision_box.center_y));
 				delete* it;
@@ -311,7 +315,7 @@ Danmaku* danmaku_split(Danmaku* danmaku_ptr, split_move* split_move_ptr,float an
 	new_danmaku->collision_box.angle = new_danmaku->angle;
 	new_danmaku->dx = -new_danmaku->speed * sin(pi * (new_danmaku->angle) / 180) * Image_manager::Screen_height / 1600;
 	new_danmaku->dy = new_danmaku->speed * cos(pi * (new_danmaku->angle) / 180) * Image_manager::Screen_height / 1600;
-	if (split_move_ptr->split_num == 1) {
+	if (split_move_ptr->split_num == 1&&danmaku_ptr->is_rebound==false) {
 		new_danmaku->exist_time = 9999;
 	}
 	else {
