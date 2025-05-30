@@ -46,7 +46,16 @@ void genshin_start(RenderWindow* window_ptr) {
 	}
 	return;
 }
-void pause_page(RenderWindow* window_ptr, int& option, bool& is_paused,string role) {
+void pause_page(RenderWindow* window_ptr,  bool& is_paused,string role,string bgm) {
+	static int option = 0;
+	sf::RectangleShape dark_overlay(sf::Vector2f(window_ptr->getSize().x, window_ptr->getSize().y));
+	dark_overlay.setFillColor(sf::Color(0, 0, 0, 128));
+	window_ptr->draw(game_bridge.player_ptr->sprite);
+	game_bridge.danmaku_manager_ptr->show_all_danmaku(window_ptr);
+	game_bridge.enemy_manager_ptr->show_all_enemy(window_ptr, game_bridge.danmaku_manager_ptr);
+	game_bridge.falling_object_manager_ptr->show_all_object(window_ptr);
+	window_ptr->draw(dark_overlay);
+	Display_manager::show();
 	window_ptr->draw(Image_manager::custom_image("pause_title.png", 0.3, 0.2, 0.53, 0.3));
 	window_ptr->draw(Image_manager::custom_image("pause0_unselect.png", 0.28,0.45, 0.6, 0.55));
 	window_ptr->draw(Image_manager::custom_image("pause1_unselect.png", 0.28, 0.6, 0.6, 0.7));
@@ -54,7 +63,6 @@ void pause_page(RenderWindow* window_ptr, int& option, bool& is_paused,string ro
 	static bool key_up_ready = true;
 	static bool key_down_ready = true;
 	static bool key_enter_ready = true;
-
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
 		if (key_up_ready) {
 			option = (option + 2) % 3;
@@ -72,25 +80,27 @@ void pause_page(RenderWindow* window_ptr, int& option, bool& is_paused,string ro
 		}
 	}
 	else key_down_ready = true;
-
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Z)) {
 		if (key_enter_ready) {
 			Music_manager::play_music("button1.mp3");
 			switch (option) {
-			case 0: is_paused = false; option = 0; Music_manager::play_music("th08_17.mp3"); break;  // 继续游戏
-			case 1: Music_manager::stop_music("th08_17.mp3"); main_menu.show_page(); break;
-			case 2: Music_manager::stop_music("th08_17.mp3"); game_start(window_ptr, role);  break;
+			case 0: is_paused = false; option = 0; Music_manager::play_music(bgm); break;  
+			case 1: Music_manager::stop_music(bgm); option = 0; main_menu.show_page(); break;
+			case 2: Music_manager::stop_music(bgm); option = 0; game_start(window_ptr, role,bgm);  break;
 			}
 			key_enter_ready = false;
 		}
 	}
 	else key_enter_ready = true;
 
-	// 绘制选中项高亮（你已有）
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape)) {
+		option = 0;
+	}
+
 	switch (option) {
-	case 0: window_ptr->draw(Image_manager::custom_image("pause0_select.png", 0.28, 0.45, 0.6, 0.55)); break;  // 继续游戏
+	case 0: window_ptr->draw(Image_manager::custom_image("pause0_select.png", 0.28, 0.45, 0.6, 0.55)); break;  
 	case 1: window_ptr->draw(Image_manager::custom_image("pause1_select.png", 0.28, 0.6, 0.6, 0.7)); break;
-	case 2: window_ptr->draw(Image_manager::custom_image("pause2_select.png", 0.28, 0.75, 0.6, 0.865)); break; // 退出游戏
+	case 2: window_ptr->draw(Image_manager::custom_image("pause2_select.png", 0.28, 0.75, 0.6, 0.865)); break; 
 	}
 }
 float get_fps() {
@@ -323,8 +333,52 @@ void back_ground_one(RenderWindow* window_ptr,bool is_paused) {
 	}
 	
 }
+void show_game_info(RenderWindow* window_ptr) {
+	static Page test(window_ptr);
+	static bool is_init = false;
+	static float start_x;
+	if (!is_init) {
+		unsigned Screen_width = window_ptr->getSize().x;
+		unsigned Screen_height = window_ptr->getSize().y;
+		start_x = 0.625f - (Screen_height * 4.0f / 5.0f) / Screen_width;
+		test.add_image(Image_manager::custom_image("front.png", 0.715, 0.35, 0.935, 0.95, 128, 0, 255, 255));
+		test.add_image(Image_manager::custom_image("front.png", 0.65, 0.23, 0.73, 0.37, 0, 144, 42, 208));
+		test.add_image(Image_manager::custom_image("front.png", 0.65, 0.13, 0.73, 0.20, 0, 111, 42, 145));
+		test.add_image(Image_manager::custom_image("front.png", 0.65, 0.13, 0.73, 0.20, 0, 111, 42, 145));
+		test.add_image(Image_manager::custom_image("front.png", 0.65, 0.03, 0.73, 0.10, 0, 78, 50, 110));
+		test.add_image(Image_manager::custom_image("front.png", 0.70, 0.80, 0.88, 0.87, 0, 0, 128, 32));
+		is_init = true;
+	}
+	window_ptr->draw(Image_manager::custom_image("front.png", 0, 0, start_x, 1, 0, 226, 31, 256));
+	window_ptr->draw(Image_manager::custom_image("front.png", 0.625, 0, 1, 1, 0, 226, 31, 256));
+	test.once_page();
+	window_ptr->draw(Image_manager::custom_image("power_strip.png", 0.755, 0.230, 0.755 + 0.20 * game_bridge.player_ptr->power / 128, 0.264));
+	show_game_font(window_ptr, game_bridge.player_ptr->power >= 128 ? "MAX" : to_string(game_bridge.player_ptr->power), 0.755, 0.233, 0.025);
+	show_game_font(window_ptr, to_string(int(game_bridge.player_ptr->graze)), 0.755, 0.270, 0.025);
+	show_game_font(window_ptr, to_string(game_bridge.player_ptr->blue_point) + "/" + to_string(game_bridge.player_ptr->goal_point), 0.755, 0.305, 0.025);
+	show_game_font(window_ptr, string(game_bridge.player_ptr->health_num < 0 ? 0 : game_bridge.player_ptr->health_num, '+'), 0.755, 0.146, 0.02);
+	show_game_font(window_ptr, string(game_bridge.player_ptr->bomb_num, '-'), 0.755, 0.178, 0.02);
+	show_game_font(window_ptr, string(9 - to_string(game_bridge.player_ptr->score).length(), '0') + to_string(game_bridge.player_ptr->score) + "0", 0.755, 0.070, 0.03);
+	show_game_font(window_ptr, string(10 - to_string(game_bridge.player_ptr->highscore).length(), '0') + to_string(game_bridge.player_ptr->highscore), 0.755, 0.034, 0.03);
+	show_game_font(window_ptr, "0/2500", 0.755, 0.340, 0.025);
+	show_game_font(window_ptr, to_string(int(get_fps())) + "fps", 0.85, 0.93, 0.03);
+}
+Player* create_role(string role){
+	if (role == "Reimu") {
+		return  new Reimu(&game_bridge);
+	}
+	else if (role == "Morisa") {
+		return   new Morisa(&game_bridge);
+	}
+	else if (role == "Remilia") {
+		return   new Remilia(&game_bridge);
+	}
+	else if (role == "Yuyoko") {
+		return  new Yuyuko(&game_bridge);
+	}
 
-void game_start(RenderWindow* window_ptr, string role)
+}
+void game_start(RenderWindow* window_ptr, string role,string bgm)
 {
 	unsigned Screen_width = window_ptr->getSize().x;
 	unsigned Screen_height = window_ptr->getSize().y;
@@ -337,40 +391,28 @@ void game_start(RenderWindow* window_ptr, string role)
 	Falling_object_manager falling_object_manager;
 	Danmaku_manager danmaku_manager(player_ptr, start_x * Screen_width, 0 * Screen_height, 0.625 * Screen_width, 1 * Screen_height);
 	game_bridge = Game_bridge(player_ptr, &enemy_manager, &danmaku_manager, &falling_object_manager, window_ptr);
-	if (role == "Reimu") {
-		player_ptr = new Reimu(&game_bridge);
-	}
-	else if (role == "Morisa") {
-		player_ptr = new Morisa(&game_bridge);
-	}
-	else if (role == "Remilia") {
-		player_ptr = new Remilia(&game_bridge);
-	}
-	else if (role == "Yuyoko") {
-		player_ptr = new Yuyuko(&game_bridge);
-	}
+	player_ptr = create_role(role);
 	danmaku_manager.player_ptr = player_ptr;
 	game_bridge.player_ptr = player_ptr;
-	
-	Page test(window_ptr);
-	test.add_image(Image_manager::custom_image("front.png", 0.715, 0.35, 0.935, 0.95, 128, 0, 255, 255));
-	test.add_image(Image_manager::custom_image("front.png", 0.65, 0.23, 0.73, 0.37, 0, 144, 42, 208));
-	test.add_image(Image_manager::custom_image("front.png", 0.65, 0.13, 0.73, 0.20, 0, 111, 42, 145));
-	test.add_image(Image_manager::custom_image("front.png", 0.65, 0.13, 0.73, 0.20, 0, 111, 42, 145));
-	test.add_image(Image_manager::custom_image("front.png", 0.65, 0.03, 0.73, 0.10, 0, 78, 50, 110));
-	test.add_image(Image_manager::custom_image("front.png", 0.70, 0.80, 0.88, 0.87, 0, 0, 128, 32));
 	bool is_paused = false;
-	int pause_option = 0;
-	player_ptr->highscore= Score_center::search("normal_score.dat")->get_highest_score();
+
+	//游戏数据,以后应实现传入难度选择对应文件
+	string save_file = "normal_score.dat";
+	
+	player_ptr->highscore= Score_center::search(save_file)->get_highest_score();
 	enemy_manager = Enemy_manager(player_ptr, start_x * Screen_width, 0 * Screen_height, 0.625 * Screen_width, 1* Screen_height);
 	falling_object_manager = Falling_object_manager(player_ptr, start_x * Screen_width, 0 * Screen_height, 0.625 * Screen_width,1 * Screen_height);
+
+	//敌人数据,以后应实现传入关卡自动加载
 	load_all_enemies(&game_bridge, "assets/data/enemy/v1/", "assets/data/enemy/v2/");
 
-	Music_manager::play_music("th08_17.mp3");
+	Music_manager::play_music(bgm);
 	while (window_ptr->isOpen()) {
 		window_ptr->clear();
+
+		//背景板,以后应传入背景自动加载
 		back_ground_one(window_ptr,is_paused);
-		
+
 		while (const optional event = window_ptr->pollEvent()) {
 			if (event->is<Event::Closed>()) {
 				cout << "窗口关闭" << endl;
@@ -379,12 +421,11 @@ void game_start(RenderWindow* window_ptr, string role)
 			if (event->is<Event::KeyPressed>()) {
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape)) {
 					if (!is_paused) {
-						Music_manager::pause_music("th08_17.mp3");
+						Music_manager::pause_music(bgm);
 						Music_manager::play_music("se_pause.wav");
 					}
 					else {
-						Music_manager::play_music("th08_17.mp3");
-						pause_option = 0;
+						Music_manager::play_music(bgm);
 					}
 					is_paused = !is_paused;
 				}
@@ -398,34 +439,13 @@ void game_start(RenderWindow* window_ptr, string role)
 			Display_manager::update();
 		}
 		else {
-			sf::RectangleShape dark_overlay(sf::Vector2f(Screen_width, Screen_height));
-			dark_overlay.setFillColor(sf::Color(0, 0, 0, 128));
-			window_ptr->draw(player_ptr->sprite);
-			danmaku_manager.show_all_danmaku(window_ptr);
-			enemy_manager.show_all_enemy(window_ptr, &danmaku_manager);
-			falling_object_manager.show_all_object(window_ptr);
-			window_ptr->draw(dark_overlay);
-			Display_manager::show();
-			pause_page(window_ptr, pause_option, is_paused,role);
+			pause_page(window_ptr,  is_paused,role,bgm);
 		}
-		window_ptr->draw(Image_manager::custom_image("front.png", 0, 0, start_x, 1, 0, 226, 31, 256));
-		window_ptr->draw(Image_manager::custom_image("front.png", 0.625, 0, 1, 1, 0, 226, 31, 256));
-		test.once_page();
-		window_ptr->draw(Image_manager::custom_image("power_strip.png", 0.755, 0.230, 0.755 + 0.20 * player_ptr->power / 128, 0.264));
-		show_game_font(window_ptr, player_ptr->power >= 128 ? "MAX" : to_string(player_ptr->power), 0.755, 0.233, 0.025);
-		show_game_font(window_ptr, to_string(int(player_ptr->graze)), 0.755, 0.270, 0.025);
-		show_game_font(window_ptr, to_string(player_ptr->blue_point) + "/" + to_string(player_ptr->goal_point), 0.755, 0.305, 0.025);
-		show_game_font(window_ptr, string(player_ptr->health_num < 0 ? 0 : player_ptr->health_num, '+'), 0.755, 0.146, 0.02);
-		show_game_font(window_ptr, string(player_ptr->bomb_num, '-'), 0.755, 0.178, 0.02);
-		show_game_font(window_ptr, string(9 - to_string(player_ptr->score).length(), '0') + to_string(player_ptr->score) + "0", 0.755, 0.070, 0.03);
-		show_game_font(window_ptr, string(10 - to_string(player_ptr->highscore).length(), '0') + to_string(player_ptr->highscore), 0.755, 0.034, 0.03);
-		show_game_font(window_ptr, "0/2500", 0.755, 0.340, 0.025);
-		show_game_font(window_ptr, to_string(int(get_fps())) + "fps", 0.85, 0.93, 0.03);
-		
+		show_game_info(window_ptr);
 		window_ptr->display();
 		if (player_ptr->is_game_over) {
-			Music_manager::stop_music("th08_17.mp3");
-			(Score_center::search("normal_score.dat"))->add_new_score(get_name(window_ptr), player_ptr->score * 10);
+			Music_manager::stop_music(bgm);
+			(Score_center::search(save_file))->add_new_score(get_name(window_ptr), player_ptr->score * 10);
 			main_menu.show_page();
 		}
 	}
@@ -439,7 +459,6 @@ void init_window(RenderWindow& window, unsigned int& width, unsigned int& height
 	window.setFramerateLimit(60);
 	Display_manager::init(&window);
 }
-
 void init_resources(unsigned int width, unsigned int height) {
 	Music_manager::init("assets/music/");
 	Image_manager::init("assets/img/", width, height);
@@ -448,7 +467,6 @@ void init_resources(unsigned int width, unsigned int height) {
 	Danmaku_action_manager::init("assets/data/danmaku/");
 	Score_center::init("assets/score/");
 }
-
 void role_select(int type, Page& menu, RenderWindow* window_ptr) {
 	Page role_select(window_ptr, "button1.mp3", "menu.mp3");
 	role_select.add_image(Image_manager::custom_image("sl_text.png",0.3,0.05,0.7,0.18,0,51,255,100));

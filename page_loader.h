@@ -13,6 +13,6 @@ void build_introduction(Page& intro, Page& main_menu);
 void build_result(Page& result, Page& main_menu);
 void genshin_start(sf::RenderWindow* window_ptr);
 void show_board(Page& result, sf::RenderWindow* window_ptr, std::string file_name);
-void game_start(sf::RenderWindow* window_ptr, std::string role);
+void game_start(sf::RenderWindow* window_ptr, std::string role,std::string bgm= "th08_17.mp3");
 float get_fps();
 extern Page main_menu;

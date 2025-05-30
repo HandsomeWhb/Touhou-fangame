@@ -1,8 +1,8 @@
 [
   {
     "frame": 1,
-    "angle": -8.0,
+    "angle": -10.0,
     "type": "aim",
-    "exist_time": 240
+    "exist_time": 100
   }
 ]

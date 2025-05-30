@@ -166,24 +166,28 @@ void Danmaku_manager::is_outside(){
 			else {
 				if ((**it).collision_box.center_x < x1 + ((**it).sprite.getGlobalBounds()).size.x / 2) {
 					(**it).dx = -(**it).dx;
+					(**it).angle = 180 - (**it).angle;
 					(**it).collision_box.move(10, 0, (**it).angle);
 					(**it).sprite.setRotation(degrees(180 + (**it).angle));
 					(**it).sprite.move({ 10,0 });
 				}
 				if ((**it).collision_box.center_x > x2 - ((**it).sprite.getGlobalBounds()).size.x / 2) {
 					(**it).dx = -(**it).dx;
+					(**it).angle = 180 - (**it).angle;
 					(**it).collision_box.move(-10, 0, (**it).angle);
 					(**it).sprite.setRotation(degrees(180 + (**it).angle));
 					(**it).sprite.move({ -10,0 });
 				}
 				if ((**it).collision_box.center_y < y1 + ((**it).sprite.getGlobalBounds()).size.y / 2) {
 					(**it).dy = -(**it).dy;
+					(**it).angle =  - (**it).angle;
 					(**it).collision_box.move(0, 10, (**it).angle);
 					(**it).sprite.setRotation(degrees(180 + (**it).angle));
 					(**it).sprite.move({ 0,10 });
 				}
 				if ((**it).collision_box.center_y > y2 - ((**it).sprite.getGlobalBounds()).size.y / 2) {
 					(**it).dy = -(**it).dy;
+					(**it).angle = -(**it).angle;
 					(**it).collision_box.move(0, -10, (**it).angle);
 					(**it).sprite.setRotation(degrees(180 + (**it).angle));
 					(**it).sprite.move({ 0,-10 });

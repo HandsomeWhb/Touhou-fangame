@@ -31,7 +31,6 @@ public:
    
 };
 
-
 class Danmaku_action {
 public:
     std::string file_name;
