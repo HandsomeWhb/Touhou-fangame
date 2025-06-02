@@ -60,9 +60,10 @@ public:
 	Full_power(float dx, float dy, float position_x, float position_y);
 	void on_pick(Player* player_ptr) override;
 };
-class Spell_card :public Falling_object {
+
+class Point_item :public Falling_object {
 public:
-	Spell_card(float dx, float dy, float position_x, float position_y);
+	Point_item(float dx, float dy, float position_x, float position_y);
 	void on_pick(Player* player_ptr) override;
 };
 Falling_object* create_falling_object(std::string name, float dx, float dy, float position_x, float position_y);

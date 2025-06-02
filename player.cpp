@@ -392,7 +392,7 @@ void Player::handle_input() {
 }
 
 Reimu::Reimu(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 4.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
-	0.03 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.95 * game_bridge_ptr->Screen_height, 3, 2, 3,
+	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 1 * game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
 	load_img("human_stand", 20, "player00.png", 4, 32 * 3, 48 * 3, 0, 0, 32, 48, false);
 	load_img("human_left", 20, "player00.png", 3, 32 * 3, 48 * 3, 128, 48, 32, 48, false);
@@ -531,7 +531,7 @@ void Morisa::bomb_continuous(sf::RenderWindow* window_ptr) {
 	}
 }
 Morisa::Morisa(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
-	0.03 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.95 * game_bridge_ptr->Screen_height, 3, 2, 3,
+	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 1 * game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
 	load_img("human_stand", 20, "player01.png", 4, 32 * 3, 48 * 3, 0, 0, 32, 48, false);
 	load_img("human_left", 20, "player01.png", 3, 32 * 3, 48 * 3, 128, 48, 32, 48, false);
@@ -543,7 +543,7 @@ Morisa::Morisa(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.1
 	bomb_sprite1 = Image_manager::custom_image("face_al00.png", 0.125, 0.43, 0.4, 1.35);
 }
 Remilia::Remilia(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
-	0.03 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.95 * game_bridge_ptr->Screen_height, 3, 2, 3,
+	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 1* game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
 	load_img("human_stand", 20, "player02.png", 4, 32 * 3, 48 * 3, 0, 0, 32, 48, false);
 	load_img("human_left", 20, "player02.png", 3, 32 * 3, 48 * 3, 128, 48, 32, 48, false);
@@ -555,7 +555,7 @@ Remilia::Remilia(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0
 	bomb_sprite1 = Image_manager::custom_image("face_rs00.png", 0.125, 0.43, 0.4, 1.35);
 }
 Yuyuko::Yuyuko(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
-	0.03 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.95 * game_bridge_ptr->Screen_height, 3, 2, 3,
+	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 1 * game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
 	load_img("human_stand", 20, "player03.png", 4, 32 * 3, 48 * 3, 0, 0, 32, 48, false);
 	load_img("human_left", 20, "player03.png", 3, 32 * 3, 48 * 3, 32, 48, 32, 48, false);

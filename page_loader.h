@@ -3,6 +3,8 @@
 #include <windows.h>
 #include <vector>
 #include <deque>
+#include <map>
+#include <functional>
 #include "page.h"
 #include "player.h"
 #include "score.h"
@@ -13,6 +15,9 @@ void build_introduction(Page& intro, Page& main_menu);
 void build_result(Page& result, Page& main_menu);
 void genshin_start(sf::RenderWindow* window_ptr);
 void show_board(Page& result, sf::RenderWindow* window_ptr, std::string file_name);
+void back_ground_one(sf::RenderWindow* window_ptr, bool is_paused,int alpha=255);
+void back_ground_two(sf::RenderWindow* window_ptr, bool is_paused,int alpha=255);
 void game_start(sf::RenderWindow* window_ptr, std::string role,std::string bgm= "th08_17.mp3");
+void show_background(const std::string& name, sf::RenderWindow* window_ptr, bool is_paused,int time_interval=60);
 float get_fps();
 extern Page main_menu;

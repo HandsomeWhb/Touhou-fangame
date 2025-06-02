@@ -3,6 +3,44 @@
 using namespace sf;
 using namespace std;
 class Game_bridge;
+map<string, function<void(RenderWindow*, bool,int)>> background_map = {
+	{"bamboo_forest", back_ground_one},
+	{"real_moon",back_ground_two}
+};
+void show_background(const string& name, RenderWindow* window_ptr, bool is_paused,int interval) {
+	static int counter = 0;
+	static int time_interval = 60;
+	static string temp_name="";
+	time_interval = interval;
+	if (name == "clear") {
+		int counter = 0;
+		int time_interval = interval;
+		temp_name = "";
+		return;
+	}
+	if (temp_name == "") {
+		temp_name = name;
+	}
+	if (temp_name != name&&counter<=time_interval) {
+		background_map[temp_name](window_ptr, is_paused, 255.f-255.f*counter/time_interval);
+		background_map[name](window_ptr, is_paused,255.f * counter / time_interval);
+		if (!is_paused) {
+			counter++;
+		}
+		return;
+	}
+	else {
+		temp_name = name;
+		counter = 0;
+		if (background_map.find(name) != background_map.end()) {
+			background_map[name](window_ptr, is_paused, 255.f);
+		}
+		else {
+			cout << "未找到背景函数：" << name << "，使用默认背景。" << endl;
+			back_ground_one(window_ptr, is_paused,255.f);
+		}
+	}	 
+}
 void genshin_start(RenderWindow* window_ptr) {
 	Music_manager::play_music("genshin.mp3");
 	int time_counter = 0;
@@ -84,9 +122,9 @@ void pause_page(RenderWindow* window_ptr,  bool& is_paused,string role,string bg
 		if (key_enter_ready) {
 			Music_manager::play_music("button1.mp3");
 			switch (option) {
-			case 0: is_paused = false; option = 0; Music_manager::play_music(bgm); break;  
-			case 1: Music_manager::stop_music(bgm); option = 0; main_menu.show_page(); break;
-			case 2: Music_manager::stop_music(bgm); option = 0; game_start(window_ptr, role,bgm);  break;
+			case 0: is_paused = false; option = 0; Music_manager::play_music(bgm);  break;
+			case 1: Music_manager::stop_music(bgm); show_background("clear", nullptr, false); option = 0; main_menu.show_page(); break;
+			case 2: Music_manager::stop_music(bgm); show_background("clear", nullptr, false); option = 0; game_start(window_ptr, role,bgm);  break;
 			}
 			key_enter_ready = false;
 		}
@@ -160,7 +198,7 @@ string get_name(RenderWindow* window_ptr) {
 }
 VertexArray get_renderer_quad(Vector2f leftTop, Vector2f leftDown, float lengthUp, float lengthDown, Vector2f uvLeftTop, Vector2f uvRightDown);
 list<VertexArray> get_renderer_yaxis_trape(int accuracy, Vector2f leftUp, Vector2f leftDown, float lengthUp, float lengthDown, Vector2f uvLeftTop, Vector2f uvRightDown);
-void back_ground_one(RenderWindow* window_ptr,bool is_paused) {
+void back_ground_one(RenderWindow* window_ptr,bool is_paused,int alpha) {
 	static bool initialized = false;
 	static vector<Sprite> sprite_far_left;
 	static vector<Sprite> sprite_near_left;
@@ -266,7 +304,7 @@ void back_ground_one(RenderWindow* window_ptr,bool is_paused) {
 				it.setPosition({ it.getPosition().x, it.getPosition().y - 2.5f * Image_manager::Screen_height });
 			}
 			if (it.getPosition().y > 0.4 * Image_manager::Screen_height) {
-				it.setColor({ 255,255,255,(uint8_t)(int)(((it.getPosition().y >= 0.9*Image_manager::Screen_height?1.8:it.getPosition().y / Image_manager::Screen_height*2)-0.8)*255) });
+				it.setColor({ 255,255,255,(uint8_t)(int)(((it.getPosition().y >= 0.9*Image_manager::Screen_height?1.8:it.getPosition().y / Image_manager::Screen_height*2)-0.8)*alpha) });
 			}
 			else {
 				it.setColor({ 255,255,255,0 });
@@ -283,14 +321,14 @@ void back_ground_one(RenderWindow* window_ptr,bool is_paused) {
 	float fogBBoundaryDown = (float) 1 * Image_manager::Screen_height;
 
 	Sprite fogARenderer = Image_manager::custom_image("white.png", start_x, 0, 0.625, 0.35);
-	fogARenderer.setColor(Color(96, 96, 96, 255));
+	fogARenderer.setColor(Color(96, 96, 96, alpha));
 	
 	auto fogBRenderer = get_renderer_quad(
 		{ 0,  fogBBoundaryUp},
 		{ 0,  fogBBoundaryDown},
 		(float)Image_manager::Screen_width, (float)Image_manager::Screen_width, { 0,0 }, { 1,1 });
 	for (int i = 0; i < 6; i++)
-		fogBRenderer[i].color = Color(96,96,96,fogBRenderer[i].position.y > fogBBoundaryUp? 0:255);
+		fogBRenderer[i].color = Color(96,96,96,fogBRenderer[i].position.y > fogBBoundaryUp? 0:alpha);
 
 	if (!is_paused) {
 		offset = -int(current_frame * speed) % floor_texture.getSize().y;
@@ -301,8 +339,13 @@ void back_ground_one(RenderWindow* window_ptr,bool is_paused) {
 			(0.625f - start_x) / 4 * Image_manager::Screen_width,
 			(0.625f - start_x + (0.625 - start_x) * 0.4) * Image_manager::Screen_width,
 			{ 0, offset }, {256, 256+offset});
-		for (auto renderer_quad : renderer_trape) 
+		for (auto& renderer_quad : renderer_trape) {
+			for (std::size_t i = 0; i < renderer_quad.getVertexCount(); ++i) {
+				renderer_quad[i].color.a = alpha; // 设置透明度
+			}
 			window_ptr->draw(renderer_quad, &floor_texture);
+		}
+
 		
 		window_ptr->draw(fogARenderer);
 		window_ptr->draw(fogBRenderer);
@@ -320,9 +363,12 @@ void back_ground_one(RenderWindow* window_ptr,bool is_paused) {
 			(0.625f - start_x) / 4 * Image_manager::Screen_width,
 			(0.625f - start_x + (0.625 - start_x) * 0.4) * Image_manager::Screen_width,
 			{ 0, offset }, { 256, 256 + offset });
-		for (auto renderer_quad : renderer_trape)
+		for (auto& renderer_quad : renderer_trape) {
+			for (std::size_t i = 0; i < renderer_quad.getVertexCount(); ++i) {
+				renderer_quad[i].color.a = alpha; // 设置透明度
+			}
 			window_ptr->draw(renderer_quad, &floor_texture);
-
+		}
 		window_ptr->draw(fogARenderer);
 		window_ptr->draw(fogBRenderer);
 
@@ -332,6 +378,32 @@ void back_ground_one(RenderWindow* window_ptr,bool is_paused) {
 		scroll_and_draw(sprite_near_right, 0);
 	}
 	
+}
+void back_ground_two(RenderWindow* window_ptr, bool is_paused, int alpha) {
+	static bool initialized = false;
+	static Texture floor_texture;
+	static int current_frame = 0;
+	static float offset = 0;
+	float speed = 0.1;
+	float start_x = 0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width;
+	if (!initialized) {
+		initialized = true;
+		current_frame = 0;
+		offset = 0;
+		floor_texture.loadFromFile(Image_manager::image_folder + "stg4bg2.png");
+		floor_texture.setRepeated(true);
+	}
+	if (alpha <= 5) {
+		current_frame = 0;
+	}
+	Sprite sprite = Image_manager::custom_image(floor_texture, start_x, -0.2, 0.625, 1, 120, 0, 445, 485);
+	sprite.setColor({ 255, 255, 255, (uint8_t)alpha });
+	offset = int(current_frame * speed) % floor_texture.getSize().y;
+	sprite.move({ 0, offset });
+	window_ptr->draw(sprite);
+	if (!is_paused) {
+		current_frame++;
+	}
 }
 void show_game_info(RenderWindow* window_ptr) {
 	static Page test(window_ptr);
@@ -378,11 +450,12 @@ Player* create_role(string role){
 	}
 
 }
-void game_start(RenderWindow* window_ptr, string role,string bgm)
+void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 {
 	unsigned Screen_width = window_ptr->getSize().x;
 	unsigned Screen_height = window_ptr->getSize().y;
 	float start_x = 0.625f - (Screen_height * 4.0f / 5.0f) / Screen_width;
+	int bg_change_interval = 60;
 	/*main_menu.add_button();*/
 	/*main_menu.show_page();*/
 	//320,48,1600,1520
@@ -395,7 +468,8 @@ void game_start(RenderWindow* window_ptr, string role,string bgm)
 	danmaku_manager.player_ptr = player_ptr;
 	game_bridge.player_ptr = player_ptr;
 	bool is_paused = false;
-
+	string bgm = default_bgm;
+	string back_ground = "bamboo_forest";
 	//游戏数据,以后应实现传入难度选择对应文件
 	string save_file = "normal_score.dat";
 	
@@ -411,8 +485,7 @@ void game_start(RenderWindow* window_ptr, string role,string bgm)
 		window_ptr->clear();
 
 		//背景板,以后应传入背景自动加载
-		back_ground_one(window_ptr,is_paused);
-
+		show_background(back_ground,window_ptr,is_paused,bg_change_interval);
 		while (const optional event = window_ptr->pollEvent()) {
 			if (event->is<Event::Closed>()) {
 				cout << "窗口关闭" << endl;
@@ -432,6 +505,12 @@ void game_start(RenderWindow* window_ptr, string role,string bgm)
 			}
 		}
 		if (!is_paused) {
+			if (enemy_manager.frame_count % 300 == 150) {
+				back_ground = "real_moon";
+			}
+			if (enemy_manager.frame_count % 300 == 0) {
+				back_ground = "bamboo_forest";
+			}
 			player_ptr->update(window_ptr);
 			danmaku_manager.update_all_danmaku(player_ptr, &enemy_manager,  window_ptr, false);
 			enemy_manager.update(window_ptr, &danmaku_manager, player_ptr->damage);
@@ -444,6 +523,7 @@ void game_start(RenderWindow* window_ptr, string role,string bgm)
 		show_game_info(window_ptr);
 		window_ptr->display();
 		if (player_ptr->is_game_over) {
+			show_background("clear", nullptr, false);
 			Music_manager::stop_music(bgm);
 			(Score_center::search(save_file))->add_new_score(get_name(window_ptr), player_ptr->score * 10);
 			main_menu.show_page();

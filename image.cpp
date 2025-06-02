@@ -54,12 +54,11 @@ Texture* Image_manager::search_image(const string& path) {
 Sprite Image_manager::cut_image(const string& path, float width, float height, int cut_x1, int cut_y1, int cut_x2, int cut_y2) {
     return custom_image(path, 0, 0, width / 2560, height / 1600, cut_x1, cut_y1, cut_x2, cut_y2);
 }
-Sprite Image_manager::custom_image(const string& path, float start_x, float start_y, float end_x, float end_y, int cut_x1, int cut_y1, int cut_x2, int cut_y2) {
-    Texture* new_texture = search_image(path);
-    Sprite sprite(*new_texture);
+Sprite Image_manager::custom_image(const Texture& texture, float start_x, float start_y, float end_x, float end_y, int cut_x1, int cut_y1, int cut_x2, int cut_y2) {
+    Sprite sprite(texture);
     IntRect rect;
     if (cut_x1 == -1 && cut_x2 == -1 && cut_y1 == -1 && cut_y2 == -1) {
-        rect = IntRect({ 0,0 }, { static_cast<int>((*new_texture).getSize().x), static_cast<int>((*new_texture).getSize().y) });
+        rect = IntRect({ 0,0 }, { static_cast<int>(texture.getSize().x), static_cast<int>(texture.getSize().y) });
     }
     else {
         if (cut_x1 < cut_x2) {
@@ -93,6 +92,11 @@ Sprite Image_manager::custom_image(const string& path, float start_x, float star
     sprite.setScale({ scale_x, scale_y });
     sprite.setPosition(Vector2f(start_x * Screen_width, start_y * Screen_height));
     return sprite;
+
+}
+Sprite Image_manager::custom_image(const string& path, float start_x, float start_y, float end_x, float end_y, int cut_x1, int cut_y1, int cut_x2, int cut_y2) {
+    Texture* new_texture = search_image(path);
+    return custom_image(*new_texture, start_x, start_y,  end_x,  end_y,cut_x1, cut_y1, cut_x2, cut_y2);
 }
 sf::Sprite Image_manager::scale_sprite(const sf::Sprite& sprite, float ratio) {
     sf::Sprite scaled_sprite = sprite;

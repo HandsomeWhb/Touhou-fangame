@@ -27,6 +27,7 @@ public:
     static void delete_image(const std::string& path);
     static sf::Texture* search_image(const std::string& path);
     static sf::Sprite cut_image(const std::string& path, float width, float height, int cut_x1, int cut_y1, int cut_x2, int cut_y2);
+    static sf::Sprite custom_image(const sf::Texture& texture, float start_x = 0, float start_y = 0, float end_x = 1, float end_y = 1, int cut_x1 = -1, int cut_y1 = -1, int cut_x2 = -1, int cut_y2 = -1);
     static sf::Sprite custom_image(const std::string& path, float start_x = 0, float start_y = 0, float end_x = 1, float end_y = 1, int cut_x1 = -1, int cut_y1 = -1, int cut_x2 = -1, int cut_y2 = -1);
     static sf::Sprite scale_sprite(const sf::Sprite& sprite, float ratio);
     static sf::Sprite rotate_sprite(const sf::Sprite& sprite, float angle_degrees);

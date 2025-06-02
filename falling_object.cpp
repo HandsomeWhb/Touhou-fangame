@@ -167,13 +167,13 @@ Full_power::Full_power(float dx, float dy, float position_x, float position_y)
 void Full_power::on_pick(Player* player_ptr) {
 	player_ptr->add_power(128);
 }
-Spell_card::Spell_card(float dx, float dy, float position_x, float position_y)
+Point_item::Point_item(float dx, float dy, float position_x, float position_y)
 	:Falling_object(dx, dy, position_x, position_y) {
 	this->circle_box = Circle_box(16.f, 0, 0, 0, position_x, position_y);
 	load_img("etama2.png", 48, 48, 96, 64, 112, 80);
 	sprite.setPosition({ position_x - 24, position_y - 24 });
 }
-void Spell_card::on_pick(Player* player_ptr) {
+void Point_item::on_pick(Player* player_ptr) {
 	player_ptr->add_score(1000);
 }
 Falling_object* create_falling_object(string name, float dx, float dy, float position_x, float position_y) {
@@ -196,7 +196,7 @@ Falling_object* create_falling_object(string name, float dx, float dy, float pos
 		return new Full_power(dx, dy, position_x, position_y);
 	}
 	else if (name == "Spell_card") {
-		Falling_object*  temp= new Spell_card(dx, dy, position_x, position_y);
+		Falling_object*  temp= new Point_item(dx, dy, position_x, position_y);
 		temp->is_absorb = true;
 		return temp;
 	}

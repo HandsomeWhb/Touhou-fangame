@@ -247,7 +247,21 @@ void Enemy_manager::hurt_all_enemy(float damage) {
 
 
 
-
+void Boss::shoot(Danmaku_manager* danmaku_manager_ptr) {
+    while (current_action_ptr->motion.fire_plan_ptr != current_action_ptr->motion.fire_plan.end() &&
+        (current_frame % current_action_ptr->loop_time) == current_action_ptr->motion.fire_plan_ptr->trigger_frame) {
+        current_action_ptr->motion.fire_plan_ptr->position_x += begin_position_x;
+        current_action_ptr->motion.fire_plan_ptr->position_y += begin_position_y;
+        current_action_ptr->motion.fire_plan_ptr->backbone_x += begin_position_x;
+        current_action_ptr->motion.fire_plan_ptr->backbone_y += begin_position_y;
+        current_action_ptr->motion.fire_plan_ptr->enemy_ptr = this;
+        (danmaku_manager_ptr->enemy_danmaku_ptrs).push_back(create_danmaku(*(current_action_ptr->motion.fire_plan_ptr)));
+        current_action_ptr->motion.fire_plan_ptr++;
+    }
+    if (current_action_ptr->motion.fire_plan_ptr == current_action_ptr->motion.fire_plan.end()) {
+        current_action_ptr->motion.fire_plan_ptr = current_action_ptr->motion.fire_plan.begin();
+    }
+}
 
 
 
