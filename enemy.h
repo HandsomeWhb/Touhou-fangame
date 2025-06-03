@@ -50,7 +50,6 @@ public:
         bool remove_on_death,float backbone_x,float backbone_y,bool use_backbone_rotation);
     void add_rewards(int bomb_up, int health_up, int big_power, int power, int blue_point);
 };
-
 class Boss_action {
 public:
     Motion motion;
@@ -60,7 +59,6 @@ public:
     int hp;
     virtual ~Boss_action() = default;
 };
-
 class None_spell:public Boss_action{
 public:
 };
@@ -85,15 +83,22 @@ public:
     float default_x;
     float default_y;
     bool is_adjust = false;
+    bool is_init = false;
     std::vector<std::shared_ptr<Boss_phase>> boss_phase_ptrs;
     std::shared_ptr<Boss_phase> current_phase_ptr=nullptr;
     std::shared_ptr<Boss_action>current_action_ptr = nullptr;
     int boss_phase_index = 0;
     int spell_card_index = 0;
     int none_spell_index = 0;
-    Boss() {
-        default_x = (1.25f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width) * Image_manager::Screen_width / 2;
-        default_y = Image_manager::Screen_height * 0.2;
+
+    Boss(std::string name,std::string bgm,float dot_radius,float begin_position_x, float begin_position_y,
+        Falling_object_manager* falling_object_manager_ptr, float default_x=-1, float default_y=-1):Enemy(100,  dot_radius,  begin_position_x,
+           begin_position_y, falling_object_manager_ptr),name(name),bgm(bgm),default_x(default_x),default_y(default_y) {
+        if (std::abs(this->default_x + 1.0f) < 1e-3 && std::abs(this->default_y + 1.0f) < 1e-3) {
+            this->default_x = (1.25f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width) * Image_manager::Screen_width / 2;
+            this->default_y = Image_manager::Screen_height * 0.2;
+        }
+        is_death = false;
     }
     bool next_action() {
         current_frame = 0;
@@ -145,8 +150,13 @@ public:
         if (!is_death) {
             hp = current_action_ptr->hp;
         }
-    }
-    void update(Danmaku_manager* danmaku_manager_ptr) {
+    }//添加掉落物
+    void update(Danmaku_manager* danmaku_manager_ptr) override{
+        if (!is_init) {
+            next_action();
+            this->hp = current_action_ptr->hp;
+            is_init = true;
+        }
         if (!is_adjust) {
             show_boss_info();
             if (hp <= 0) {
@@ -162,8 +172,8 @@ public:
         }
         else {
             float angle = -std::atan2(( default_x - begin_position_x), (default_y - begin_position_y)) * 180 / pi;
-            dx = -4 * std::sin(pi * (angle) / 180) * Image_manager::Screen_height / 1600;
-            dy = 4 * std::cos(pi * (angle) / 180) * Image_manager::Screen_height / 1600;
+            dx = -6 * std::sin(pi * (angle) / 180) * Image_manager::Screen_height / 1600;
+            dy = 6 * std::cos(pi * (angle) / 180) * Image_manager::Screen_height / 1600;
             move();
             if (std::abs(begin_position_x - default_x) <= 10 && std::abs(begin_position_y - default_y) <= 10){
                 dx = 0;
@@ -201,10 +211,21 @@ public:
 
     }
     void shoot(Danmaku_manager* danmaku_manager_ptr)override;
-    void show_boss_info();
-    void get_bonus(int bonus);
-    void bonus_failed();
+    void show_boss_info() {};//底部展示enemy,顶部展示生命数量,阶段血条,符卡名称,可获得bonus,剩余秒数
+    void get_bonus(int bonus) {};
+    void bonus_failed() {};
 };
+class Mokou :public Boss {
+public:
+    Mokou( std::string name, std::string bgm,  float begin_position_x, float begin_position_y,
+        Falling_object_manager* falling_object_manager_ptr, float default_x=-1, float default_y=-1):Boss( name, bgm, 50 * Image_manager::Screen_width / 1600 ,  begin_position_x,
+            begin_position_y,falling_object_manager_ptr, default_x,default_y)  {
+        load_img("stand", 20, "stg8enm2.png", 4, 64 * 3, 81 * 3, 0,  0,  64, 81, false);
+        load_img("left",  20, "stg8enm2.png", 3, 64 * 3, 81 * 3, 64, 81, 64, 81, false);
+        load_img("right", 20, "stg8enm2.png", 3, 64 * 3, 81 * 3, 64, 81, 64, 81, true);
+    }
+};
+
 
 
 struct Appearance_list {
@@ -271,6 +292,7 @@ public:
 };
 
 Enemy* create_enemy(const std::string& name, float hp, float x, float y, Falling_object_manager* falling_object_manager);
+Boss* creat_boss(const std::string& type, const std::string& name, const std::string& bgm, float begin_x, float begin_y, Falling_object_manager* falling_object_manager, float default_x=-1, float default_y=-1);
 void load_enemies_from_file_v1(const std::string& filename, Enemy_manager* enemy_manager_ptr,  Falling_object_manager* falling_object_manager);
 bool compare_by_frame_count(const Appearance_list& a, const Appearance_list& b);
 bool compare_by_trigger_count(const Danmaku_command& a, const Danmaku_command& b);

@@ -395,6 +395,11 @@ Enemy* create_enemy(const string& name, float hp, float x, float y, Falling_obje
         return new Green_rabbit_enemy(hp, x, y,  falling_object_manager);
     }
 }
+Boss* creat_boss(const string& type, const string& name, const string& bgm, float begin_x, float begin_y, Falling_object_manager* falling_object_manager, float default_x, float default_y) {
+    if (type == "Mokou") {
+        return new Mokou(name, bgm, begin_x, begin_y, falling_object_manager, default_x, default_y);
+    }
+}
 bool compare_by_frame_count(const Appearance_list& a, const Appearance_list& b) {
     return a.frame_count < b.frame_count;  // 升序排序
 }
@@ -475,54 +480,164 @@ void load_enemies_from_file_v1(const string& filename, Enemy_manager* enemy_mana
 
 
 }
+void load_danmaku_data_list(const nlohmann::json& plan_json, std::vector<Danmaku_data>& danmaku_data_list) {
+    for (const auto& d : plan_json) {
+        Danmaku_data danmaku_data;
+        danmaku_data.remove_on_death = d.value("remove_on_death", "");
+        danmaku_data.angle = d.value("danmaku_offset_angle", 0);
+        danmaku_data.start_frame = d.value("danmaku_start_frame", 0);
+        danmaku_data.shoot_logic = d.value("shoot_logic", "");
+        danmaku_data.type = d.value("type", "Circle");
+        danmaku_data.speed = d.value("global_speed", -100);
+        danmaku_data.offset_position_x = d.value("offset_position_x", 0);
+        danmaku_data.offset_position_y = d.value("offset_position_y", 0);
+        danmaku_data.is_rebound = d.value("is_rebound", false);
 
+        if (d.contains("color")) {
+            const auto& c = d["color"];
+            danmaku_data.color.r = c.value("r", 255);
+            danmaku_data.color.g = c.value("g", 255);
+            danmaku_data.color.b = c.value("b", 255);
+            danmaku_data.color.a = c.value("a", 255);
+            danmaku_data.has_color = true;
+        }
+        danmaku_data_list.push_back(danmaku_data);
+    }
+}
+
+void danmaku_data_to_command(Motion& motion, const std::vector<Danmaku_data>& danmaku_data_list) {
+    std::vector<Danmaku_command> result;  // 局部变量用来收集所有生成的弹幕指令
+
+    for (auto danmaku = danmaku_data_list.begin(); danmaku != danmaku_data_list.end(); danmaku++) {
+        std::vector<Danmaku_command> temp = Danmaku_action_manager::search_danmaku_command(danmaku->shoot_logic);
+
+        for (auto it = temp.begin(); it != temp.end(); it++) {
+            if (danmaku->speed >= 0) {
+                it->speed = danmaku->speed;
+            }
+            if (danmaku->remove_on_death == "true") {
+                it->remove_on_death = true;
+            }
+            if (danmaku->remove_on_death == "false") {
+                it->remove_on_death = false;
+            }
+            it->type = danmaku->type + "_" + it->type;
+            if (danmaku->has_color) {
+                it->color = danmaku->color;
+            }
+            if (danmaku->is_rebound.has_value()) {
+                it->is_rebound = danmaku->is_rebound.value();
+            }
+
+            it->trigger_frame = danmaku->start_frame + it->trigger_frame;
+            it->position_x += danmaku->offset_position_x;
+            it->position_y += danmaku->offset_position_y;
+
+            int x = it->position_x;
+            int y = it->position_y;
+            float rad = danmaku->angle * 3.1415f / 180.0f;
+
+            it->position_x = x * cos(rad) - y * sin(rad);
+            it->position_y = x * sin(rad) + y * cos(rad);
+
+            it->backbone_x = danmaku->offset_position_x * cos(rad) - danmaku->offset_position_y * sin(rad);
+            it->backbone_y = danmaku->offset_position_x * sin(rad) + danmaku->offset_position_y * cos(rad);
+
+            it->angle += danmaku->angle;
+        }
+
+        result.insert(result.end(), temp.begin(), temp.end());
+    }
+
+    motion.fire_plan = std::move(result);  // 直接移动赋值，避免拷贝
+    std::sort(motion.fire_plan.begin(), motion.fire_plan.end(), compare_by_trigger_count);
+    motion.fire_plan_ptr = motion.fire_plan.begin();
+}
 void creat_wave(Enemy_manager* enemy_manager_ptr, Falling_object_manager* falling_object_manager,int num,int appear_frame,int frame_interval,Enemy_data enemy_data,
     const vector<Danmaku_data>& danmaku_list,std::string move) {
     for (int i = 0; i < num; i++) {
         Enemy* enemy_ptr = create_enemy(enemy_data.type, enemy_data.hp,
             enemy_data.position_x, enemy_data.position_y, falling_object_manager);
-        
         enemy_ptr->motion.move_plan= Move_action_manager::search_move_command(move);
         enemy_ptr->motion.rewards = enemy_data.rewards;
-        vector<Danmaku_command> result;
-        for (auto danmaku = danmaku_list.begin(); danmaku != danmaku_list.end(); danmaku++) {
-            vector<Danmaku_command> temp=Danmaku_action_manager::search_danmaku_command(danmaku->shoot_logic);
-            for (auto it = temp.begin(); it != temp.end(); it++) {
-                if (danmaku->speed >= 0) {
-                    it->speed = danmaku->speed;
-                }
-                if (danmaku->remove_on_death == "true") {
-                    it->remove_on_death = true;
-                }
-                if (danmaku->remove_on_death == "false") {
-                    it->remove_on_death = false;
-                }
-                it->type = danmaku->type + "_" + it->type;
-                if (danmaku->has_color) {
-                    it->color = danmaku->color;
-                }
-                if (danmaku->is_rebound.has_value()) {
-                    it->is_rebound = danmaku->is_rebound.value();
-                }
-                it->trigger_frame = danmaku->start_frame + it->trigger_frame;
-                it->position_x += danmaku->offset_position_x;
-                it->position_y += danmaku->offset_position_y;
-                int x = it->position_x;
-                int y = it->position_y;
-                float rad = danmaku->angle * 3.1415 / 180;
-                it->position_x= x * cos(rad) - y * sin(rad);
-                it->position_y = x * sin(rad) + y * cos(rad);
-                it->backbone_x = danmaku->offset_position_x * cos(rad) - danmaku->offset_position_y * sin(rad);
-                it->backbone_y = danmaku->offset_position_x *sin(rad)+ danmaku->offset_position_y *cos(rad);
-                it->angle += danmaku->angle;
-            }
-            result.insert(result.end(), temp.begin(),temp.end());
-        }
-        enemy_ptr->motion.fire_plan = result;
-        sort(enemy_ptr->motion.fire_plan.begin(), enemy_ptr->motion.fire_plan.end(), compare_by_trigger_count);
-        enemy_ptr->motion.fire_plan_ptr = enemy_ptr->motion.fire_plan.begin();
+        danmaku_data_to_command(enemy_ptr->motion, danmaku_list);
         enemy_manager_ptr->add_enemy_list(appear_frame + i * frame_interval, enemy_ptr);
     }
+}
+
+
+
+void load_boss_from_json(const nlohmann::json& wave_json, Enemy_manager* enemy_manager_ptr, Falling_object_manager* falling_object_manager_ptr) {
+    string name = wave_json.value("name", "unknown_boss");
+    string type = wave_json.value("type", "generic_type");
+    string bgm = wave_json.value("bgm", "default_bgm.ogg");
+    int appear_frame= wave_json.value("appear_frame", 0);
+    float begin_position_x= wave_json.value("begin_position_x", 960);
+    float begin_position_y = wave_json.value("begin_position_y", 200);
+    float default_position_x = wave_json.value("default_position_x", -1);
+    float default_position_y = wave_json.value("default_position_y", -1);
+    Boss* boss = creat_boss(type, name, bgm, begin_position_x, begin_position_y, falling_object_manager_ptr, default_position_x, default_position_y);
+    std::vector<std::shared_ptr<Boss_phase>> boss_phase_ptrs;
+    if (wave_json.contains("stages")) {
+        for (const auto& stage_json : wave_json["stages"]) {
+            shared_ptr<Boss_phase> boss_phase = make_shared<Boss_phase>();
+            if (stage_json.contains("non_spell")) {
+                for (const auto& ns_json : stage_json["non_spell"]) {
+                    shared_ptr<None_spell>none_spell = make_shared<None_spell>();
+                    none_spell->back_ground_name= ns_json.value("bg_name", "");
+                    none_spell->hp= ns_json.value("hp", 100);
+                    none_spell->loop_time= ns_json.value("loop_time", 100);
+                    none_spell->phase_time = ns_json.value("stage_time", 200);
+                    vector<Danmaku_data> danmaku_data_list;
+                    load_danmaku_data_list(ns_json["fire_plan"], danmaku_data_list);
+                    danmaku_data_to_command(none_spell->motion, danmaku_data_list);
+                    Rewards rewards;
+                    if (ns_json.contains("rewards")) {
+                        const auto& r = ns_json["rewards"];
+                        rewards.power = r.value("power", 0);
+                        rewards.big_power = r.value("big_power", 0);
+                        rewards.bomb_up = r.value("bomb_up", 0);
+                        rewards.health_up = r.value("health_up", 0);
+                        rewards.blue_point = r.value("blue_point", 0);
+                    }
+                    string move = ns_json.value("move", "test.json");
+                    none_spell->motion.move_plan = Move_action_manager::search_move_command(move);
+                    none_spell->motion.rewards = rewards;
+                    boss_phase->none_spell_ptrs.push_back(none_spell);
+                }
+            }
+            if (stage_json.contains("spell")) {
+                for (const auto& s_json : stage_json["spell"]) {
+                    shared_ptr<Spell_card>spell_card = make_shared<Spell_card>();
+                    spell_card->back_ground_name = s_json.value("bg_name", "");
+                    spell_card->hp = s_json.value("hp", 100);
+                    spell_card->loop_time = s_json.value("loop_time", 100);
+                    spell_card->phase_time = s_json.value("stage_time", 200);
+                    spell_card->bonus= s_json.value("spell_card_bonus", 1000000);
+                    spell_card->name= s_json.value("name", "unknown_spell");
+                    vector<Danmaku_data> danmaku_data_list;
+                    load_danmaku_data_list(s_json["fire_plan"], danmaku_data_list);
+                    danmaku_data_to_command(spell_card->motion, danmaku_data_list);
+                    Rewards rewards;
+                    if (s_json.contains("rewards")) {
+                        const auto& r = s_json["rewards"];
+                        rewards.power = r.value("power", 0);
+                        rewards.big_power = r.value("big_power", 0);
+                        rewards.bomb_up = r.value("bomb_up", 0);
+                        rewards.health_up = r.value("health_up", 0);
+                        rewards.blue_point = r.value("blue_point", 0);
+                    }
+                    string move = s_json.value("move", "test.json");
+                    spell_card->motion.move_plan = Move_action_manager::search_move_command(move);
+                    spell_card->motion.rewards = rewards;
+                    boss_phase->spell_card_ptrs.push_back(spell_card);
+                }
+            }
+            boss_phase_ptrs.push_back(boss_phase);
+        }
+    }
+    boss->boss_phase_ptrs = boss_phase_ptrs;
+    enemy_manager_ptr->add_enemy_list(appear_frame, boss);
 }
 void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, Falling_object_manager* falling_object_manager) {
     ifstream file(filename);
@@ -535,6 +650,10 @@ void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, F
     file >> config;
 
     for (const auto& wave_json : config) {
+        if (wave_json.contains("boss") && wave_json["boss"].get<bool>()) {
+            load_boss_from_json(wave_json, enemy_manager_ptr,falling_object_manager); // 调用外部函数
+            continue;
+        }
         int num = wave_json.value("num", 1);
         int appear_frame = wave_json.value("appear_frame", 0);
         int frame_interval = wave_json.value("frame_interval", 10);
@@ -561,33 +680,7 @@ void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, F
             }
             enemy_data.rewards = rewards;
         }
-
-        if (wave_json.contains("fire_plan")) {
-            for (const auto& d : wave_json["fire_plan"]) {
-                Danmaku_data danmaku_data;
-                danmaku_data.remove_on_death= d.value("remove_on_death", "");
-                danmaku_data.angle= d.value("danmaku_offset_angle", 0);
-                danmaku_data.start_frame = d.value("danmaku_start_frame", 0);
-                danmaku_data.shoot_logic = d.value("shoot_logic", "");
-                danmaku_data.type = d.value("type", "Circle");
-                danmaku_data.speed = d.value("global_speed", -100);
-                danmaku_data.offset_position_x= d.value("offset_position_x", 0);
-                danmaku_data.offset_position_y = d.value("offset_position_y", 0);
-                if (d.contains("is_rebound")) {
-                    danmaku_data.is_rebound= d.value("is_rebound", false);
-                }
-                if (d.contains("color")) {
-                    const auto& c = d["color"];
-                    danmaku_data.color.r = c.value("r", 255);
-                    danmaku_data.color.g = c.value("g", 255);
-                    danmaku_data.color.b = c.value("b", 255);
-                    danmaku_data.color.a = c.value("a", 255);
-                    danmaku_data.has_color = true;
-                }
-                danmaku_list.push_back(danmaku_data);
-            }
-        }
-
+        load_danmaku_data_list(wave_json["fire_plan"], danmaku_list);
         string move = wave_json.value("move", "");
 
         creat_wave(enemy_manager_ptr, falling_object_manager, num, appear_frame,
