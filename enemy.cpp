@@ -53,12 +53,20 @@ void Enemy_manager::update(sf::RenderWindow* window_ptr,Danmaku_manager* danmaku
        
     }
     is_enemy = false;
-    for (auto it = enemies.begin(); it != enemies.end(); it++) {
-        is_enemy = true;
+    for (auto it = enemies.begin(); it != enemies.end(); ) {
         (*it)->update(danmaku_manager_ptr);
         (*window_ptr).draw((*it)->sprite);
-        /*(*it)->circle_box.draw(window_ptr);*/
+        if ((*it)->is_death) {
+            danmaku_manager_ptr->clear_enemy_reference(*it);
+            delete* it;
+            it = enemies.erase(it); // 返回新位置，不手动 ++
+        }
+        else {
+            /*(*it)->circle_box.draw(window_ptr);*/ // 放这里会错：若 erase 后跳过了
+            ++it;
+        }
     }
+    is_enemy = !enemies.empty();
     frame_count += 1;
 }
 void Enemy_manager::show_all_enemy(sf::RenderWindow* window_ptr, Danmaku_manager* danmaku_manager_ptr) {
@@ -71,25 +79,12 @@ void Enemy_manager::add_enemy(Enemy* enemy_ptr) {
     enemies.push_back(enemy_ptr);
 }
 void Enemy_manager::is_collision(Danmaku_manager* danmaku_manager_ptr,float damage) {
-
-    for (auto it = enemies.begin(); it != enemies.end();) {
+    for (auto it = enemies.begin(); it != enemies.end();it++) {
         danmaku_manager_ptr->is_hit_enemy(*it,damage);
-        if ((*it)->hp <= 0) {
-            danmaku_manager_ptr->clear_enemy_reference(*it);
-            delete* it;
-            it=enemies.erase(it);
-            //敌人死亡音效
-        }
-        else {
-            it++;
-        }
     }
 }
 void Enemy::take_damage(float damage) {
     hp -= damage;
-    if (hp <= 0) {
-        on_death();
-    }
 }
 int get_random_offset(int a,int b) {
     static random_device rd;
@@ -207,6 +202,10 @@ void Enemy::update(Danmaku_manager* danmaku_manager_ptr) {
     move();
     shoot(danmaku_manager_ptr);
     motion.frame_count += 1;
+    if (hp <= 0) {
+        on_death();
+    }
+
 }
 void Enemy::add_move_plan(int trigger_frame, float angle, float speed) {
     motion.move_plan.push_back({ trigger_frame,angle,speed });
@@ -245,24 +244,122 @@ void Enemy_manager::hurt_all_enemy(float damage) {
     }
 }
 
-
-
+int digit_count(int n) {
+    if (n == 0) return 1; // 0 特殊处理
+    int count = 0;
+    n = abs(n); // 去掉负号
+    while (n > 0) {
+        n /= 10;
+        count++;
+    }
+    return count;
+}
+void Boss::get_bonus(int bonus) {
+    int real_bonus = bonus * ((current_action_ptr->phase_time - current_frame) * 0.8 / current_action_ptr->phase_time + 0.2) / 10;
+    game_bridge.player_ptr->add_score(real_bonus);
+    int num=digit_count(real_bonus * 10);
+    float num_size = 0.05;
+    float num_space_factor = 0.75;
+    float start_x = 0.125;
+    string message = "Spell Card Bonus!";
+    float message_size = 0.045;
+    float message_space_factor = 0.6;
+    Display_manager::add(get_game_font_sprites(message, ((0.625 - start_x) - message_size *message.length() * message_space_factor) / 2 + start_x,0.1,
+        message_size,message_space_factor),90);
+    Display_manager::add(get_game_font_sprites(to_string(real_bonus * 10), ((0.625 - start_x) - num * num_size * 0.75) / 2 + start_x, 0.18, num_size,num_space_factor), 90);
+    
+}
+void Boss::bonus_failed() {
+    float start_x = 0.125;
+    string message = "Bonus Failed!";
+    float message_size = 0.045;
+    float message_space_factor = 0.6;
+    Display_manager::add(get_game_font_sprites(message, ((0.625 - start_x) - message_size * message.length() * message_space_factor) / 2 + start_x, 0.1,
+        message_size, message_space_factor), 90);
+}
 void Boss::shoot(Danmaku_manager* danmaku_manager_ptr) {
     while (current_action_ptr->motion.fire_plan_ptr != current_action_ptr->motion.fire_plan.end() &&
         (current_frame % current_action_ptr->loop_time) == current_action_ptr->motion.fire_plan_ptr->trigger_frame) {
-        current_action_ptr->motion.fire_plan_ptr->position_x += begin_position_x;
-        current_action_ptr->motion.fire_plan_ptr->position_y += begin_position_y;
-        current_action_ptr->motion.fire_plan_ptr->backbone_x += begin_position_x;
-        current_action_ptr->motion.fire_plan_ptr->backbone_y += begin_position_y;
-        current_action_ptr->motion.fire_plan_ptr->enemy_ptr = this;
-        (danmaku_manager_ptr->enemy_danmaku_ptrs).push_back(create_danmaku(*(current_action_ptr->motion.fire_plan_ptr)));
+        auto danmaku_data = *(current_action_ptr->motion.fire_plan_ptr); 
+        danmaku_data.position_x += begin_position_x;
+        danmaku_data.position_y += begin_position_y;
+        danmaku_data.backbone_x += begin_position_x;
+        danmaku_data.backbone_y += begin_position_y;
+        danmaku_data.enemy_ptr = this;
+        (danmaku_manager_ptr->enemy_danmaku_ptrs).push_back(create_danmaku(danmaku_data));
         current_action_ptr->motion.fire_plan_ptr++;
     }
     if (current_action_ptr->motion.fire_plan_ptr == current_action_ptr->motion.fire_plan.end()) {
         current_action_ptr->motion.fire_plan_ptr = current_action_ptr->motion.fire_plan.begin();
     }
 }
-
+void Boss::on_death() {
+    struct RewardInfo {
+        string type;
+        int count;
+    };
+    srand(static_cast<unsigned>(time(0)));
+    vector<RewardInfo> rewards = {
+        { "Big_power", current_action_ptr->motion.rewards.big_power },
+        { "Power", current_action_ptr->motion.rewards.power },
+        { "Bomb_up",current_action_ptr->motion.rewards.bomb_up },
+        { "Health_up",current_action_ptr->motion.rewards.health_up },
+        { "Blue_point", current_action_ptr->motion.rewards.blue_point }
+    };
+    for (const auto& reward : rewards) {
+        if (reward.count > 0&&hp<=0) {
+            for (int i = 0; i < reward.count; ++i) {
+                falling_object_manager_ptr->add_falling_object(create_falling_object(reward.type, get_random_offset(-2, 2), dy-2 , begin_position_x + get_random_offset(-50, 50), begin_position_y + get_random_offset(30, 100)));
+            }
+        }
+    }
+    if (is_spell_card) {
+        if (able_get_bonus) {
+            if (auto spell = std::dynamic_pointer_cast<Spell_card>(current_action_ptr)) {
+                get_bonus(spell->bonus);
+            }
+        }
+        else {
+            bonus_failed();
+        }
+    }
+    is_death = !(next_action());
+    if (!is_death) {
+        hp = current_action_ptr->hp;
+    }
+}//添加掉落物
+void Boss::update(Danmaku_manager* danmaku_manager_ptr)  {
+    if (!is_init) {
+        next_action();
+        this->hp = current_action_ptr->hp;
+        is_init = true;
+    }
+    if (!is_adjust) {
+        if (hp <= 0) {
+            danmaku_manager_ptr->clear_enemy_danmaku(true);
+            on_death();
+        }
+        else if (current_frame >= current_action_ptr->phase_time) {
+            danmaku_manager_ptr->clear_enemy_danmaku(false);
+            able_get_bonus = false;
+            on_death();
+        }
+        move();
+        shoot(danmaku_manager_ptr);
+        current_frame++;
+    }
+    else {
+        float angle = -std::atan2((default_x - begin_position_x), (default_y - begin_position_y)) * 180 / pi;
+        dx = -6 * std::sin(pi * (angle) / 180) * Image_manager::Screen_height / 1600;
+        dy = 6 * std::cos(pi * (angle) / 180) * Image_manager::Screen_height / 1600;
+        move();
+        if (std::abs(begin_position_x - default_x) <= 10 && std::abs(begin_position_y - default_y) <= 10) {
+            dx = 0;
+            dy = 0;
+            is_adjust = false;
+        }
+    }
+}
 
 
 
@@ -406,80 +503,7 @@ bool compare_by_frame_count(const Appearance_list& a, const Appearance_list& b) 
 bool compare_by_trigger_count(const Danmaku_command& a, const Danmaku_command& b) {
     return a.trigger_frame < b.trigger_frame;  // 升序排序
 }
-void load_enemies_from_file_v1(const string& filename, Enemy_manager* enemy_manager_ptr, Falling_object_manager* falling_object_manager) {
-    ifstream file(filename);
-    if (!file.is_open()) {
-        cerr << "无法打开敌人配置文件：" << filename << endl;
-        return;
-    }
 
-    nlohmann::json config;
-    file >> config;
-
-    for (const auto& enemy_json : config) {
-        string type = enemy_json.value("type", "Blue_enemy");
-        float hp = enemy_json.value("hp", 100.0f);
-        //分辨率适配,别问,问就是屎山
-        float x= ((enemy_json.value("x", 1000.0f) - 320.0f) * (Image_manager::Screen_height * 4.0f / 5.0f) 
-            / Image_manager::Screen_width / 1280.0f + (0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width)) * Image_manager::Screen_width;
-        float y = enemy_json.value("y", 0.0f) * Image_manager::Screen_height / 1600;
-        int appear_frame = enemy_json.value("appear_frame", 0);
-
-        Enemy* enemy = create_enemy(type, hp, x, y, falling_object_manager);
-        if (!enemy) {
-            cerr << "未能根据类型创建敌人：" << type << endl;
-            continue;
-        }
-
-        if (enemy_json.contains("move_plan")) {
-            for (const auto& move : enemy_json["move_plan"]) {
-                int frame = move.value("frame", 0);
-                float angle = move.value("angle", 0.0f);
-                float speed = move.value("speed", 0.0f) ;
-                enemy->add_move_plan(frame, angle, speed);
-            }
-        }
-
-        if (enemy_json.contains("fire_plan")) {
-            for (const auto& fire : enemy_json["fire_plan"]) {
-                int frame = fire.value("frame", 0);
-                string fire_type = fire.value("type", "Circle_fixed");
-                float angle = fire.value("angle", 0.0f);
-                float speed = fire.value("speed", 0.0f);
-                float pos_x = fire.value("y", 0.0f) * Image_manager::Screen_height / 1600;
-                float pos_y = fire.value("y", 0.0f) * Image_manager::Screen_height / 1600;
-                float aim_offset_x = fire.value("aim_offset_x", 0.0f) * Image_manager::Screen_height / 1600;
-                float aim_offset_y = fire.value("aim_offset_y", 0.0f) * Image_manager::Screen_height / 1600;
-                bool remove_on_death = fire.value("remove_on_death", false);
-                int exist_time = fire.value("exist_time", 9999);
-                auto color_json = fire["color"];
-                sf::Color color(
-                    color_json.value("r", 255),
-                    color_json.value("g", 255),
-                    color_json.value("b", 255)
-                );
-                enemy->add_fire_plan(frame, fire_type, angle, speed, pos_x, pos_y,color,aim_offset_x,aim_offset_y,exist_time,remove_on_death,0,0,false);
-            }
-            sort(enemy->motion.fire_plan.begin(), enemy->motion.fire_plan.end(), compare_by_trigger_count);
-            enemy->motion.fire_plan_ptr = enemy->motion.fire_plan.begin();
-        }
-
-        if (enemy_json.contains("rewards")) {
-            const auto& reward = enemy_json["rewards"];
-            int bomb_up = reward.value("bomb_up", 0);
-            int health_up = reward.value("health_up", 0);
-            int big_power = reward.value("big_power", 0);
-            int power = reward.value("power", 0);
-            int blue_point = reward.value("blue_point", 0);
-            enemy->add_rewards(bomb_up, health_up, big_power, power, blue_point);
-        }
-
-
-        enemy_manager_ptr->add_enemy_list(appear_frame, enemy);
-    }
-
-
-}
 void load_danmaku_data_list(const nlohmann::json& plan_json, std::vector<Danmaku_data>& danmaku_data_list) {
     for (const auto& d : plan_json) {
         Danmaku_data danmaku_data;
@@ -491,8 +515,9 @@ void load_danmaku_data_list(const nlohmann::json& plan_json, std::vector<Danmaku
         danmaku_data.speed = d.value("global_speed", -100);
         danmaku_data.offset_position_x = d.value("offset_position_x", 0);
         danmaku_data.offset_position_y = d.value("offset_position_y", 0);
-        danmaku_data.is_rebound = d.value("is_rebound", false);
-
+        if (d.contains("is_rebound")) {
+            danmaku_data.is_rebound = d.value("is_rebound", false);
+        }
         if (d.contains("color")) {
             const auto& c = d["color"];
             danmaku_data.color.r = c.value("r", 255);
@@ -637,6 +662,7 @@ void load_boss_from_json(const nlohmann::json& wave_json, Enemy_manager* enemy_m
         }
     }
     boss->boss_phase_ptrs = boss_phase_ptrs;
+
     enemy_manager_ptr->add_enemy_list(appear_frame, boss);
 }
 void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, Falling_object_manager* falling_object_manager) {
@@ -689,32 +715,9 @@ void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, F
 }
 
 
-void load_all_enemies(Game_bridge* game_bridge_ptr,string old_path_name, string new_path_name) {
-    string relative_path = "./" + old_path_name;
-    cout << "开始加载以前版本的" << " 文件夹:" << relative_path << endl;
-    if (!exists(relative_path)) {
-        cout << "路径不存在：" << relative_path << endl;
-        return;
-    }
-    if (!is_directory(relative_path)) {
-        cout << "不是一个目录：" << relative_path << endl;
-        return;
-    }
+void load_all_enemies(Game_bridge* game_bridge_ptr, string new_path_name) {
+    string relative_path;
     vector<string> fileNames;
-    // 遍历文件夹
-    for (const auto& entry : directory_iterator(relative_path)) {
-        if (entry.is_regular_file()) {
-            // 获取文件名（不带路径）
-            string filename = entry.path().filename().string();
-            fileNames.push_back(filename);
-            cout << "加载文件: " << filename << endl;
-            load_enemies_from_file_v1(old_path_name+filename, game_bridge_ptr->enemy_manager_ptr, game_bridge_ptr->falling_object_manager_ptr);
-        }
-    }
-    // 文件名存储在 vector 中，可以进一步处理
-    cout << "共加载 " << fileNames.size() << " 个文件。" << endl;
-    cout << "老版本素材加载完毕" << endl;
-
     relative_path = "./" + new_path_name;
     cout << "开始加载最新版本的" << " 文件夹:" << relative_path << endl;
     if (!exists(relative_path)) {

@@ -107,7 +107,7 @@ void Player::full_power() {
 }
 void Player::on_death() {
 	sf::Clock clock;
-	bool is_death = true;
+	is_death = true;
 	Music_manager::play_music("se_slash.wav", 100);
 	while (clock.getElapsedTime().asMilliseconds() < 300 && is_death) {
 		while (const optional event = game_bridge.window_ptr->pollEvent()) {
@@ -244,6 +244,7 @@ Animation* Player::search_animation_ptr(string name) {
 
 }
 void Player::update(sf::RenderWindow* window_ptr) {
+	is_death = false;
 	handle_input();
 	animation_ptr->update();
 	if (!is_human) {
@@ -261,7 +262,7 @@ void Player::update(sf::RenderWindow* window_ptr) {
 		is_first_full_power = false;
 	}
 	//ÎÞµÐ×´Ì¬£¬²âÊÔÊ±¿ª
-	//is_god_mode = true;
+	/*is_god_mode = true;*/
 	if (will_clear_enemy) {
 		danmaku_manager_ptr->clear_enemy_danmaku();
 		will_clear_enemy = false;
@@ -288,6 +289,7 @@ void Player::update(sf::RenderWindow* window_ptr) {
 			normal_absorb_radius -= 2000;
 		}
 	}
+
 	window_ptr->draw(sprite);
 
 }
@@ -392,7 +394,7 @@ void Player::handle_input() {
 }
 
 Reimu::Reimu(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 4.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
-	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 1 * game_bridge_ptr->Screen_height, 3, 2, 3,
+	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.965 * game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
 	load_img("human_stand", 20, "player00.png", 4, 32 * 3, 48 * 3, 0, 0, 32, 48, false);
 	load_img("human_left", 20, "player00.png", 3, 32 * 3, 48 * 3, 128, 48, 32, 48, false);
@@ -531,7 +533,7 @@ void Morisa::bomb_continuous(sf::RenderWindow* window_ptr) {
 	}
 }
 Morisa::Morisa(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
-	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 1 * game_bridge_ptr->Screen_height, 3, 2, 3,
+	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.965 * game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
 	load_img("human_stand", 20, "player01.png", 4, 32 * 3, 48 * 3, 0, 0, 32, 48, false);
 	load_img("human_left", 20, "player01.png", 3, 32 * 3, 48 * 3, 128, 48, 32, 48, false);
@@ -543,7 +545,7 @@ Morisa::Morisa(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.1
 	bomb_sprite1 = Image_manager::custom_image("face_al00.png", 0.125, 0.43, 0.4, 1.35);
 }
 Remilia::Remilia(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
-	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 1* game_bridge_ptr->Screen_height, 3, 2, 3,
+	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.965 * game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
 	load_img("human_stand", 20, "player02.png", 4, 32 * 3, 48 * 3, 0, 0, 32, 48, false);
 	load_img("human_left", 20, "player02.png", 3, 32 * 3, 48 * 3, 128, 48, 32, 48, false);
@@ -555,7 +557,7 @@ Remilia::Remilia(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0
 	bomb_sprite1 = Image_manager::custom_image("face_rs00.png", 0.125, 0.43, 0.4, 1.35);
 }
 Yuyuko::Yuyuko(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 6.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
-	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 1 * game_bridge_ptr->Screen_height, 3, 2, 3,
+	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.965 * game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
 	load_img("human_stand", 20, "player03.png", 4, 32 * 3, 48 * 3, 0, 0, 32, 48, false);
 	load_img("human_left", 20, "player03.png", 3, 32 * 3, 48 * 3, 32, 48, 32, 48, false);

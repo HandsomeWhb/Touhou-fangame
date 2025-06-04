@@ -146,6 +146,12 @@ void Display_manager::init(sf::RenderWindow* win) {
 void Display_manager::add(const sf::Sprite& sprite, int frames) {
     items.emplace_back(sprite, frames);
 }
+void Display_manager::add(const std::vector<sf::Sprite>& sprites, int frames) {
+    for (const auto& sprite : sprites) {
+        items.emplace_back(sprite, frames);
+    }
+}
+
 void Display_manager::update() {
     if (!window) return;
     for (auto it = items.begin(); it != items.end();) {

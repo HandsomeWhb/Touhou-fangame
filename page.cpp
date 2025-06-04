@@ -125,7 +125,7 @@ void Page::show_page() {
 	}
 }
 
-Sprite use_game_font(RenderWindow* window_ptr, char a, float x, float y, float size) {
+Sprite use_game_font(char a, float x, float y, float size) {
 	switch (a)
 	{
 	case '0': return  Image_manager::custom_image("ascii.png", x, y, x + size, y + size, 0, 48, 16, 64); break;
@@ -196,6 +196,7 @@ Sprite use_game_font(RenderWindow* window_ptr, char a, float x, float y, float s
 	case '%': return  Image_manager::custom_image("ascii.png", x, y, x + size, y + size, 80, 32, 96, 48); break;
 	case '+': return  Image_manager::custom_image("front.png", x, y - 0.015, x + size, y + size, 64, 80, 80, 96); break;
 	case '-': return  Image_manager::custom_image("front.png", x, y - 0.015, x + size, y + size, 80, 80, 96, 96); break;
+	case '!': return  Image_manager::custom_image("ascii.png", x, y, x + size, y + size, 16, 32, 32, 48); break;
 	
 	default:return  Image_manager::custom_image("ascii.png", x, y, x + size, y + size, 240, 48, 256, 64); break;
 	}
@@ -207,8 +208,18 @@ void show_game_font(RenderWindow* window_ptr, string a, float x, float y, float 
 	}
 	for (int i = 0; i < a.length(); ++i) {
 		if (a[i] != ' ') {
-			(*window_ptr).draw(use_game_font(window_ptr, a[i], x + i * size * space_factor, y, size));
+			(*window_ptr).draw(use_game_font( a[i], x + i * size * space_factor, y, size));
 		}
 		
 	}
+}
+vector<Sprite> get_game_font_sprites( const string& a, float x, float y, float size,float space_factor) {
+	vector<Sprite> result;
+	for (int i = 0; i < a.length(); ++i) {
+		if (a[i] != ' ') {
+			Sprite sprite = use_game_font(a[i], x + i * size * space_factor, y, size);
+			result.push_back(sprite);
+		}
+	}
+	return result;
 }

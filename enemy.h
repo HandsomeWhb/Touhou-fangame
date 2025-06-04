@@ -36,6 +36,7 @@ public:
     Enemy();
     Enemy(float hp, float dot_radius, float begin_position_x, float begin_position_y,   Falling_object_manager* falling_object_manager_ptr);
     virtual void move();
+    virtual bool is_boss() { return false; };
     virtual void shoot(Danmaku_manager* danmaku_manager_ptr);
     virtual void update(Danmaku_manager* danmaku_manager_ptr);
     Animation* search_animation_ptr(std::string name);
@@ -134,54 +135,8 @@ public:
         // 递归尝试下一个阶段
         return next_action();
     }
-    void on_death() override {
-        if (is_spell_card) {
-            if (able_get_bonus) {
-                if (auto spell = std::dynamic_pointer_cast<Spell_card>(current_action_ptr)) {
-                    get_bonus(spell->bonus);
-                }
-            }
-            else {
-                bonus_failed();
-            }
-        }
-        
-        is_death = !(next_action());
-        if (!is_death) {
-            hp = current_action_ptr->hp;
-        }
-    }//添加掉落物
-    void update(Danmaku_manager* danmaku_manager_ptr) override{
-        if (!is_init) {
-            next_action();
-            this->hp = current_action_ptr->hp;
-            is_init = true;
-        }
-        if (!is_adjust) {
-            show_boss_info();
-            if (hp <= 0) {
-                on_death();
-            }
-            else if (current_frame >= current_action_ptr->phase_time) {
-                able_get_bonus = false;
-                on_death();
-            }
-            move();
-            shoot(danmaku_manager_ptr);
-            current_frame++;
-        }
-        else {
-            float angle = -std::atan2(( default_x - begin_position_x), (default_y - begin_position_y)) * 180 / pi;
-            dx = -6 * std::sin(pi * (angle) / 180) * Image_manager::Screen_height / 1600;
-            dy = 6 * std::cos(pi * (angle) / 180) * Image_manager::Screen_height / 1600;
-            move();
-            if (std::abs(begin_position_x - default_x) <= 10 && std::abs(begin_position_y - default_y) <= 10){
-                dx = 0;
-                dy = 0;
-                is_adjust = false;
-            }
-        }
-    }
+    void on_death() override;
+    void update(Danmaku_manager* danmaku_manager_ptr) override;
     void move()override {
         for (auto it = current_action_ptr->motion.move_plan.begin(); it != current_action_ptr->motion.move_plan.end(); it++) {
             if (is_adjust) {
@@ -211,9 +166,9 @@ public:
 
     }
     void shoot(Danmaku_manager* danmaku_manager_ptr)override;
-    void show_boss_info() {};//底部展示enemy,顶部展示生命数量,阶段血条,符卡名称,可获得bonus,剩余秒数
-    void get_bonus(int bonus) {};
-    void bonus_failed() {};
+    void get_bonus(int bonus);
+    void bonus_failed();
+    bool is_boss()override { return true; };
 };
 class Mokou :public Boss {
 public:
@@ -254,6 +209,14 @@ public:
     void is_collision_player(Danmaku_manager* danmaku_manager_ptr);
     void hurt_all_enemy(float damage);
     void show_all_enemy(sf::RenderWindow* window_ptr, Danmaku_manager* danmaku_manager_ptr);
+    Boss* get_current_boss() const {
+        for (auto enemy : enemies) {
+            if (enemy->is_boss()) {
+                return dynamic_cast<Boss*>(enemy);
+            }
+        }
+        return nullptr;
+    }
     Enemy* search_close_enemy(float x,float y);
 };
 
@@ -293,10 +256,9 @@ public:
 
 Enemy* create_enemy(const std::string& name, float hp, float x, float y, Falling_object_manager* falling_object_manager);
 Boss* creat_boss(const std::string& type, const std::string& name, const std::string& bgm, float begin_x, float begin_y, Falling_object_manager* falling_object_manager, float default_x=-1, float default_y=-1);
-void load_enemies_from_file_v1(const std::string& filename, Enemy_manager* enemy_manager_ptr,  Falling_object_manager* falling_object_manager);
 bool compare_by_frame_count(const Appearance_list& a, const Appearance_list& b);
 bool compare_by_trigger_count(const Danmaku_command& a, const Danmaku_command& b);
 void creat_wave(Enemy_manager* enemy_manager_ptr, Falling_object_manager* falling_object_manager, int num, int appear_frame, int frame_interval, Enemy_data enemy_data,
     const std::vector<Danmaku_data>& danmaku_list, std::string move);
 void load_enemies_from_file(std::string filename, Enemy_manager* enemy_manager_ptr, Falling_object_manager* falling_object_manager);
-void load_all_enemies(Game_bridge* game_bridge_ptr, std::string old_path_name, std::string new_path_name);
+void load_all_enemies(Game_bridge* game_bridge_ptr,  std::string new_path_name);

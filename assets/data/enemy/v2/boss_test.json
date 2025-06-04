@@ -1,0 +1,208 @@
+[
+  {
+    "boss": true,
+    "name": "Huziwara no Mokou",
+    "type": "Mokou",
+    "bgm": "th08_18.mp3",
+    "appear_frame": 300,
+    "begin_position_x": 960,
+    "begin_position_y": 10,
+    "default_position_x": 960,
+    "default_position_y": 200,
+    "stages": [
+      {
+        "non_spell": [
+          {
+            "bg_name": "real_moon",
+            "hp": 500,
+            "loop_time": 1800,
+            "stage_time": 3600,
+            "move": "boss_01.json",
+            "fire_plan": [
+              {
+                "danmaku_start_frame": 15,
+                "shoot_logic": "little_boss02_1.json",
+                "type": "Ellipse",
+                "global_speed": 10.0,
+                "is_rebound": true,
+                "color": {
+                  "r": 140,
+                  "g": 160,
+                  "b": 255,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 45,
+                "shoot_logic": "laser_left.json",
+                "type": "Laser",
+                "global_speed": 0.0,
+                "color": {
+                  "r": 140,
+                  "g": 160,
+                  "b": 255,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 45,
+                "shoot_logic": "laser_right.json",
+                "type": "Laser",
+                "global_speed": 0.0,
+                "color": {
+                  "r": 140,
+                  "g": 160,
+                  "b": 255,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 185,
+                "shoot_logic": "laser_left.json",
+                "type": "Laser",
+                "global_speed": 0.0,
+                "color": {
+                  "r": 140,
+                  "g": 160,
+                  "b": 255,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 185,
+                "shoot_logic": "laser_right.json",
+                "type": "Laser",
+                "global_speed": 0.0,
+                "color": {
+                  "r": 140,
+                  "g": 160,
+                  "b": 255,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 305,
+                "shoot_logic": "laser_left.json",
+                "type": "Laser",
+                "global_speed": 0.0,
+                "color": {
+                  "r": 140,
+                  "g": 160,
+                  "b": 255,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 305,
+                "shoot_logic": "laser_right.json",
+                "type": "Laser",
+                "global_speed": 0.0,
+                "color": {
+                  "r": 140,
+                  "g": 160,
+                  "b": 255,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 1000,
+                "shoot_logic": "little_boss02_2.json",
+                "type": "Circle"
+              },
+              {
+                "danmaku_start_frame": 1000,
+                "shoot_logic": "little_boss02_3.json",
+                "global_speed": 4.0,
+                "type": "Circle"
+              }
+            ],
+            "rewards": {
+              "power": 8,
+              "big_power": 0,
+              "bomb_up": 0,
+              "health_up": 0,
+              "blue_point": 15
+            }
+          }
+        ],
+        "spell": [
+          {
+            "name": "Firestorm Sign: Scarlet Rain",
+            "bg_name": "bamboo_forest",
+            "hp": 1000,
+            "loop_time": 600,
+            "stage_time": 3000,
+            "spell_card_bonus": 2000000,
+            "move": "boss_01.json",
+            "fire_plan": [
+              {
+                "danmaku_start_frame": 1,
+                "shoot_logic": "random01.json",
+                "type": "Star",
+                "remove_on_death": "true",
+                "color": {
+                  "r": 255,
+                  "g": 240,
+                  "b": 100,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 400,
+                "shoot_logic": "bird_aim.json",
+                "type": "Circle",
+                "remove_on_death": "true",
+                "danmaku_offset_angle": 0,
+                "offset_position_x": 0,
+                "offset_position_y": 100,
+                "color": {
+                  "r": 255,
+                  "g": 69,
+                  "b": 0,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 400,
+                "shoot_logic": "bird_aim.json",
+                "type": "Circle",
+                "remove_on_death": "true",
+                "danmaku_offset_angle": 30,
+                "offset_position_x": -50,
+                "offset_position_y": 85,
+                "color": {
+                  "r": 255,
+                  "g": 69,
+                  "b": 0,
+                  "a": 255
+                }
+              },
+              {
+                "danmaku_start_frame": 400,
+                "shoot_logic": "bird_aim.json",
+                "type": "Circle",
+                "remove_on_death": "true",
+                "danmaku_offset_angle": -30,
+                "offset_position_x": 50,
+                "offset_position_y": 85,
+                "color": {
+                  "r": 255,
+                  "g": 69,
+                  "b": 0,
+                  "a": 255
+                }
+              }
+            ],
+            "rewards": {
+              "power": 8,
+              "big_power": 0,
+              "bomb_up": 0,
+              "health_up": 0,
+              "blue_point": 30
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

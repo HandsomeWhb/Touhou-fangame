@@ -423,6 +423,7 @@ void show_game_info(RenderWindow* window_ptr) {
 	}
 	window_ptr->draw(Image_manager::custom_image("front.png", 0, 0, start_x, 1, 0, 226, 31, 256));
 	window_ptr->draw(Image_manager::custom_image("front.png", 0.625, 0, 1, 1, 0, 226, 31, 256));
+	window_ptr->draw(Image_manager::custom_image("front.png", start_x, 0.97, 0.625, 1, 0, 226, 31, 256));
 	test.once_page();
 	window_ptr->draw(Image_manager::custom_image("power_strip.png", 0.755, 0.230, 0.755 + 0.20 * game_bridge.player_ptr->power / 128, 0.264));
 	show_game_font(window_ptr, game_bridge.player_ptr->power >= 128 ? "MAX" : to_string(game_bridge.player_ptr->power), 0.755, 0.233, 0.025);
@@ -434,6 +435,157 @@ void show_game_info(RenderWindow* window_ptr) {
 	show_game_font(window_ptr, string(10 - to_string(game_bridge.player_ptr->highscore).length(), '0') + to_string(game_bridge.player_ptr->highscore), 0.755, 0.034, 0.03);
 	show_game_font(window_ptr, "0/2500", 0.755, 0.340, 0.025);
 	show_game_font(window_ptr, to_string(int(get_fps())) + "fps", 0.85, 0.93, 0.03);
+}
+struct hp_bar {
+	float start_x;
+	float end_x;
+	float total_hp;
+	float current_hp;
+	string color;
+};
+Color darker(const Color& color, float factor) {
+	return Color(
+		static_cast<uint8_t>(color.r * factor),
+		static_cast<uint8_t>(color.g * factor),
+		static_cast<uint8_t>(color.b * factor),
+		color.a
+	);
+}
+void show_boss_info(Boss* boss_ptr, RenderWindow* window_ptr) {
+	static Boss_phase* boss_phase_ptr=nullptr;
+	static string boss_name;
+	static int total_spell_card_num;
+	static int total_none_spell_num;
+	static vector<hp_bar> hp_bars;
+	if (boss_phase_ptr != boss_ptr->current_phase_ptr.get()) {
+		boss_phase_ptr = boss_ptr->current_phase_ptr.get();
+		boss_name = boss_ptr->name;
+		total_spell_card_num = boss_phase_ptr->spell_card_ptrs.size();
+		total_none_spell_num = boss_phase_ptr->none_spell_ptrs.size();
+		hp_bars.clear();
+
+		bool has_spell = total_spell_card_num > 0;
+		bool has_none = total_none_spell_num > 0;
+
+		float spell_area_len = 0.f;
+		float none_area_len = 0.f;
+		if (has_spell && has_none) {
+			spell_area_len = 0.25f;
+			none_area_len = 0.75f;
+		}
+		else if (has_spell && !has_none) {
+			spell_area_len = 1.0f;
+		}
+		else if (!has_spell && has_none) {
+			none_area_len = 1.0f;
+		}
+
+		float spell_spacing = 0.01f;
+		float none_spacing = 0.01f;
+
+		float spell_total_spacing = (total_spell_card_num > 1) ? spell_spacing * (total_spell_card_num - 1) : 0.f;
+		float none_total_spacing = (total_none_spell_num > 1) ? none_spacing * (total_none_spell_num - 1) : 0.f;
+
+		float spell_bar_len = (total_spell_card_num > 0) ? (spell_area_len - spell_total_spacing) / total_spell_card_num : 0.f;
+		float none_bar_len = (total_none_spell_num > 0) ? (none_area_len - none_total_spacing) / total_none_spell_num : 0.f;
+
+		float cur_x = 0.f;
+
+		// 符卡（逆序）
+		for (int i = total_spell_card_num - 1; i >= 0; --i) {
+			const auto& spell = boss_phase_ptr->spell_card_ptrs[i];
+			hp_bar bar;
+			bar.start_x = cur_x;
+			bar.end_x = cur_x + spell_bar_len;
+			bar.total_hp = spell->hp;
+			bar.current_hp = spell->hp;
+			bar.color = "red";
+			hp_bars.push_back(bar);
+			cur_x = bar.end_x + spell_spacing;
+		}
+
+		// 非符卡起始位置
+		if (has_spell && has_none)
+			cur_x = 0.26f;
+		else if (!has_spell && has_none)
+			cur_x = 0.f;
+
+		// 非符卡（逆序）
+		for (int i = total_none_spell_num - 1; i >= 0; --i) {
+			const auto& none = boss_phase_ptr->none_spell_ptrs[i];
+			hp_bar bar;
+			bar.start_x = cur_x;
+			bar.end_x = cur_x + none_bar_len;
+			bar.total_hp = none->hp;
+			bar.current_hp = none->hp;
+			bar.color = "white";
+			hp_bars.push_back(bar);
+			cur_x = bar.end_x + none_spacing;
+		}
+		
+	}
+	int index = total_spell_card_num+total_none_spell_num-boss_ptr->spell_card_index - boss_ptr->none_spell_index;
+	if (index >= 0 && index < hp_bars.size()) {
+		hp_bars[index].current_hp = boss_ptr->hp;
+		if (index + 1 < hp_bars.size()) {
+			hp_bars[index+1].current_hp = 0;
+		}
+	}
+
+	int boss_health_num = boss_ptr->boss_phase_ptrs.size() - boss_ptr->boss_phase_index - 1;
+	int time = (boss_ptr->current_action_ptr->phase_time - boss_ptr->current_frame) / 60;
+	
+	float start_x = 0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width;
+	float screen_width = 0.625 - start_x;
+	// 传入两个血条绘制的整体范围坐标（屏幕像素）
+	Vector2f bar_start_pos((start_x + screen_width * 0.03) * Image_manager::Screen_width, 0.04 * Image_manager::Screen_height);
+	Vector2f bar_end_pos((start_x + screen_width * 0.87) * Image_manager::Screen_width, 0.05 * Image_manager::Screen_height);
+	float bar_height = bar_end_pos.y - bar_start_pos.y; 
+	show_game_font(window_ptr, to_string(time > 99 ? 99 : time), 0.625 - 0.055, 0.03, 0.03);
+	show_game_font(window_ptr, string(boss_health_num+1, '+'), start_x + 0.015, 0.02, 0.015);
+	show_game_font(window_ptr, boss_name, start_x + 0.015, 0.055, 0.015);
+	for (const auto& bar : hp_bars) {
+		float segment_start_x = bar_start_pos.x + (bar.start_x * (bar_end_pos.x - bar_start_pos.x));
+		float segment_end_x = bar_start_pos.x + (bar.end_x * (bar_end_pos.x - bar_start_pos.x));
+		float segment_width = segment_end_x - segment_start_x;
+
+		float cur_width = segment_width * (bar.current_hp / bar.total_hp);
+
+		Color base_color;
+		if (bar.color == "red") {
+			base_color = Color(0xec, 0x80, 0x71);
+		}
+		else if (bar.color == "white") {
+			base_color = Color(0xe6, 0xe0, 0xeb);
+		}
+		else {
+			base_color = Color::Red; // 默认回退颜色
+		}
+		Color edge_color = darker(base_color, 0.75f); // 边缘暗一点
+
+		sf::VertexArray quad(sf::PrimitiveType::Triangles, 6);
+
+		quad[0].position = Vector2f(segment_start_x, bar_start_pos.y);                     // 左上
+		quad[1].position = Vector2f(segment_start_x + cur_width, bar_start_pos.y);         // 右上
+		quad[2].position = Vector2f(segment_start_x, bar_start_pos.y + bar_height);        // 左下
+
+		quad[3].position = Vector2f(segment_start_x + cur_width, bar_start_pos.y);         // 右上
+		quad[4].position = Vector2f(segment_start_x + cur_width, bar_start_pos.y + bar_height); // 右下
+		quad[5].position = Vector2f(segment_start_x, bar_start_pos.y + bar_height);        // 左下
+
+		quad[0].color = edge_color;
+		quad[1].color = base_color;
+		quad[2].color = edge_color;
+
+		quad[3].color = base_color;
+		quad[4].color = base_color;
+		quad[5].color = edge_color;
+
+		window_ptr->draw(quad);
+
+	}
+
+	
 }
 Player* create_role(string role){
 	if (role == "Reimu") {
@@ -469,7 +621,9 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 	game_bridge.player_ptr = player_ptr;
 	bool is_paused = false;
 	string bgm = default_bgm;
-	string back_ground = "bamboo_forest";
+	string temp_bgm = bgm;
+	string default_back_ground = "bamboo_forest";
+	string back_ground = default_back_ground;
 	//游戏数据,以后应实现传入难度选择对应文件
 	string save_file = "normal_score.dat";
 	
@@ -478,7 +632,7 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 	falling_object_manager = Falling_object_manager(player_ptr, start_x * Screen_width, 0 * Screen_height, 0.625 * Screen_width,1 * Screen_height);
 
 	//敌人数据,以后应实现传入关卡自动加载
-	load_all_enemies(&game_bridge, "assets/data/enemy/v1/", "assets/data/enemy/v2/");
+	load_all_enemies(&game_bridge,  "assets/data/enemy/v2/");
 
 	Music_manager::play_music(bgm);
 	while (window_ptr->isOpen()) {
@@ -504,18 +658,34 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 				}
 			}
 		}
+		Boss* boss = enemy_manager.get_current_boss();
+		if (boss) {
+			if (player_ptr->is_using_bomb ||player_ptr->is_death) {
+				boss->able_get_bonus = false;
+			}
+			if (boss->bgm != bgm) {
+				Music_manager::stop_music(bgm);
+				bgm = boss->bgm;
+				Music_manager::play_music(bgm);
+			}
+			show_boss_info(boss, window_ptr);
+			back_ground = boss->current_action_ptr->back_ground_name;
+		}
+		else {
+			if (bgm != default_bgm) {
+				Music_manager::stop_music(bgm);
+				Music_manager::play_music(default_bgm);
+				bgm = default_bgm;
+			}
+			back_ground = default_back_ground;
+		}
 		if (!is_paused) {
-			if (enemy_manager.frame_count % 300 == 150) {
-				back_ground = "real_moon";
-			}
-			if (enemy_manager.frame_count % 300 == 0) {
-				back_ground = "bamboo_forest";
-			}
 			player_ptr->update(window_ptr);
 			danmaku_manager.update_all_danmaku(player_ptr, &enemy_manager,  window_ptr, false);
 			enemy_manager.update(window_ptr, &danmaku_manager, player_ptr->damage);
 			falling_object_manager.update(window_ptr);
 			Display_manager::update();
+			
 		}
 		else {
 			pause_page(window_ptr,  is_paused,role,bgm);

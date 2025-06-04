@@ -45,6 +45,7 @@ public:
 
     static void init(sf::RenderWindow* win);
     static void add(const sf::Sprite& sprite, int frames);
+    static void add(const std::vector<sf::Sprite>& sprites, int frames);
     static void update();
     static void show();
 
