@@ -32,7 +32,6 @@ void Page::debug(string a) {
 	}
 };
 void Page::once_page() {
-	//适合在游戏内展示固定ui使用,不提供清屏展示功能,自己实现
 	debug("开始展示页面...");
 	debug("开始渲染图片...");
 	for (auto i = images.begin(); i != images.end(); i++) {
@@ -201,8 +200,7 @@ Sprite use_game_font(char a, float x, float y, float size) {
 	default:return  Image_manager::custom_image("ascii.png", x, y, x + size, y + size, 240, 48, 256, 64); break;
 	}
 }
-void show_game_font(RenderWindow* window_ptr, string a, float x, float y, float size) {
-	float space_factor = 0.75;
+void show_game_font(RenderWindow* window_ptr, string a, float x, float y, float size,float space_factor) {
 	if (a[0] == '+' || a[0] == '-') {
 		space_factor = 1;
 	}

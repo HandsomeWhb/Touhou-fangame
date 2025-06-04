@@ -258,7 +258,6 @@ Danmaku::Danmaku(const Danmaku& other)
 	hurt_ratio(other.hurt_ratio),
 	is_rebound(other.is_rebound)
 {
-
 }
 
 Danmaku::Danmaku(Move_api* move_api_ptr, float speed, float position_x, float position_y, float angle,
@@ -349,9 +348,6 @@ void split_move::move(Danmaku* danmaku_ptr, float player_x, float player_y) {
 		danmaku_ptr->dy = 0;
 	}
 }
-
-
-
 
 
 void line_move::move(Danmaku* danmaku_ptr, float player_x, float player_y) {
@@ -462,9 +458,6 @@ void circle_move::move(Danmaku* danmaku_ptr, float enemy_x, float enemy_y) {
 	danmaku_ptr->sprite.move({ danmaku_ptr->dx,danmaku_ptr->dy });
 	danmaku_ptr->exist_time -= 1;
 }
-
-
-
 
 
 Circle::Circle(Move_api* move_api_ptr, sf::Color color, float speed, float position_x, float position_y, float angle, float hurt_ratio , int exist_time,

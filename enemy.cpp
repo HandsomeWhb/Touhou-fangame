@@ -255,7 +255,8 @@ int digit_count(int n) {
     return count;
 }
 void Boss::get_bonus(int bonus) {
-    int real_bonus = bonus * ((current_action_ptr->phase_time - current_frame) * 0.8 / current_action_ptr->phase_time + 0.2) / 10;
+    float ratio = (current_action_ptr->phase_time - current_frame*1.5>0? current_action_ptr->phase_time - current_frame * 1.5:0) * 0.5 / current_action_ptr->phase_time + 0.5;
+    int real_bonus = bonus * ratio / 10;
     game_bridge.player_ptr->add_score(real_bonus);
     int num=digit_count(real_bonus * 10);
     float num_size = 0.05;
@@ -290,6 +291,7 @@ void Boss::shoot(Danmaku_manager* danmaku_manager_ptr) {
         current_action_ptr->motion.fire_plan_ptr++;
     }
     if (current_action_ptr->motion.fire_plan_ptr == current_action_ptr->motion.fire_plan.end()) {
+        is_casting = true;
         current_action_ptr->motion.fire_plan_ptr = current_action_ptr->motion.fire_plan.begin();
     }
 }
@@ -323,6 +325,7 @@ void Boss::on_death() {
             bonus_failed();
         }
     }
+    Music_manager::play_music("se_tan00.wav",80);
     is_death = !(next_action());
     if (!is_death) {
         hp = current_action_ptr->hp;
@@ -333,6 +336,13 @@ void Boss::update(Danmaku_manager* danmaku_manager_ptr)  {
         next_action();
         this->hp = current_action_ptr->hp;
         is_init = true;
+    }
+    if (is_casting) {
+        cast_counter = 0;
+        is_casting = false;
+    }
+    if ((current_action_ptr->phase_time - current_frame) <= 340 && (current_action_ptr->phase_time - current_frame) >= 20&& (current_action_ptr->phase_time - current_frame) % 60 == 15) {
+        Music_manager::play_music("se_timeout.wav",80);
     }
     if (!is_adjust) {
         if (hp <= 0) {

@@ -79,15 +79,19 @@ public:
     std::string name;
     std::string bgm;
     int current_frame;
+    int cast_counter;
+    bool is_casting = false;
     bool is_spell_card;
     bool able_get_bonus;
     float default_x;
     float default_y;
     bool is_adjust = false;
     bool is_init = false;
+    bool is_using_spell_card = false;
     std::vector<std::shared_ptr<Boss_phase>> boss_phase_ptrs;
     std::shared_ptr<Boss_phase> current_phase_ptr=nullptr;
     std::shared_ptr<Boss_action>current_action_ptr = nullptr;
+    sf::Sprite spell_card_sprite = sf::Sprite(texture);
     int boss_phase_index = 0;
     int spell_card_index = 0;
     int none_spell_index = 0;
@@ -105,6 +109,7 @@ public:
         current_frame = 0;
         able_get_bonus = true;
         is_adjust = true;
+        is_casting = true;
         if (boss_phase_index >= boss_phase_ptrs.size()) {
             return false; // 所有阶段遍历完了
         }
@@ -121,6 +126,7 @@ public:
 
         // 然后处理符卡
         if (spell_card_index < current_phase_ptr->spell_card_ptrs.size()) {
+            is_using_spell_card = true;
             current_action_ptr = current_phase_ptr->spell_card_ptrs[spell_card_index];
             spell_card_index++;
             is_spell_card = true;
@@ -151,14 +157,20 @@ public:
         circle_box.move(dx, dy);
         begin_position_x += dx;
         begin_position_y += dy;
-        if (dx > 0.1) {
-            animation_ptr = search_animation_ptr("right");
+        if (cast_counter>=60||is_adjust) {
+            if (dx > 0.1) {
+                animation_ptr = search_animation_ptr("right");
+            }
+            if (dx <= 0.1 && dx >= -0.1) {
+                animation_ptr = search_animation_ptr("stand");
+            }
+            if (dx < -0.1) {
+                animation_ptr = search_animation_ptr("left");
+            }
         }
-        if (dx <= 0.1 && dx >= -0.1) {
-            animation_ptr = search_animation_ptr("stand");
-        }
-        if (dx < -0.1) {
-            animation_ptr = search_animation_ptr("left");
+        else {
+            animation_ptr = search_animation_ptr("use_spell_card");
+            cast_counter++;
         }
         animation_ptr->update();
         sprite = sf::Sprite(animation_ptr->get_current_frame());
@@ -178,6 +190,9 @@ public:
         load_img("stand", 20, "stg8enm2.png", 4, 64 * 3, 81 * 3, 0,  0,  64, 81, false);
         load_img("left",  20, "stg8enm2.png", 3, 64 * 3, 81 * 3, 64, 81, 64, 81, false);
         load_img("right", 20, "stg8enm2.png", 3, 64 * 3, 81 * 3, 64, 81, 64, 81, true);
+        load_img("use_spell_card", 15, "stg8enm2.png", 4, 64 * 3, 81 * 3, 0, 162, 64, 81, false);
+        float start_x = 0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width;
+        spell_card_sprite = Image_manager::custom_image("face_st08a.png", 0.625-(0.625-start_x)*0.6, -0.3, 0.625, 0.55, 0, 0, 300, 512);
     }
 };
 

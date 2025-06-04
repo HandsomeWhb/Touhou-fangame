@@ -3,8 +3,6 @@
 using namespace sf;
 using namespace std;
 using  namespace filesystem;
-
-
 vector<Move_action*> Move_action_manager::move_action_list_ptr;
 string Move_action_manager::file_path;
 vector<Danmaku_action*> Danmaku_action_manager::danmaku_action_list_ptr;
@@ -156,12 +154,9 @@ void Danmaku_action_manager::load_all_danmaku_action() {
             add_danmaku_action(action_ptr);
             continue;
         }
-
         // 分支2：普通弹幕加载
         Danmaku_action* danmaku_action_temp_ptr = new Danmaku_action();
         danmaku_action_temp_ptr->file_name = filename;
-        
-        // 先尝试读取骨干相关字段，兼容旧格式
         float backbone_x = 0.0f;
         float backbone_y = 0.0f;
         bool use_backbone_rotation = false;
@@ -175,8 +170,6 @@ void Danmaku_action_manager::load_all_danmaku_action() {
         if (config.contains("use_backbone_rotation")) {
             use_backbone_rotation = config.value("use_backbone_rotation", false);
         }
-
-        // 弹幕列表的提取，兼容旧格式(根节点数组)或新格式(包含danmakus字段)
         nlohmann::json danmaku_list;
         if (config.is_array()) {
             danmaku_list = config;
@@ -185,7 +178,6 @@ void Danmaku_action_manager::load_all_danmaku_action() {
             danmaku_list = config["danmakus"];
         }
         else {
-            // 这里可以打印错误，或者跳过当前文件
             cout << "弹幕文件格式异常，未找到弹幕数组" << endl;
             continue;
         }
@@ -219,7 +211,6 @@ void Danmaku_action_manager::load_all_danmaku_action() {
             temp->backbone_x = backbone_x;
             temp->backbone_y = backbone_y;
             temp->use_backbone_rotation = use_backbone_rotation;
-            // 调用时传入骨干参数，兼容旧格式骨干默认0，旋转默认false
             danmaku_action_temp_ptr->add_danmaku_list(temp);
         }
 
@@ -229,7 +220,6 @@ void Danmaku_action_manager::load_all_danmaku_action() {
     cout << "共加载 " << fileNames.size() << " 个文件。" << endl;
     cout << "danmaku素材加载完毕" << endl;
 }
-
 
 Danmaku_action::Danmaku_action() {}
 void Danmaku_action::add_danmaku_list(int trigger_frame, std::string type, sf::Color color, float angle, float speed, float position_x, 

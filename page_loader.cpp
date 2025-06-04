@@ -5,7 +5,8 @@ using namespace std;
 class Game_bridge;
 map<string, function<void(RenderWindow*, bool,int)>> background_map = {
 	{"bamboo_forest", back_ground_one},
-	{"real_moon",back_ground_two}
+	{"real_moon",back_ground_two},
+	{"mokou_bg",mokou_bg}
 };
 void show_background(const string& name, RenderWindow* window_ptr, bool is_paused,int interval) {
 	static int counter = 0;
@@ -84,7 +85,7 @@ void genshin_start(RenderWindow* window_ptr) {
 	}
 	return;
 }
-void pause_page(RenderWindow* window_ptr,  bool& is_paused,string role,string bgm) {
+void pause_page(RenderWindow* window_ptr,  bool& is_paused,string role,string bgm,string default_bgm) {
 	static int option = 0;
 	sf::RectangleShape dark_overlay(sf::Vector2f(window_ptr->getSize().x, window_ptr->getSize().y));
 	dark_overlay.setFillColor(sf::Color(0, 0, 0, 128));
@@ -124,7 +125,7 @@ void pause_page(RenderWindow* window_ptr,  bool& is_paused,string role,string bg
 			switch (option) {
 			case 0: is_paused = false; option = 0; Music_manager::play_music(bgm);  break;
 			case 1: Music_manager::stop_music(bgm); show_background("clear", nullptr, false); option = 0; main_menu.show_page(); break;
-			case 2: Music_manager::stop_music(bgm); show_background("clear", nullptr, false); option = 0; game_start(window_ptr, role,bgm);  break;
+			case 2: Music_manager::stop_music(bgm); show_background("clear", nullptr, false); option = 0; game_start(window_ptr, role, default_bgm);  break;
 			}
 			key_enter_ready = false;
 		}
@@ -405,8 +406,43 @@ void back_ground_two(RenderWindow* window_ptr, bool is_paused, int alpha) {
 		current_frame++;
 	}
 }
-void show_game_info(RenderWindow* window_ptr) {
+void mokou_bg(RenderWindow* window_ptr, bool is_paused, int alpha){
+	static bool initialized = false;
+	static Texture floor_texture;
+	static Texture circle_texture;
+	static int current_frame = 0;
+	static float offset = 0;
+	float rad_speed = 1;
+	float start_x = 0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width;
+	if (!initialized) {
+		initialized = true;
+		current_frame = 0;
+		offset = 0;
+		floor_texture.loadFromFile(Image_manager::image_folder + "eff08.png");
+		floor_texture.setRepeated(true);
+		circle_texture.loadFromFile(Image_manager::image_folder + "eff08b.png");
+		circle_texture.setRepeated(true);
+	}
+	if (alpha <= 5) {
+		current_frame = 0;
+	}
+	Sprite sprite = Image_manager::custom_image(floor_texture, start_x, 0, 0.625, 1, 0, 0, 383, 447);
+	sprite.setColor({ 255, 255, 255, (uint8_t)alpha });
+	window_ptr->draw(sprite);
+	sprite = Image_manager::custom_image(circle_texture, start_x - 0.25 * Image_manager::Screen_height / Image_manager::Screen_width,
+		-0.15, 0.625 + 0.25 * Image_manager::Screen_height / Image_manager::Screen_width, 1.15);
+	sprite.setColor({ 255, 255, 255, (uint8_t)(alpha*0.7) });
+	sprite.setOrigin({ 256, 256 });
+	sprite.setPosition({ (float)(0.625 +start_x) / 2 * Image_manager::Screen_width,(float)Image_manager::Screen_height/2 });
+	sprite.setRotation(degrees(current_frame*rad_speed));
+	window_ptr->draw(sprite);
+	if (!is_paused) {
+		current_frame++;
+	}
+}
+void show_game_info(RenderWindow* window_ptr,Boss* boss_ptr) {
 	static Page test(window_ptr);
+	static Sprite boss_position = Image_manager::custom_image("ascii.png", 0, 0, 0.09 * Image_manager::Screen_height / Image_manager::Screen_width, 0.03, 0, 240, 48, 256);
 	static bool is_init = false;
 	static float start_x;
 	if (!is_init) {
@@ -435,6 +471,11 @@ void show_game_info(RenderWindow* window_ptr) {
 	show_game_font(window_ptr, string(10 - to_string(game_bridge.player_ptr->highscore).length(), '0') + to_string(game_bridge.player_ptr->highscore), 0.755, 0.034, 0.03);
 	show_game_font(window_ptr, "0/2500", 0.755, 0.340, 0.025);
 	show_game_font(window_ptr, to_string(int(get_fps())) + "fps", 0.85, 0.93, 0.03);
+	if (boss_ptr) {
+		boss_position.setOrigin({ 24,16 });
+		boss_position.setPosition({ boss_ptr->begin_position_x,(float)Image_manager::Screen_height });
+		window_ptr->draw(boss_position);
+	}
 }
 struct hp_bar {
 	float start_x;
@@ -451,7 +492,31 @@ Color darker(const Color& color, float factor) {
 		color.a
 	);
 }
-void show_boss_info(Boss* boss_ptr, RenderWindow* window_ptr) {
+void show_boss_spell_card(Boss* boss_ptr, RenderWindow* window_ptr,bool is_paused) {
+	static int counter = 120;
+	if (boss_ptr->is_using_spell_card) {
+		boss_ptr->is_using_spell_card = false;
+		counter = 0;
+	}
+	if (counter < 120) {
+		
+		if (counter < 80) {
+			boss_ptr->spell_card_sprite.setColor(sf::Color(255, 255, 255, counter * 3));
+		}
+		else {
+			boss_ptr->spell_card_sprite.setColor(sf::Color(255, 255, 255, 560 - counter * 4));
+		}
+		window_ptr->draw(boss_ptr->spell_card_sprite);
+		if (!is_paused) {
+			boss_ptr->spell_card_sprite.move({ 0,7 });
+			counter += 1;
+		}
+		if (counter >= 120) {
+			boss_ptr->spell_card_sprite.move({ 0,-940 });
+		}
+	}
+}
+void show_boss_info(Boss* boss_ptr, RenderWindow* window_ptr,bool is_paused) {
 	static Boss_phase* boss_phase_ptr=nullptr;
 	static string boss_name;
 	static int total_spell_card_num;
@@ -541,9 +606,18 @@ void show_boss_info(Boss* boss_ptr, RenderWindow* window_ptr) {
 	Vector2f bar_start_pos((start_x + screen_width * 0.03) * Image_manager::Screen_width, 0.04 * Image_manager::Screen_height);
 	Vector2f bar_end_pos((start_x + screen_width * 0.87) * Image_manager::Screen_width, 0.05 * Image_manager::Screen_height);
 	float bar_height = bar_end_pos.y - bar_start_pos.y; 
+	if (boss_ptr->is_spell_card) {
+		float ratio = (boss_ptr->current_action_ptr->phase_time - boss_ptr->current_frame * 1.5 > 0 ? boss_ptr->current_action_ptr->phase_time 
+			- boss_ptr->current_frame * 1.5 : 0) * 0.5 / boss_ptr->current_action_ptr->phase_time + 0.5;
+		int real_bonus = dynamic_cast<Spell_card*>(boss_ptr->current_action_ptr.get())->bonus * ratio / 10;
+		string message = dynamic_cast<Spell_card*>(boss_ptr->current_action_ptr.get())->name;
+		show_game_font(window_ptr, message, 0.625 - 0.185-message.length()*0.016*0.6, 0.020, 0.016,0.6);
+		show_game_font(window_ptr, to_string(real_bonus*10), 0.625 - 0.165, 0.020, 0.017);
+	}
 	show_game_font(window_ptr, to_string(time > 99 ? 99 : time), 0.625 - 0.055, 0.03, 0.03);
-	show_game_font(window_ptr, string(boss_health_num+1, '+'), start_x + 0.015, 0.02, 0.015);
+	show_game_font(window_ptr, string(boss_health_num, '+'), start_x + 0.015, 0.02, 0.015);
 	show_game_font(window_ptr, boss_name, start_x + 0.015, 0.055, 0.015);
+	show_boss_spell_card(boss_ptr, window_ptr,is_paused);
 	for (const auto& bar : hp_bars) {
 		float segment_start_x = bar_start_pos.x + (bar.start_x * (bar_end_pos.x - bar_start_pos.x));
 		float segment_end_x = bar_start_pos.x + (bar.end_x * (bar_end_pos.x - bar_start_pos.x));
@@ -584,7 +658,6 @@ void show_boss_info(Boss* boss_ptr, RenderWindow* window_ptr) {
 		window_ptr->draw(quad);
 
 	}
-
 	
 }
 Player* create_role(string role){
@@ -668,7 +741,7 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 				bgm = boss->bgm;
 				Music_manager::play_music(bgm);
 			}
-			show_boss_info(boss, window_ptr);
+			show_boss_info(boss, window_ptr,is_paused);
 			back_ground = boss->current_action_ptr->back_ground_name;
 		}
 		else {
@@ -688,9 +761,9 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 			
 		}
 		else {
-			pause_page(window_ptr,  is_paused,role,bgm);
+			pause_page(window_ptr,  is_paused,role,bgm,default_bgm);
 		}
-		show_game_info(window_ptr);
+		show_game_info(window_ptr,boss);
 		window_ptr->display();
 		if (player_ptr->is_game_over) {
 			show_background("clear", nullptr, false);

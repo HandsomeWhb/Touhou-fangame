@@ -42,6 +42,6 @@ public:
 	void debug(std::string a);
 };
 sf::Sprite use_game_font( char a, float x, float y, float size);
-void show_game_font(sf::RenderWindow* window_ptr, std::string a, float x, float y, float size);
+void show_game_font(sf::RenderWindow* window_ptr, std::string a, float x, float y, float size,float space_factor=0.75);
 std::vector<sf::Sprite> get_game_font_sprites( const std::string& a, float x, float y, float size,float space_factor=1);
 void genshin_start(sf::RenderWindow* window_ptr);

@@ -262,7 +262,7 @@ void Player::update(sf::RenderWindow* window_ptr) {
 		is_first_full_power = false;
 	}
 	//ÎÞµÐ×´Ì¬£¬²âÊÔÊ±¿ª
-	/*is_god_mode = true;*/
+	is_god_mode = true;
 	if (will_clear_enemy) {
 		danmaku_manager_ptr->clear_enemy_danmaku();
 		will_clear_enemy = false;
@@ -289,9 +289,7 @@ void Player::update(sf::RenderWindow* window_ptr) {
 			normal_absorb_radius -= 2000;
 		}
 	}
-
 	window_ptr->draw(sprite);
-
 }
 void Player::add_graze(float num) {
 	graze += num;
@@ -392,7 +390,6 @@ void Player::handle_input() {
 		sprite.setPosition({ circle_box.position_x - 2,circle_box.position_y - 20 });
 	}
 }
-
 Reimu::Reimu(Game_bridge* game_bridge_ptr) :Player(10.0, 3.0, 4.0, 80, 10, 0.125 * game_bridge_ptr->Screen_width,
 	0 * game_bridge_ptr->Screen_height, 0.625 * game_bridge_ptr->Screen_width, 0.965 * game_bridge_ptr->Screen_height, 3, 2, 3,
 	game_bridge_ptr) {
@@ -628,7 +625,6 @@ void Reimu::shoot() {
 	Music_manager::play_music("se_damage01.wav", 15);
 	counter++;
 }
-
 void Morisa::shoot() {
 	static int counter = 0;
 	Danmaku* danmaku = nullptr;

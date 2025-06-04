@@ -18,19 +18,23 @@ Animation::Animation(string name, float frame_time, string path, int img_num, fl
     this->is_reverse = is_reverse;
     this->current_frame = img_num - 1;
     for (int i = 0; i < img_num; i++) {
+        // 从右往左排列，起始图块是最右边的那一块
         sprites.push_back(Image_manager::custom_image(path, 0, 0, width / 2560,
-            height / 1600, start_x + i * interval_x, start_y
-            , start_x + (i + 1) * interval_x, start_y + interval_y));
+            height / 1600,
+            start_x + (img_num - 1 - i) * interval_x, start_y,
+            start_x + (img_num - i) * interval_x, start_y + interval_y));
+
         sprites[i].setOrigin({ interval_x / 2, interval_y / 2 });
+
         if (is_reverse) {
             Vector2f scale = sprites[i].getScale();
             if (scale.x > 0) {
-                scale.x *= -1;  // 水平翻转
+                scale.x *= -1; // 水平翻转
                 sprites[i].setScale(scale);
             }
-
         }
     }
+
 }
 Sprite Animation::get_current_frame() {
     return sprites[current_frame];

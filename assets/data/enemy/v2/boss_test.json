@@ -128,7 +128,7 @@
         "spell": [
           {
             "name": "Firestorm Sign: Scarlet Rain",
-            "bg_name": "bamboo_forest",
+            "bg_name": "mokou_bg",
             "hp": 1000,
             "loop_time": 600,
             "stage_time": 3000,
