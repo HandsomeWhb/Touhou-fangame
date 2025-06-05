@@ -129,7 +129,6 @@ void Player::on_death() {
 		}
 		sf::sleep(sf::milliseconds(5));
 	}
-
 	if (is_death) {
 		able_use_bomb = false;
 		counter1 = 0;
@@ -247,9 +246,7 @@ void Player::update(sf::RenderWindow* window_ptr) {
 	is_death = false;
 	handle_input();
 	animation_ptr->update();
-	if (!is_human) {
-		circle_box.draw(window_ptr);
-	}
+	
 	if (is_god_mode) {
 		god_mode_counter += 1;
 		if (god_mode_counter >= 210) {
@@ -262,7 +259,7 @@ void Player::update(sf::RenderWindow* window_ptr) {
 		is_first_full_power = false;
 	}
 	//ÎÞµÐ×´Ì¬£¬²âÊÔÊ±¿ª
-	/*is_god_mode = true;*/
+	//is_god_mode = true;
 	if (will_clear_enemy) {
 		danmaku_manager_ptr->clear_enemy_danmaku();
 		will_clear_enemy = false;
@@ -290,6 +287,15 @@ void Player::update(sf::RenderWindow* window_ptr) {
 		}
 	}
 	window_ptr->draw(sprite);
+	if (!is_human) {
+		Circle_box temp_box = circle_box;
+		temp_box.circle.setRadius(circle_box.radius+1);          
+		temp_box.circle.setOrigin({ temp_box.circle.getRadius(), temp_box.circle.getRadius() }); 
+		temp_box.circle.setFillColor(sf::Color::White);
+		temp_box.circle.setOutlineColor(sf::Color::Red);        
+		temp_box.circle.setOutlineThickness(3);                     
+		temp_box.draw(window_ptr);                                  
+	}
 }
 void Player::add_graze(float num) {
 	graze += num;

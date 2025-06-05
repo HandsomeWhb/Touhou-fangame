@@ -100,9 +100,11 @@ public:
     Boss(std::string name,std::string bgm,float dot_radius,float begin_position_x, float begin_position_y,
         Falling_object_manager* falling_object_manager_ptr, float default_x=-1, float default_y=-1):Enemy(100,  dot_radius,  begin_position_x,
            begin_position_y, falling_object_manager_ptr),name(name),bgm(bgm),default_x(default_x),default_y(default_y) {
-        if (std::abs(this->default_x + 1.0f) < 1e-3 && std::abs(this->default_y + 1.0f) < 1e-3) {
+        if (std::abs(this->default_x + 1.0f) < 1 && std::abs(this->default_y + 1.0f) < 1) {
+            float start_x = 0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width;
             this->default_x = (1.25f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width) * Image_manager::Screen_width / 2;
             this->default_y = Image_manager::Screen_height * 0.2;
+           
         }
         is_death = false;
     }
@@ -175,7 +177,6 @@ public:
         animation_ptr->update();
         sprite = sf::Sprite(animation_ptr->get_current_frame());
         sprite.setPosition({ circle_box.position_x,circle_box.position_y });
-
     }
     void shoot(Danmaku_manager* danmaku_manager_ptr)override;
     void get_bonus(int bonus);

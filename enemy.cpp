@@ -612,10 +612,18 @@ void load_boss_from_json(const nlohmann::json& wave_json, Enemy_manager* enemy_m
     string type = wave_json.value("type", "generic_type");
     string bgm = wave_json.value("bgm", "default_bgm.ogg");
     int appear_frame= wave_json.value("appear_frame", 0);
-    float begin_position_x= wave_json.value("begin_position_x", 960);
-    float begin_position_y = wave_json.value("begin_position_y", 200);
+    float begin_position_x= ((wave_json.value("begin_position_x", 960) - 320.0f) * (Image_manager::Screen_height * 4.0f / 5.0f) /
+        Image_manager::Screen_width / 1280.0f + (0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width))
+        * Image_manager::Screen_width;
+    float begin_position_y = wave_json.value("begin_position_y", 200) * Image_manager::Screen_height / 1600;
     float default_position_x = wave_json.value("default_position_x", -1);
     float default_position_y = wave_json.value("default_position_y", -1);
+    if (default_position_x != -1 && default_position_y != -1) {
+        default_position_x= ((wave_json.value("default_position_x", 960) - 320.0f) * (Image_manager::Screen_height * 4.0f / 5.0f) /
+            Image_manager::Screen_width / 1280.0f + (0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width))
+            * Image_manager::Screen_width;
+        default_position_y= default_position_y* Image_manager::Screen_height / 1600;
+    }
     Boss* boss = creat_boss(type, name, bgm, begin_position_x, begin_position_y, falling_object_manager_ptr, default_position_x, default_position_y);
     std::vector<std::shared_ptr<Boss_phase>> boss_phase_ptrs;
     if (wave_json.contains("stages")) {
@@ -708,7 +716,8 @@ void load_enemies_from_file(string filename, Enemy_manager* enemy_manager_ptr, F
             enemy_data.hp = e.value("hp", 100.0f);
             //分辨率适配,有用,别问,问就是屎山
             enemy_data.position_x = ((e.value("x", 1000.0f) - 320.0f)* (Image_manager::Screen_height * 4.0f / 5.0f) /
-                Image_manager::Screen_width / 1280.0f + (0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width)) * Image_manager::Screen_width;
+                Image_manager::Screen_width / 1280.0f + (0.625f - (Image_manager::Screen_height * 4.0f / 5.0f) / Image_manager::Screen_width))
+                * Image_manager::Screen_width;
             enemy_data.position_y = e.value("y", 800.0f) * Image_manager::Screen_height / 1600;
 
             if (e.contains("rewards")) {

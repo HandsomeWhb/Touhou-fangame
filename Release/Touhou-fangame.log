@@ -1,0 +1,955 @@
+﻿  anime.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\anime.cpp(25,59): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\anime.cpp(25,21): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\anime.cpp(24,55): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\anime.cpp(24,21): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  button.cpp
+  collision.cpp
+  danmaku.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(105,60): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(113,30): warning C4018: “>=”: 有符号/无符号不匹配
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(120,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(128,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(152,100): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(153,99): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(188,151): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,115): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,102): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,80): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“danmaku.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(60,26): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(274,77): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(275,75): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(319,110): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(320,109): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(325,44): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(364,195): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(365,112): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(366,111): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(369,171): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(370,112): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(371,111): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(394,192): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(395,110): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(396,109): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(438,111): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(439,110): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(447,119): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(451,119): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(466,84): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(487,88): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(487,83): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(523,37): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(543,37): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(564,98): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\danmaku.cpp(565,91): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  enemy.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(105,60): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(113,30): warning C4018: “>=”: 有符号/无符号不匹配
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(120,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(128,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(152,100): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(153,99): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(188,151): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,115): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,102): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,80): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“enemy.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(115,120): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(122,112): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(125,117): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(128,117): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(131,117): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(134,117): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(137,116): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(169,96): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(170,95): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(224,28): warning C4305: “初始化”: 从“int”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(257,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(258,20): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(262,20): warning C4305: “初始化”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(266,24): warning C4305: “初始化”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(267,32): warning C4305: “初始化”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(268,147): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(268,137): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(270,130): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(270,119): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(275,24): warning C4305: “初始化”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(276,32): warning C4305: “初始化”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(277,149): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(277,138): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(315,116): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(332,32): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(338,38): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(367,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(368,79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(369,78): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(390,54): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(402,57): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(414,57): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(426,57): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(438,57): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(450,57): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(462,57): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(474,57): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(526,37): warning C4244: “=”: 从“ReturnType”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(526,37): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(526,37): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(526,37): warning C4244:             ReturnType=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(526,37): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(530,37): warning C4244: “=”: 从“ReturnType”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(530,37): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(530,37): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(530,37): warning C4244:             ReturnType=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(530,37): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(531,49): warning C4244: “=”: 从“ReturnType”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(531,49): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(531,49): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(531,49): warning C4244:             ReturnType=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(531,49): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(532,49): warning C4244: “=”: 从“ReturnType”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(532,49): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(532,49): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(532,49): warning C4244:             ReturnType=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(532,49): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(576,19): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(577,19): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(615,27): warning C4244: “初始化”: 从“ReturnType”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(615,27): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(615,27): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(615,27): warning C4244:             ReturnType=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(615,27): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(616,28): warning C4244: “初始化”: 从“ReturnType”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(616,28): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(616,28): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(616,28): warning C4244:             ReturnType=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(616,28): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(617,30): warning C4244: “初始化”: 从“ReturnType”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(617,30): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(617,30): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(617,30): warning C4244:             ReturnType=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(617,30): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(618,30): warning C4244: “初始化”: 从“ReturnType”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(618,30): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(618,30): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(618,30): warning C4244:             ReturnType=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.cpp(618,30): warning C4244:         ]
+  falling_object.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(105,60): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(113,30): warning C4018: “>=”: 有符号/无符号不匹配
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(120,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(128,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(152,100): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(153,99): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(188,151): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,115): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,102): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,80): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“falling_object.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(13,80): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(13,74): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(13,66): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(13,58): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(19,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(20,75): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(21,74): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(25,46): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(28,46): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(31,46): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(53,51): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(121,28): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(131,29): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\falling_object.cpp(141,29): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  gamebridge.cpp
+  image.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(84,26): warning C4244: “初始化”: 从“T”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(84,26): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(84,26): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(84,26): warning C4244:             T=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(84,26): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(85,27): warning C4244: “初始化”: 从“T”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(85,27): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(85,27): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(85,27): warning C4244:             T=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\image.cpp(85,27): warning C4244:         ]
+  main.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(105,60): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(113,30): warning C4018: “>=”: 有符号/无符号不匹配
+  (编译源文件“main.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(120,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“main.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(128,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“main.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(152,100): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(153,99): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(188,151): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,115): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“main.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,102): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“main.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,80): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+  motion.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\motion.cpp(197,48): warning C4244: “=”: 从“ReturnType”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\motion.cpp(197,48): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\motion.cpp(197,48): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\motion.cpp(197,48): warning C4244:             ReturnType=int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\motion.cpp(197,48): warning C4244:         ]
+  music.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\music.cpp(93,40): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\music.cpp(96,40): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\music.cpp(98,22): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  page.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page.cpp(196,66): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page.cpp(197,66): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page.cpp(207,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page.cpp(216,20): warning C4018: “<”: 有符号/无符号不匹配
+  page_loader.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(105,60): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(113,30): warning C4018: “>=”: 有符号/无符号不匹配
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(120,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(128,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(152,100): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(153,99): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(188,151): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,115): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,102): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,80): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“page_loader.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(26,57): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(27,62): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(37,48): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(41,42): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(48,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(48,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(48,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(48,60): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(49,81): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(49,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(49,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(49,63): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(50,81): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(50,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(50,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(50,63): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(51,73): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(62,105): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(62,96): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(62,64): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(62,55): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,93): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,93): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,93): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,93): warning C4244:             T=unsigned int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,93): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,93): warning C4244:         and
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,93): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,93): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,93): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,68): warning C4244: “参数”: 从“T”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,68): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,68): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,68): warning C4244:             T=unsigned int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,68): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,68): warning C4244:         and
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,68): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,68): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(107,68): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(115,82): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(115,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(115,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(115,66): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(116,86): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(116,81): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(116,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(116,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(117,86): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(117,81): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(117,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(117,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(118,87): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(118,82): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(118,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(157,93): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(157,88): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(157,82): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(157,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(158,92): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(158,87): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(158,82): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(158,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(159,93): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(159,88): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(159,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(211,68): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(211,63): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(211,57): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(212,48): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(212,43): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(212,37): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(229,14): warning C4305: “初始化”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(234,95): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(234,55): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(234,18): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(237,55): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(243,52): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(242,113): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(255,95): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(255,55): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(255,18): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(258,55): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(264,52): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(263,112): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(263,105): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(275,104): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(275,56): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(275,18): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(278,55): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(284,51): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(283,114): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(294,104): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(294,56): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(294,18): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(297,55): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(303,51): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(302,114): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(314,29): warning C4834: 放弃具有 [[nodiscard]] 属性的函数的返回值
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(336,29): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(341,84): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(352,40): warning C4244: “=”: 从“T”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(352,40): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(352,40): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(352,40): warning C4244:             T=unsigned int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(352,40): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(358,49): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,95): warning C4244: “参数”: 从“unsigned int”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,95): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,95): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,95): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,95): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,49): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,49): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,49): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,49): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(356,49): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(355,45): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(355,45): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(355,45): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(355,45): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(355,45): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(382,49): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,99): warning C4244: “参数”: 从“unsigned int”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,99): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,99): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,99): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,99): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,53): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,53): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,53): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,53): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(380,53): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(379,47): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(379,47): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(379,47): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(379,47): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(379,47): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(405,14): warning C4305: “初始化”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(411,29): warning C4834: 放弃具有 [[nodiscard]] 属性的函数的返回值
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(417,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(419,38): warning C4244: “=”: 从“T”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(419,38): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(419,38): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(419,38): warning C4244:             T=unsigned int
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(419,38): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(438,29): warning C4834: 放弃具有 [[nodiscard]] 属性的函数的返回值
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(440,30): warning C4834: 放弃具有 [[nodiscard]] 属性的函数的返回值
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(450,85): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(450,16): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(450,3): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(449,63): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(462,146): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(462,115): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(469,79): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(469,72): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(469,66): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(469,59): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(470,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(470,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(470,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(470,59): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(471,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(471,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(471,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(471,59): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(472,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(472,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(472,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(472,59): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(473,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(473,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(473,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(473,59): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(474,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(474,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(474,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(474,59): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(479,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(481,132): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(481,86): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(481,73): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(481,66): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(482,132): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(482,125): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(482,118): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(483,90): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(483,83): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(483,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(484,144): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(484,137): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(484,130): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(485,137): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(485,130): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(485,123): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(486,90): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(486,83): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(486,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(487,160): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(487,153): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(487,146): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(488,163): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(488,156): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(488,149): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(489,53): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(489,46): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(489,39): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(490,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(490,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(490,64): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(582,24): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(583,26): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(601,23): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(602,25): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(610,26): warning C4018: “<”: 有符号/无符号不匹配
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(612,17): warning C4018: “<”: 有符号/无符号不匹配
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(621,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,93): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,93): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,93): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,93): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,93): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,57): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,57): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,57): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,57): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(623,57): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,91): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,91): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,91): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,91): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,91): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,55): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,55): warning C4244:         with
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,55): warning C4244:         [
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,55): warning C4244:             T=float
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(624,55): warning C4244:         ]
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(627,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(629,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(631,94): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(631,88): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(631,81): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(631,52): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(632,78): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(632,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(632,62): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(634,84): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(634,78): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(634,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(635,82): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(635,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(635,67): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(636,64): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(636,57): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(636,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(707,113): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(707,95): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(707,72): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(721,110): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(721,93): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(721,70): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(722,128): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(722,111): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(722,88): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(819,79): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(819,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(819,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(819,66): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(821,87): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(821,81): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(821,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(824,87): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(824,81): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(824,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(834,68): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(834,64): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(835,68): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(835,64): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(836,79): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(836,74): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(836,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(836,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(839,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(839,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(840,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(840,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(841,83): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(841,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(841,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(841,66): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(844,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(844,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(845,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(845,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(846,83): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(846,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(846,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(846,66): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(849,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(849,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(850,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(850,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(851,83): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(851,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(851,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(851,66): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(901,19): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(902,19): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(967,36): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(972,36): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(978,36): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(979,36): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(989,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(989,66): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(990,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(990,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(991,124): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(991,118): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(991,112): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(991,106): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(992,134): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(992,128): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(992,122): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(992,116): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(993,126): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(993,120): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(993,109): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(994,125): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(994,119): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(994,114): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(994,108): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1000,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1000,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1000,60): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1001,116): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1001,105): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1001,100): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1002,67): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1002,56): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1002,51): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1003,123): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1003,117): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1003,111): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1003,105): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1004,74): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1004,68): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1004,62): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1004,56): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1005,124): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1005,118): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1005,112): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1005,107): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1006,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1006,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1006,63): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1006,58): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1007,120): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1007,114): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1007,107): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1007,101): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1008,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1008,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1008,58): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1008,52): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1009,120): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1009,114): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1009,107): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1009,101): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1010,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1010,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1010,58): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1010,52): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1011,116): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1011,110): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1011,104): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1011,99): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1012,67): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1012,61): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1012,55): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1012,50): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1016,68): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1016,63): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1017,66): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1017,60): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1018,78): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1018,72): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1019,78): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1020,88): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1020,81): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1021,85): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1021,78): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1022,85): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1022,78): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1023,82): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1023,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1024,63): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1025,78): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1025,72): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1026,83): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1026,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1027,108): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1027,101): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1028,95): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1028,88): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1029,78): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1030,118): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1030,112): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1030,106): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1030,100): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1031,68): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1031,62): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1031,56): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1031,50): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1035,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1035,72): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1035,67): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1035,62): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1036,119): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1036,102): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1037,68): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1037,51): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1038,125): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1038,119): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1038,113): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1038,107): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1039,74): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1039,68): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1039,62): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1039,56): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1040,119): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1040,113): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1040,107): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1040,101): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1041,68): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1041,62): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1041,56): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1041,50): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1080,83): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1080,77): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1080,71): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1080,65): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1089,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1089,70): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1089,64): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1097,99): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1097,87): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1097,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1102,72): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1102,60): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\page_loader.cpp(1102,49): warning C4305: “参数”: 从“double”到“float”截断
+  player.cpp
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(105,60): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(113,30): warning C4018: “>=”: 有符号/无符号不匹配
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(120,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(128,30): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(152,100): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(153,99): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(188,151): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,115): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,102): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\enemy.h(195,80): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“player.cpp”)
+  
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(104,89): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(104,82): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(104,76): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(104,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(155,40): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(162,126): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(162,86): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(186,118): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(188,118): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(192,121): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(194,121): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(206,119): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(208,119): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(212,122): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(214,122): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(384,10): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(384,7): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(394,83): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(394,44): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(394,4): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(393,82): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(402,80): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(402,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(402,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(403,80): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(403,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(403,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(412,127): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(433,15): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(443,90): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(467,21): warning C4244: “初始化”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(470,35): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(476,43): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(520,17): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(522,121): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(524,121): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(527,49): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(533,83): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(533,44): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(533,4): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(532,84): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(541,80): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(541,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(541,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(542,80): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(542,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(542,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(545,83): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(545,44): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(545,4): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(544,86): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(553,80): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(553,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(553,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(554,80): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(554,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(554,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(557,83): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(557,44): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(557,4): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(556,84): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(565,80): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(565,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(565,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(566,80): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(566,75): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(566,69): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(576,124): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(579,124): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(590,125): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(593,125): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(599,129): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(604,142): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(607,142): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(611,138): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(613,138): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(618,143): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(621,143): warning C4305: “参数”: 从“double”到“float”截断
+D:\c++store\code\Touhou-fangame\Touhou-fangame\player.cpp(652,42): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  score.cpp
+  text.cpp
+anime.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Vector2<float> __thiscall sf::Transformable::getScale(void)const " (__imp_?getScale@Transformable@sf@@QBE?AV?$Vector2@M@2@XZ)
+anime.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(class sf::Vector2<float>)" (__imp_?setOrigin@Transformable@sf@@QAEXV?$Vector2@M@2@@Z)
+anime.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Transformable::setScale(class sf::Vector2<float>)" (__imp_?setScale@Transformable@sf@@QAEXV?$Vector2@M@2@@Z)
+anime.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) private: virtual void __thiscall sf::Sprite::draw(class sf::RenderTarget &,struct sf::RenderStates)const " (__imp_?draw@Sprite@sf@@EBEXAAVRenderTarget@2@URenderStates@2@@Z)
+anime.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(class sf::Sprite &&)" (__imp_??0Sprite@sf@@QAE@$$QAV01@@Z)
+anime.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(class sf::Sprite const &)" (__imp_??0Sprite@sf@@QAE@ABV01@@Z)
+anime.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: static struct sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2U12@B)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::CircleShape::setRadius(float)" (__imp_?setRadius@CircleShape@sf@@QAEXM@Z)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::CircleShape::CircleShape(float,unsigned int)" (__imp_??0CircleShape@sf@@QAE@MI@Z)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Transform const & __thiscall sf::Transformable::getTransform(void)const " (__imp_?getTransform@Transformable@sf@@QBEABVTransform@2@XZ)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Transformable::move(class sf::Vector2<float>)" (__imp_?move@Transformable@sf@@QAEXV?$Vector2@M@2@@Z)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Transformable::setRotation(class sf::Angle)" (__imp_?setRotation@Transformable@sf@@QAEXVAngle@2@@Z)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float>)" (__imp_?setPosition@Transformable@sf@@QAEXV?$Vector2@M@2@@Z)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,struct sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABURenderStates@2@@Z)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Shape::setFillColor(class sf::Color)" (__imp_?setFillColor@Shape@sf@@QAEXVColor@2@@Z)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::CircleShape::CircleShape(class sf::CircleShape &&)" (__imp_??0CircleShape@sf@@QAE@$$QAV01@@Z)
+collision.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall sf::CircleShape::~CircleShape(void)" (__imp_??1CircleShape@sf@@UAE@XZ)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Vector2<float> __thiscall sf::Transformable::getPosition(void)const " (__imp_?getPosition@Transformable@sf@@QBE?AV?$Vector2@M@2@XZ)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Texture::setRepeated(bool)" (__imp_?setRepeated@Texture@sf@@QAEX_N@Z)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Texture::Texture(class sf::Texture const &)" (__imp_??0Texture@sf@@QAE@ABV01@@Z)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Rect<float> __thiscall sf::Sprite::getGlobalBounds(void)const " (__imp_?getGlobalBounds@Sprite@sf@@QBE?AV?$Rect@M@2@XZ)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Sprite::setColor(class sf::Color)" (__imp_?setColor@Sprite@sf@@QAEXVColor@2@@Z)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(class sf::Texture const &)" (__imp_??0Sprite@sf@@QAE@ABVTexture@1@@Z)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Sprite & __thiscall sf::Sprite::operator=(class sf::Sprite const &)" (__imp_??4Sprite@sf@@QAEAAV01@ABV01@@Z)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::CircleShape & __thiscall sf::CircleShape::operator=(class sf::CircleShape &&)" (__imp_??4CircleShape@sf@@QAEAAV01@$$QAV01@@Z)
+danmaku.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::CircleShape::CircleShape(class sf::CircleShape const &)" (__imp_??0CircleShape@sf@@QAE@ABV01@@Z)
+enemy.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Sprite & __thiscall sf::Sprite::operator=(class sf::Sprite &&)" (__imp_??4Sprite@sf@@QAEAAV01@$$QAV01@@Z)
+image.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Transformable::rotate(class sf::Angle)" (__imp_?rotate@Transformable@sf@@QAEXVAngle@2@@Z)
+image.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Vector2<unsigned int> __thiscall sf::Texture::getSize(void)const " (__imp_?getSize@Texture@sf@@QBE?AV?$Vector2@I@2@XZ)
+image.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::filesystem::path const &,bool,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABVpath@filesystem@std@@_NABV?$Rect@H@2@@Z)
+image.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Texture & __thiscall sf::Texture::operator=(class sf::Texture &&)" (__imp_??4Texture@sf@@QAEAAV01@$$QAV01@@Z)
+image.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Texture::Texture(class sf::Texture &&)" (__imp_??0Texture@sf@@QAE@$$QAV01@@Z)
+image.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Sprite::setTextureRect(class sf::Rect<int> const &)" (__imp_?setTextureRect@Sprite@sf@@QAEXABV?$Rect@H@2@@Z)
+main.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ)
+main.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::RenderWindow::RenderWindow(void)" (__imp_??0RenderWindow@sf@@QAE@XZ)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::SoundSource::setVolume(float)" (__imp_?setVolume@SoundSource@sf@@QAEXM@Z)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) protected: virtual class std::optional<unsigned __int64> __thiscall sf::Music::onLoop(void)" (__imp_?onLoop@Music@sf@@MAE?AV?$optional@_K@std@@XZ)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) protected: virtual void __thiscall sf::Music::onSeek(class sf::Time)" (__imp_?onSeek@Music@sf@@MAEXVTime@2@@Z)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) protected: virtual bool __thiscall sf::Music::onGetData(struct sf::SoundStream::Chunk &)" (__imp_?onGetData@Music@sf@@MAE_NAAUChunk@SoundStream@2@@Z)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Time __thiscall sf::Music::getDuration(void)const " (__imp_?getDuration@Music@sf@@QBE?AVTime@2@XZ)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall sf::Music::~Music(void)" (__imp_??1Music@sf@@UAE@XZ)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Music::Music(class std::filesystem::path const &)" (__imp_??0Music@sf@@QAE@ABVpath@filesystem@std@@@Z)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) private: virtual void * __thiscall sf::SoundStream::getSound(void)const " (__imp_?getSound@SoundStream@sf@@EBEPAXXZ)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual void __thiscall sf::SoundStream::setEffectProcessor(class std::function<void __cdecl(float const *,unsigned int &,float *,unsigned int &,unsigned int)>)" (__imp_?setEffectProcessor@SoundStream@sf@@UAEXV?$function@$$A6AXPBMAAIPAM1I@Z@std@@@Z)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual enum sf::SoundSource::Status __thiscall sf::SoundStream::getStatus(void)const " (__imp_?getStatus@SoundStream@sf@@UBE?AW4Status@SoundSource@2@XZ)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual void __thiscall sf::SoundStream::stop(void)" (__imp_?stop@SoundStream@sf@@UAEXXZ)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual void __thiscall sf::SoundStream::pause(void)" (__imp_?pause@SoundStream@sf@@UAEXXZ)
+music.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual void __thiscall sf::SoundStream::play(void)" (__imp_?play@SoundStream@sf@@UAEXXZ)
+page.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Window::display(void)" (__imp_?display@Window@sf@@QAEXXZ)
+page.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class std::optional<class sf::Event> __thiscall sf::WindowBase::pollEvent(void)" (__imp_?pollEvent@WindowBase@sf@@QAE?AV?$optional@VEvent@sf@@@std@@XZ)
+page.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: bool __thiscall sf::WindowBase::isOpen(void)const " (__imp_?isOpen@WindowBase@sf@@QBE_NXZ)
+page.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::RenderTarget::clear(class sf::Color)" (__imp_?clear@RenderTarget@sf@@QAEXVColor@2@@Z)
+    已定义且可能匹配的符号上的提示:
+      "__declspec(dllimport) public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::clear(int,bool)" (__imp_?clear@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::restart(void)" (__imp_?restart@Clock@sf@@QAE?AVTime@2@XZ)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::RenderStates::RenderStates(class sf::Texture const *)" (__imp_??0RenderStates@sf@@QAE@PBVTexture@1@@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) private: virtual void __thiscall sf::VertexArray::draw(class sf::RenderTarget &,struct sf::RenderStates)const " (__imp_?draw@VertexArray@sf@@EBEXAAVRenderTarget@2@URenderStates@2@@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: struct sf::Vertex & __thiscall sf::VertexArray::operator[](unsigned int)" (__imp_??AVertexArray@sf@@QAEAAUVertex@1@I@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: unsigned int __thiscall sf::VertexArray::getVertexCount(void)const " (__imp_?getVertexCount@VertexArray@sf@@QBEIXZ)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(enum sf::PrimitiveType,unsigned int)" (__imp_??0VertexArray@sf@@QAE@W4PrimitiveType@1@I@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Window::setFramerateLimit(unsigned int)" (__imp_?setFramerateLimit@Window@sf@@QAEXI@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) bool __cdecl sf::Keyboard::isKeyPressed(enum sf::Keyboard::Key)" (__imp_?isKeyPressed@Keyboard@sf@@YA_NW4Key@12@@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::String::String(wchar_t const *)" (__imp_??0String@sf@@QAE@PB_W@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::RectangleShape::RectangleShape(class sf::Vector2<float>)" (__imp_??0RectangleShape@sf@@QAE@V?$Vector2@M@1@@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::VideoMode::VideoMode(class sf::Vector2<unsigned int>,unsigned int)" (__imp_??0VideoMode@sf@@QAE@V?$Vector2@I@1@I@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::VertexArray::VertexArray(class sf::VertexArray &&)" (__imp_??0VertexArray@sf@@QAE@$$QAV01@@Z)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QAE@XZ)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall sf::RectangleShape::~RectangleShape(void)" (__imp_??1RectangleShape@sf@@UAE@XZ)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall sf::VertexArray::~VertexArray(void)" (__imp_??1VertexArray@sf@@UAE@XZ)
+page_loader.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ)
+player.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::getElapsedTime(void)const " (__imp_?getElapsedTime@Clock@sf@@QBE?AVTime@2@XZ)
+player.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::View::move(class sf::Vector2<float>)" (__imp_?move@View@sf@@QAEXV?$Vector2@M@2@@Z)
+player.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) void __cdecl sf::sleep(class sf::Time)" (__imp_?sleep@sf@@YAXVTime@1@@Z)
+player.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::View const & __thiscall sf::RenderTarget::getDefaultView(void)const " (__imp_?getDefaultView@RenderTarget@sf@@QBEABVView@2@XZ)
+player.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::RenderTarget::setView(class sf::View const &)" (__imp_?setView@RenderTarget@sf@@QAEXABVView@2@@Z)
+text.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: bool __thiscall sf::Font::openFromFile(class std::filesystem::path const &)" (__imp_?openFromFile@Font@sf@@QAE_NABVpath@filesystem@std@@@Z)
+text.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) private: virtual void __thiscall sf::Text::draw(class sf::RenderTarget &,struct sf::RenderStates)const " (__imp_?draw@Text@sf@@EBEXAAVRenderTarget@2@URenderStates@2@@Z)
+text.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: class sf::Rect<float> __thiscall sf::Text::getLocalBounds(void)const " (__imp_?getLocalBounds@Text@sf@@QBE?AV?$Rect@M@2@XZ)
+text.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Text::setFillColor(class sf::Color)" (__imp_?setFillColor@Text@sf@@QAEXVColor@2@@Z)
+text.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Text::Text(class sf::Font const &,class sf::String,unsigned int)" (__imp_??0Text@sf@@QAE@ABVFont@1@VString@1@I@Z)
+text.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall sf::Text::~Text(void)" (__imp_??1Text@sf@@UAE@XZ)
+text.obj : error LNK2001: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::Font::Font(void)" (__imp_??0Font@sf@@QAE@XZ)
+D:\c++store\code\Touhou-fangame\Release\Touhou-fangame.exe : fatal error LNK1120: 83 个无法解析的外部命令
