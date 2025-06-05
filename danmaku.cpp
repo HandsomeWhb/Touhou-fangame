@@ -107,9 +107,9 @@ void Danmaku_manager::update_all_danmaku(Player* player_ptr, Enemy_manager* enem
 	for (auto it = enemy_danmaku_ptrs.begin(); it != enemy_danmaku_ptrs.end(); it++) {
 		(**it).move(player_ptr->circle_box.position_x, player_ptr->circle_box.position_y);
 	}
-
-	show_all_danmaku(window_ptr);
 	is_outside();
+	show_all_danmaku(window_ptr);
+	
 	if (debug) {
 		show_all_danmaku_box( window_ptr);
 	}
@@ -144,7 +144,7 @@ void Danmaku_manager::is_outside(){
 		}
 		else {
 			(**it).is_outside = false;
-			if ((**it).exist_time < 0) {
+			if ((**it).exist_time <=0) {
 				delete* it;
 				it = player_danmaku_ptrs.erase(it);
 			}

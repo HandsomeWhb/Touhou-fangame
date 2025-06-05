@@ -1,0 +1,66 @@
+[
+  {
+    "num": 6,
+    "appear_frame": 7000,
+    "frame_interval": 30,
+    "enemy": {
+      "type": "Blue_enemy",
+      "hp": 200.0,
+      "x": 1590,
+      "y": 320,
+      "rewards": {
+        "power": 0,
+        "big_power": 1,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 6
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 61,
+        "shoot_logic": "circle02.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 147,
+          "b": 0,
+          "a": 255
+        }
+      }
+    ],
+    "move": "left.json"
+  },
+  {
+    "num": 6,
+    "appear_frame": 7000,
+    "frame_interval": 30,
+    "enemy": {
+      "type": "Blue_enemy",
+      "hp": 200.0,
+      "x": 330,
+      "y": 280,
+      "rewards": {
+        "power": 0,
+        "big_power": 1,
+        "bomb_up": 0,
+        "health_up": 0,
+        "blue_point": 6
+      }
+    },
+    "fire_plan": [
+      {
+        "danmaku_start_frame": 61,
+        "shoot_logic": "circle02.json",
+        "type": "Circle",
+        "color": {
+          "r": 255,
+          "g": 147,
+          "b": 0,
+          "a": 255
+        }
+      }
+    ],
+    "move": "right.json"
+  }
+]

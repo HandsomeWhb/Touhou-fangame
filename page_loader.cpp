@@ -45,46 +45,63 @@ void show_background(const string& name, RenderWindow* window_ptr, bool is_pause
 void genshin_start(RenderWindow* window_ptr) {
 	Music_manager::play_music("genshin.mp3");
 	int time_counter = 0;
-	Sprite  sprite1 = Image_manager::custom_image("white.png", 0.1, 0.2, 0.9, 0.8);
+	Sprite sprite1 = Image_manager::custom_image("white.png", 0.1, 0.2, 0.9, 0.8);
 	Sprite sprite2 = Image_manager::custom_image("genshin1.jpg", 0.43, 0.30, 0.57, 0.52);
 	Sprite sprite3 = Image_manager::custom_image("genshin2.jpg", 0.18, 0.70, 0.84, 0.85);
-	while ((*window_ptr).isOpen()) {
-
+	Text* text = Text_manager::custom_text(L"按Z跳过启动动画", 0.5, 0.65, 50, { 0,0,0,255 });
+	while (window_ptr->isOpen()) {
+		// 显示第一张图：纯白
 		if (time_counter < 180) {
 			window_ptr->draw(sprite1);
+			window_ptr->draw(*text);
 			window_ptr->display();
 			window_ptr->clear();
 		}
-		if (180 <= time_counter && time_counter < 210) {
+		// 缩放白图（实现一种视觉效果）
+		else if (time_counter < 210) {
 			sprite1 = Image_manager::custom_image("white.png", 0.1, 0.2 - (time_counter - 180) * 0.003, 0.9, 0.8 + (time_counter - 180) * 0.003);
 			window_ptr->draw(sprite1);
+			window_ptr->draw(*text);
 			window_ptr->display();
 			window_ptr->clear();
 		}
-		if (210 <= time_counter && time_counter < 262) {
+		// 渐显展示两张图
+		else if (time_counter < 262) {
 			window_ptr->clear();
 			sprite2.setColor(sf::Color(255, 255, 255, (time_counter - 210) * 5));
 			sprite3.setColor(sf::Color(255, 255, 255, (time_counter - 210) * 5));
 			window_ptr->draw(sprite1);
 			window_ptr->draw(sprite2);
 			window_ptr->draw(sprite3);
+			window_ptr->draw(*text);
 			window_ptr->display();
 		}
+
+		// 如果音乐播放结束，则退出
 		if (Music_manager::search_music("genshin.mp3")->getStatus() != Music::Status::Playing) {
 			Sleep(200);
 			return;
 		}
+		
 		time_counter += 1;
-		while (const optional event = (*window_ptr).pollEvent()) {
+
+		while (const optional event = window_ptr->pollEvent()) {
 			if (event->is<Event::Closed>()) {
 				cout << "窗口关闭" << endl;
-				(*window_ptr).close();
+				window_ptr->close();
+			}
+			// 检测按键事件：按下Z则跳过
+			if (event->is<Event::KeyPressed>()) {
+				if (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Z) {
+					Music_manager::stop_music("genshin.mp3");
+					cout << "按下Z，跳过启动动画" << endl;
+					return;
+				}
 			}
 		}
-
 	}
-	return;
 }
+
 void pause_page(RenderWindow* window_ptr,  bool& is_paused,string role,string bgm,string default_bgm) {
 	static int option = 0;
 	sf::RectangleShape dark_overlay(sf::Vector2f(window_ptr->getSize().x, window_ptr->getSize().y));
@@ -159,7 +176,7 @@ float get_fps() {
 	float res = total / frameTimes.size();
 	return res > 100 ? 60 : res;
 }
-string get_name(RenderWindow* window_ptr) {
+string get_name(RenderWindow* window_ptr,bool is_win) {
 	string input;
 	while (window_ptr->isOpen()) {
 		window_ptr->clear();
@@ -699,7 +716,7 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 	string back_ground = default_back_ground;
 	//游戏数据,以后应实现传入难度选择对应文件
 	string save_file = "normal_score.dat";
-	
+	bool is_win = false;
 	player_ptr->highscore= Score_center::search(save_file)->get_highest_score();
 	enemy_manager = Enemy_manager(player_ptr, start_x * Screen_width, 0 * Screen_height, 0.625 * Screen_width, 1* Screen_height);
 	falling_object_manager = Falling_object_manager(player_ptr, start_x * Screen_width, 0 * Screen_height, 0.625 * Screen_width,1 * Screen_height);
@@ -765,10 +782,17 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 		}
 		show_game_info(window_ptr,boss);
 		window_ptr->display();
+		if (enemy_manager.frame_count == 11100) {
+			player_ptr->add_score(20000000);
+		}
+		if (enemy_manager.frame_count == 11200) {
+			is_win = true;
+			player_ptr->is_game_over = true;
+		}
 		if (player_ptr->is_game_over) {
 			show_background("clear", nullptr, false);
 			Music_manager::stop_music(bgm);
-			(Score_center::search(save_file))->add_new_score(get_name(window_ptr), player_ptr->score * 10);
+			(Score_center::search(save_file))->add_new_score(get_name(window_ptr,is_win), player_ptr->score * 10);
 			main_menu.show_page();
 		}
 	}

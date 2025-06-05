@@ -15,7 +15,7 @@ int main() {
 	build_main_menu(main_menu, introduction, result, &window);
 	build_introduction(introduction, main_menu);
 	build_result(result, main_menu);
-	//genshin_start(&window);
+	genshin_start(&window);
 	main_menu.show_page(); // 启动说明页，可改为 main_menu.show_page()
     return 0;
 }

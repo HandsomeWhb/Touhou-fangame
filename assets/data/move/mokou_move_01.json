@@ -1,0 +1,37 @@
+[
+  {
+    "frame": 0,
+    "angle": 0.0,
+    "speed": 0.0
+  },
+  {
+    "frame": 40,
+    "angle": 63.43,
+    "speed": 3.73
+  },
+  {
+    "frame": 160,
+    "angle": 63.43,
+    "speed": 0.0
+  },
+  {
+    "frame": 190,
+    "angle": 270.0,
+    "speed": 3.33
+  },
+  {
+    "frame": 430,
+    "angle": 270.0,
+    "speed": 0.0
+  },
+  {
+    "frame": 480,
+    "angle": 116.57,
+    "speed": 3.73
+  },
+  {
+    "frame": 600,
+    "angle": 116.57,
+    "speed": 0.0
+  }
+]

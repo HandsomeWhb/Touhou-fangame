@@ -4,7 +4,7 @@
     "name": "Huziwara no Mokou",
     "type": "Mokou",
     "bgm": "th08_18.mp3",
-    "appear_frame": 300,
+    "appear_frame": 11000,
     "begin_position_x": 960,
     "begin_position_y": 10,
     "default_position_x": 960,
@@ -14,137 +14,47 @@
         "non_spell": [
           {
             "bg_name": "real_moon",
-            "hp": 500,
-            "loop_time": 1800,
+            "hp": 15000,
+            "loop_time": 600,
             "stage_time": 3600,
-            "move": "boss_01.json",
+            "move": "mokou_move_01.json",
             "fire_plan": [
               {
-                "danmaku_start_frame": 15,
-                "shoot_logic": "little_boss02_1.json",
-                "type": "Ellipse",
-                "global_speed": 10.0,
-                "is_rebound": true,
+                "danmaku_start_frame": 41,
+                "shoot_logic": "none_spell_01.json",
+                "type": "Square",
+                "global_speed": 8.0,
+                "is_rebound":false,
                 "color": {
                   "r": 140,
                   "g": 160,
                   "b": 255,
                   "a": 255
                 }
-              },
-              {
-                "danmaku_start_frame": 45,
-                "shoot_logic": "laser_left.json",
-                "type": "Laser",
-                "global_speed": 0.0,
-                "color": {
-                  "r": 140,
-                  "g": 160,
-                  "b": 255,
-                  "a": 255
-                }
-              },
-              {
-                "danmaku_start_frame": 45,
-                "shoot_logic": "laser_right.json",
-                "type": "Laser",
-                "global_speed": 0.0,
-                "color": {
-                  "r": 140,
-                  "g": 160,
-                  "b": 255,
-                  "a": 255
-                }
-              },
-              {
-                "danmaku_start_frame": 185,
-                "shoot_logic": "laser_left.json",
-                "type": "Laser",
-                "global_speed": 0.0,
-                "color": {
-                  "r": 140,
-                  "g": 160,
-                  "b": 255,
-                  "a": 255
-                }
-              },
-              {
-                "danmaku_start_frame": 185,
-                "shoot_logic": "laser_right.json",
-                "type": "Laser",
-                "global_speed": 0.0,
-                "color": {
-                  "r": 140,
-                  "g": 160,
-                  "b": 255,
-                  "a": 255
-                }
-              },
-              {
-                "danmaku_start_frame": 305,
-                "shoot_logic": "laser_left.json",
-                "type": "Laser",
-                "global_speed": 0.0,
-                "color": {
-                  "r": 140,
-                  "g": 160,
-                  "b": 255,
-                  "a": 255
-                }
-              },
-              {
-                "danmaku_start_frame": 305,
-                "shoot_logic": "laser_right.json",
-                "type": "Laser",
-                "global_speed": 0.0,
-                "color": {
-                  "r": 140,
-                  "g": 160,
-                  "b": 255,
-                  "a": 255
-                }
-              },
-              {
-                "danmaku_start_frame": 1000,
-                "shoot_logic": "little_boss02_2.json",
-                "type": "Circle"
-              },
-              {
-                "danmaku_start_frame": 1000,
-                "shoot_logic": "little_boss02_3.json",
-                "global_speed": 4.0,
-                "type": "Circle"
               }
-            ],
-            "rewards": {
-              "power": 8,
-              "big_power": 0,
-              "bomb_up": 0,
-              "health_up": 0,
-              "blue_point": 15
-            }
+            ]
           }
         ],
         "spell": [
           {
-            "name": "Firestorm Sign: Scarlet Rain",
+            "name": "Flamefall Phoenixes",
             "bg_name": "mokou_bg",
-            "hp": 1000,
+            "hp": 35000,
             "loop_time": 600,
-            "stage_time": 3000,
+            "stage_time": 6000,
             "spell_card_bonus": 2000000,
-            "move": "boss_01.json",
+            "move": "boss_movement.json",
             "fire_plan": [
               {
-                "danmaku_start_frame": 1,
+                "danmaku_start_frame": 41,
                 "shoot_logic": "random01.json",
-                "type": "Star",
+                "type": "Circle",
                 "remove_on_death": "true",
                 "color": {
                   "r": 255,
-                  "g": 240,
-                  "b": 100,
-                  "a": 255
+                  "g": 48,
+                  "b": 48,
+                  "a": 200
                 }
               },
               {
@@ -200,6 +110,103 @@
               "health_up": 0,
               "blue_point": 30
             }
+          }
+        ]
+      },
+      {
+        "non_spell": [
+          {
+            "bg_name": "real_moon",
+            "hp": 15000,
+            "loop_time": 600,
+            "stage_time": 3600,
+            "move": "mokou_move_02.json",
+            "fire_plan": [
+              {
+                "danmaku_start_frame": 40,
+                "shoot_logic": "none_spell_02.json",
+                "type": "Ellipse",
+                "global_speed": 6.0,
+                "is_rebound": false,
+                "color": {
+                  "r": 255,
+                  "g": 48,
+                  "b": 48,
+                  "a": 200
+                }
+              }
+            ]
+          }
+        ],
+        "spell": [
+          {
+            "name": "Reflected Wrath",
+            "bg_name": "mokou_bg",
+            "hp": 15000,
+            "loop_time": 600,
+            "stage_time": 3600,
+            "spell_card_bonus": 3000000,
+            "move": "mokou_move_02.json",
+            "fire_plan": [
+              {
+                "danmaku_start_frame": 40,
+                "shoot_logic": "spell_card_02.json",
+                "type": "Ellipse",
+                "is_rebound": true,
+                "color": {
+                  "r": 255,
+                  "g": 48,
+                  "b": 48,
+                  "a": 200
+                }
+              }
+            ],
+            "rewards": {
+              "power": 8,
+              "big_power": 0,
+              "bomb_up": 0,
+              "health_up": 0,
+              "blue_point": 30
+            }
+          }
+        ]
+      },
+      {
+        "spell": [
+          {
+            "name": "Death of the Righteous",
+            "bg_name": "mokou_bg",
+            "hp": 50000,
+            "loop_time": 600,
+            "stage_time": 6000,
+            "spell_card_bonus": 4000000,
+            "move": "mokou_move_03.json",
+            "fire_plan": [
+              {
+                "danmaku_start_frame": 225,
+                "shoot_logic": "spell_card_03.json",
+                "type": "Laser",
+                "remove_on_death": "true",
+                "color": {
+                  "r": 255,
+                  "g": 48,
+                  "b": 48,
+                  "a": 200
+                }
+              },
+              {
+                "danmaku_start_frame": 41,
+                "shoot_logic": "spell_card_03b.json",
+                "type": "Circle",
+                "remove_on_death": "true",
+                "color": {
+                  "r": 255,
+                  "g": 48,
+                  "b": 48,
+                  "a": 200
+                }
+              }
+            ]
           }
         ]
       }

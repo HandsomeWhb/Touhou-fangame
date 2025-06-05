@@ -1,0 +1,4802 @@
+[
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 1,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 6,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 11,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 16,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 21,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 26,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 31,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 36,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 41,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 46,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 51,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 56,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 61,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 66,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 71,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 76,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 81,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 86,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 91,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 96,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 101,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 106,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 111,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 116,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 0.0,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 11.612903225806452,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 23.225806451612904,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 34.83870967741935,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 46.45161290322581,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 58.064516129032256,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 69.6774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 81.29032258064517,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 92.90322580645162,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 104.51612903225806,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 116.12903225806451,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 127.74193548387096,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 139.3548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 150.96774193548387,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 162.58064516129033,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 174.19354838709677,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 185.80645161290323,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 197.41935483870967,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 209.03225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 220.6451612903226,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 232.25806451612902,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 243.8709677419355,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 255.48387096774192,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 267.0967741935484,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 278.7096774193548,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 290.3225806451613,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 301.93548387096774,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 313.5483870967742,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 325.16129032258067,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 336.7741935483871,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 348.38709677419354,
+    "speed": 4.0,
+    "type": "fixed"
+  },
+  {
+    "frame": 121,
+    "angle": 360.0,
+    "speed": 4.0,
+    "type": "fixed"
+  }
+]

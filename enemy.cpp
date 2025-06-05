@@ -30,6 +30,7 @@ void Enemy_manager::is_collision_player(Danmaku_manager* danmaku_manager_ptr) {
 
 
 void Enemy_manager::is_out_side() {
+
     for (auto it = enemies.begin(); it != enemies.end(); ) {
         if ((**it).circle_box.position_x < x1 || (**it).circle_box.position_x > x2 ||
             (**it).circle_box.position_y < y1 || (**it).circle_box.position_y > y2) {
@@ -48,10 +49,7 @@ void Enemy_manager::update(sf::RenderWindow* window_ptr,Danmaku_manager* danmaku
     }
     is_out_side();
     is_collision(danmaku_manager_ptr, damage);
-    if (frame_count % 6 == 0) {
-        is_collision_player(danmaku_manager_ptr);
-       
-    }
+    is_collision_player(danmaku_manager_ptr);
     is_enemy = false;
     for (auto it = enemies.begin(); it != enemies.end(); ) {
         (*it)->update(danmaku_manager_ptr);
@@ -59,15 +57,16 @@ void Enemy_manager::update(sf::RenderWindow* window_ptr,Danmaku_manager* danmaku
         if ((*it)->is_death) {
             danmaku_manager_ptr->clear_enemy_reference(*it);
             delete* it;
-            it = enemies.erase(it); // 返回新位置，不手动 ++
+            it = enemies.erase(it); 
         }
         else {
-            /*(*it)->circle_box.draw(window_ptr);*/ // 放这里会错：若 erase 后跳过了
             ++it;
         }
     }
     is_enemy = !enemies.empty();
-    frame_count += 1;
+    if (!get_current_boss()) {
+        frame_count += 1;
+    }
 }
 void Enemy_manager::show_all_enemy(sf::RenderWindow* window_ptr, Danmaku_manager* danmaku_manager_ptr) {
     for (auto it = enemies.begin(); it != enemies.end(); it++) {
@@ -256,9 +255,10 @@ int digit_count(int n) {
 }
 void Boss::get_bonus(int bonus) {
     float ratio = (current_action_ptr->phase_time - current_frame*1.5>0? current_action_ptr->phase_time - current_frame * 1.5:0) * 0.5 / current_action_ptr->phase_time + 0.5;
-    int real_bonus = bonus * ratio / 10;
+    int real_bonus = bonus * ratio/10;
+    real_bonus*=10;
     game_bridge.player_ptr->add_score(real_bonus);
-    int num=digit_count(real_bonus * 10);
+    int num=digit_count(real_bonus);
     float num_size = 0.05;
     float num_space_factor = 0.75;
     float start_x = 0.125;
@@ -267,8 +267,7 @@ void Boss::get_bonus(int bonus) {
     float message_space_factor = 0.6;
     Display_manager::add(get_game_font_sprites(message, ((0.625 - start_x) - message_size *message.length() * message_space_factor) / 2 + start_x,0.1,
         message_size,message_space_factor),90);
-    Display_manager::add(get_game_font_sprites(to_string(real_bonus * 10), ((0.625 - start_x) - num * num_size * 0.75) / 2 + start_x, 0.18, num_size,num_space_factor), 90);
-    
+    Display_manager::add(get_game_font_sprites(to_string(real_bonus), ((0.625 - start_x) - num * num_size * 0.75) / 2 + start_x, 0.18, num_size,num_space_factor), 90);
 }
 void Boss::bonus_failed() {
     float start_x = 0.125;
@@ -291,8 +290,10 @@ void Boss::shoot(Danmaku_manager* danmaku_manager_ptr) {
         current_action_ptr->motion.fire_plan_ptr++;
     }
     if (current_action_ptr->motion.fire_plan_ptr == current_action_ptr->motion.fire_plan.end()) {
-        is_casting = true;
         current_action_ptr->motion.fire_plan_ptr = current_action_ptr->motion.fire_plan.begin();
+    }
+    if (current_action_ptr->motion.fire_plan_ptr == current_action_ptr->motion.fire_plan.begin() && (current_frame % current_action_ptr->loop_time == 0)) {
+        is_casting = true;
     }
 }
 void Boss::on_death() {
@@ -337,12 +338,16 @@ void Boss::update(Danmaku_manager* danmaku_manager_ptr)  {
         this->hp = current_action_ptr->hp;
         is_init = true;
     }
+    
+    if ((current_action_ptr->phase_time - current_frame) <= 340 && (current_action_ptr->phase_time - current_frame) >= 20&& (current_action_ptr->phase_time - current_frame) % 60 == 15) {
+        Music_manager::play_music("se_timeout.wav",80);
+    }
     if (is_casting) {
         cast_counter = 0;
         is_casting = false;
-    }
-    if ((current_action_ptr->phase_time - current_frame) <= 340 && (current_action_ptr->phase_time - current_frame) >= 20&& (current_action_ptr->phase_time - current_frame) % 60 == 15) {
-        Music_manager::play_music("se_timeout.wav",80);
+        animation_ptr = search_animation_ptr("use_spell_card");
+        animation_ptr->current_frame = 3;
+        animation_ptr->time_accumulator = 0;
     }
     if (!is_adjust) {
         if (hp <= 0) {

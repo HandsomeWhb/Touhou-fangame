@@ -76,10 +76,11 @@ public:
 };
 class Boss :public Enemy{
 public:
+    
     std::string name;
     std::string bgm;
     int current_frame;
-    int cast_counter;
+    int cast_counter=60;
     bool is_casting = false;
     bool is_spell_card;
     bool able_get_bonus;
@@ -109,7 +110,6 @@ public:
         current_frame = 0;
         able_get_bonus = true;
         is_adjust = true;
-        is_casting = true;
         if (boss_phase_index >= boss_phase_ptrs.size()) {
             return false; // 所有阶段遍历完了
         }

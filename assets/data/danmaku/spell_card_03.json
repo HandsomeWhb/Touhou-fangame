@@ -1,0 +1,9452 @@
+[
+  {
+    "frame": 1,
+    "angle": 0.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 1,
+    "angle": 45.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 1,
+    "angle": 90.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 1,
+    "angle": 135.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 1,
+    "angle": 180.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 1,
+    "angle": 225.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 1,
+    "angle": 270.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 1,
+    "angle": 315.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 1,
+    "angle": 360.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 3,
+    "angle": 2.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 3,
+    "angle": 47.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 3,
+    "angle": 92.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 3,
+    "angle": 137.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 3,
+    "angle": 182.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 3,
+    "angle": 227.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 3,
+    "angle": 272.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 3,
+    "angle": 317.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 3,
+    "angle": 362.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 5,
+    "angle": 4.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 5,
+    "angle": 49.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 5,
+    "angle": 94.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 5,
+    "angle": 139.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 5,
+    "angle": 184.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 5,
+    "angle": 229.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 5,
+    "angle": 274.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 5,
+    "angle": 319.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 5,
+    "angle": 364.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 7,
+    "angle": 6.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 7,
+    "angle": 51.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 7,
+    "angle": 96.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 7,
+    "angle": 141.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 7,
+    "angle": 186.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 7,
+    "angle": 231.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 7,
+    "angle": 276.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 7,
+    "angle": 321.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 7,
+    "angle": 366.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 9,
+    "angle": 8.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 9,
+    "angle": 53.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 9,
+    "angle": 98.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 9,
+    "angle": 143.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 9,
+    "angle": 188.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 9,
+    "angle": 233.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 9,
+    "angle": 278.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 9,
+    "angle": 323.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 9,
+    "angle": 368.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 11,
+    "angle": 10.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 11,
+    "angle": 55.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 11,
+    "angle": 100.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 11,
+    "angle": 145.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 11,
+    "angle": 190.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 11,
+    "angle": 235.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 11,
+    "angle": 280.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 11,
+    "angle": 325.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 11,
+    "angle": 370.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 13,
+    "angle": 12.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 13,
+    "angle": 57.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 13,
+    "angle": 102.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 13,
+    "angle": 147.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 13,
+    "angle": 192.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 13,
+    "angle": 237.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 13,
+    "angle": 282.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 13,
+    "angle": 327.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 13,
+    "angle": 372.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 15,
+    "angle": 14.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 15,
+    "angle": 59.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 15,
+    "angle": 104.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 15,
+    "angle": 149.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 15,
+    "angle": 194.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 15,
+    "angle": 239.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 15,
+    "angle": 284.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 15,
+    "angle": 329.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 15,
+    "angle": 374.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 17,
+    "angle": 16.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 17,
+    "angle": 61.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 17,
+    "angle": 106.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 17,
+    "angle": 151.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 17,
+    "angle": 196.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 17,
+    "angle": 241.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 17,
+    "angle": 286.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 17,
+    "angle": 331.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 17,
+    "angle": 376.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 19,
+    "angle": 18.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 19,
+    "angle": 63.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 19,
+    "angle": 108.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 19,
+    "angle": 153.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 19,
+    "angle": 198.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 19,
+    "angle": 243.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 19,
+    "angle": 288.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 19,
+    "angle": 333.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 19,
+    "angle": 378.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 21,
+    "angle": 20.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 21,
+    "angle": 65.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 21,
+    "angle": 110.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 21,
+    "angle": 155.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 21,
+    "angle": 200.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 21,
+    "angle": 245.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 21,
+    "angle": 290.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 21,
+    "angle": 335.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 21,
+    "angle": 380.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 23,
+    "angle": 22.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 23,
+    "angle": 67.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 23,
+    "angle": 112.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 23,
+    "angle": 157.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 23,
+    "angle": 202.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 23,
+    "angle": 247.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 23,
+    "angle": 292.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 23,
+    "angle": 337.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 23,
+    "angle": 382.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 25,
+    "angle": 24.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 25,
+    "angle": 69.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 25,
+    "angle": 114.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 25,
+    "angle": 159.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 25,
+    "angle": 204.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 25,
+    "angle": 249.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 25,
+    "angle": 294.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 25,
+    "angle": 339.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 25,
+    "angle": 384.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 27,
+    "angle": 26.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 27,
+    "angle": 71.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 27,
+    "angle": 116.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 27,
+    "angle": 161.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 27,
+    "angle": 206.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 27,
+    "angle": 251.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 27,
+    "angle": 296.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 27,
+    "angle": 341.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 27,
+    "angle": 386.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 29,
+    "angle": 28.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 29,
+    "angle": 73.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 29,
+    "angle": 118.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 29,
+    "angle": 163.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 29,
+    "angle": 208.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 29,
+    "angle": 253.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 29,
+    "angle": 298.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 29,
+    "angle": 343.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 29,
+    "angle": 388.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 31,
+    "angle": 30.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 31,
+    "angle": 75.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 31,
+    "angle": 120.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 31,
+    "angle": 165.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 31,
+    "angle": 210.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 31,
+    "angle": 255.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 31,
+    "angle": 300.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 31,
+    "angle": 345.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 31,
+    "angle": 390.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 33,
+    "angle": 32.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 33,
+    "angle": 77.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 33,
+    "angle": 122.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 33,
+    "angle": 167.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 33,
+    "angle": 212.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 33,
+    "angle": 257.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 33,
+    "angle": 302.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 33,
+    "angle": 347.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 33,
+    "angle": 392.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 35,
+    "angle": 34.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 35,
+    "angle": 79.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 35,
+    "angle": 124.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 35,
+    "angle": 169.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 35,
+    "angle": 214.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 35,
+    "angle": 259.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 35,
+    "angle": 304.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 35,
+    "angle": 349.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 35,
+    "angle": 394.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 37,
+    "angle": 36.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 37,
+    "angle": 81.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 37,
+    "angle": 126.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 37,
+    "angle": 171.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 37,
+    "angle": 216.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 37,
+    "angle": 261.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 37,
+    "angle": 306.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 37,
+    "angle": 351.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 37,
+    "angle": 396.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 39,
+    "angle": 38.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 39,
+    "angle": 83.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 39,
+    "angle": 128.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 39,
+    "angle": 173.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 39,
+    "angle": 218.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 39,
+    "angle": 263.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 39,
+    "angle": 308.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 39,
+    "angle": 353.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 39,
+    "angle": 398.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 41,
+    "angle": 40.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 41,
+    "angle": 85.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 41,
+    "angle": 130.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 41,
+    "angle": 175.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 41,
+    "angle": 220.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 41,
+    "angle": 265.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 41,
+    "angle": 310.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 41,
+    "angle": 355.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 41,
+    "angle": 400.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 43,
+    "angle": 42.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 43,
+    "angle": 87.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 43,
+    "angle": 132.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 43,
+    "angle": 177.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 43,
+    "angle": 222.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 43,
+    "angle": 267.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 43,
+    "angle": 312.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 43,
+    "angle": 357.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 43,
+    "angle": 402.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 45,
+    "angle": 44.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 45,
+    "angle": 89.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 45,
+    "angle": 134.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 45,
+    "angle": 179.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 45,
+    "angle": 224.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 45,
+    "angle": 269.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 45,
+    "angle": 314.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 45,
+    "angle": 359.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 45,
+    "angle": 404.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 47,
+    "angle": 46.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 47,
+    "angle": 91.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 47,
+    "angle": 136.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 47,
+    "angle": 181.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 47,
+    "angle": 226.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 47,
+    "angle": 271.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 47,
+    "angle": 316.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 47,
+    "angle": 361.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 47,
+    "angle": 406.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 49,
+    "angle": 48.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 49,
+    "angle": 93.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 49,
+    "angle": 138.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 49,
+    "angle": 183.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 49,
+    "angle": 228.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 49,
+    "angle": 273.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 49,
+    "angle": 318.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 49,
+    "angle": 363.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 49,
+    "angle": 408.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 51,
+    "angle": 50.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 51,
+    "angle": 95.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 51,
+    "angle": 140.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 51,
+    "angle": 185.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 51,
+    "angle": 230.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 51,
+    "angle": 275.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 51,
+    "angle": 320.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 51,
+    "angle": 365.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 51,
+    "angle": 410.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 53,
+    "angle": 52.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 53,
+    "angle": 97.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 53,
+    "angle": 142.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 53,
+    "angle": 187.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 53,
+    "angle": 232.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 53,
+    "angle": 277.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 53,
+    "angle": 322.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 53,
+    "angle": 367.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 53,
+    "angle": 412.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 55,
+    "angle": 54.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 55,
+    "angle": 99.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 55,
+    "angle": 144.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 55,
+    "angle": 189.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 55,
+    "angle": 234.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 55,
+    "angle": 279.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 55,
+    "angle": 324.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 55,
+    "angle": 369.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 55,
+    "angle": 414.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 57,
+    "angle": 56.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 57,
+    "angle": 101.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 57,
+    "angle": 146.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 57,
+    "angle": 191.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 57,
+    "angle": 236.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 57,
+    "angle": 281.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 57,
+    "angle": 326.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 57,
+    "angle": 371.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 57,
+    "angle": 416.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 59,
+    "angle": 58.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 59,
+    "angle": 103.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 59,
+    "angle": 148.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 59,
+    "angle": 193.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 59,
+    "angle": 238.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 59,
+    "angle": 283.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 59,
+    "angle": 328.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 59,
+    "angle": 373.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 59,
+    "angle": 418.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 61,
+    "angle": 60.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 61,
+    "angle": 105.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 61,
+    "angle": 150.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 61,
+    "angle": 195.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 61,
+    "angle": 240.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 61,
+    "angle": 285.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 61,
+    "angle": 330.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 61,
+    "angle": 375.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 61,
+    "angle": 420.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 63,
+    "angle": 62.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 63,
+    "angle": 107.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 63,
+    "angle": 152.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 63,
+    "angle": 197.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 63,
+    "angle": 242.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 63,
+    "angle": 287.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 63,
+    "angle": 332.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 63,
+    "angle": 377.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 63,
+    "angle": 422.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 65,
+    "angle": 64.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 65,
+    "angle": 109.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 65,
+    "angle": 154.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 65,
+    "angle": 199.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 65,
+    "angle": 244.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 65,
+    "angle": 289.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 65,
+    "angle": 334.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 65,
+    "angle": 379.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 65,
+    "angle": 424.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 67,
+    "angle": 66.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 67,
+    "angle": 111.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 67,
+    "angle": 156.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 67,
+    "angle": 201.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 67,
+    "angle": 246.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 67,
+    "angle": 291.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 67,
+    "angle": 336.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 67,
+    "angle": 381.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 67,
+    "angle": 426.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 69,
+    "angle": 68.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 69,
+    "angle": 113.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 69,
+    "angle": 158.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 69,
+    "angle": 203.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 69,
+    "angle": 248.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 69,
+    "angle": 293.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 69,
+    "angle": 338.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 69,
+    "angle": 383.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 69,
+    "angle": 428.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 71,
+    "angle": 70.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 71,
+    "angle": 115.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 71,
+    "angle": 160.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 71,
+    "angle": 205.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 71,
+    "angle": 250.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 71,
+    "angle": 295.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 71,
+    "angle": 340.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 71,
+    "angle": 385.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 71,
+    "angle": 430.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 73,
+    "angle": 72.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 73,
+    "angle": 117.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 73,
+    "angle": 162.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 73,
+    "angle": 207.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 73,
+    "angle": 252.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 73,
+    "angle": 297.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 73,
+    "angle": 342.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 73,
+    "angle": 387.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 73,
+    "angle": 432.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 75,
+    "angle": 74.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 75,
+    "angle": 119.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 75,
+    "angle": 164.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 75,
+    "angle": 209.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 75,
+    "angle": 254.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 75,
+    "angle": 299.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 75,
+    "angle": 344.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 75,
+    "angle": 389.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 75,
+    "angle": 434.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 77,
+    "angle": 76.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 77,
+    "angle": 121.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 77,
+    "angle": 166.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 77,
+    "angle": 211.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 77,
+    "angle": 256.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 77,
+    "angle": 301.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 77,
+    "angle": 346.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 77,
+    "angle": 391.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 77,
+    "angle": 436.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 79,
+    "angle": 78.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 79,
+    "angle": 123.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 79,
+    "angle": 168.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 79,
+    "angle": 213.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 79,
+    "angle": 258.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 79,
+    "angle": 303.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 79,
+    "angle": 348.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 79,
+    "angle": 393.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 79,
+    "angle": 438.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 81,
+    "angle": 80.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 81,
+    "angle": 125.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 81,
+    "angle": 170.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 81,
+    "angle": 215.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 81,
+    "angle": 260.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 81,
+    "angle": 305.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 81,
+    "angle": 350.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 81,
+    "angle": 395.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 81,
+    "angle": 440.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 83,
+    "angle": 82.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 83,
+    "angle": 127.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 83,
+    "angle": 172.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 83,
+    "angle": 217.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 83,
+    "angle": 262.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 83,
+    "angle": 307.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 83,
+    "angle": 352.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 83,
+    "angle": 397.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 83,
+    "angle": 442.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 85,
+    "angle": 84.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 85,
+    "angle": 129.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 85,
+    "angle": 174.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 85,
+    "angle": 219.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 85,
+    "angle": 264.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 85,
+    "angle": 309.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 85,
+    "angle": 354.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 85,
+    "angle": 399.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 85,
+    "angle": 444.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 87,
+    "angle": 86.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 87,
+    "angle": 131.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 87,
+    "angle": 176.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 87,
+    "angle": 221.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 87,
+    "angle": 266.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 87,
+    "angle": 311.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 87,
+    "angle": 356.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 87,
+    "angle": 401.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 87,
+    "angle": 446.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 89,
+    "angle": 88.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 89,
+    "angle": 133.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 89,
+    "angle": 178.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 89,
+    "angle": 223.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 89,
+    "angle": 268.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 89,
+    "angle": 313.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 89,
+    "angle": 358.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 89,
+    "angle": 403.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 89,
+    "angle": 448.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 91,
+    "angle": 90.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 91,
+    "angle": 135.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 91,
+    "angle": 180.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 91,
+    "angle": 225.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 91,
+    "angle": 270.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 91,
+    "angle": 315.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 91,
+    "angle": 360.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 91,
+    "angle": 405.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 91,
+    "angle": 450.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 93,
+    "angle": 92.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 93,
+    "angle": 137.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 93,
+    "angle": 182.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 93,
+    "angle": 227.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 93,
+    "angle": 272.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 93,
+    "angle": 317.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 93,
+    "angle": 362.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 93,
+    "angle": 407.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 93,
+    "angle": 452.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 95,
+    "angle": 94.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 95,
+    "angle": 139.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 95,
+    "angle": 184.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 95,
+    "angle": 229.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 95,
+    "angle": 274.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 95,
+    "angle": 319.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 95,
+    "angle": 364.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 95,
+    "angle": 409.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 95,
+    "angle": 454.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 97,
+    "angle": 96.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 97,
+    "angle": 141.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 97,
+    "angle": 186.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 97,
+    "angle": 231.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 97,
+    "angle": 276.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 97,
+    "angle": 321.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 97,
+    "angle": 366.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 97,
+    "angle": 411.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 97,
+    "angle": 456.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 99,
+    "angle": 98.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 99,
+    "angle": 143.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 99,
+    "angle": 188.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 99,
+    "angle": 233.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 99,
+    "angle": 278.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 99,
+    "angle": 323.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 99,
+    "angle": 368.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 99,
+    "angle": 413.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 99,
+    "angle": 458.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 101,
+    "angle": 100.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 101,
+    "angle": 145.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 101,
+    "angle": 190.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 101,
+    "angle": 235.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 101,
+    "angle": 280.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 101,
+    "angle": 325.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 101,
+    "angle": 370.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 101,
+    "angle": 415.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 101,
+    "angle": 460.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 103,
+    "angle": 102.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 103,
+    "angle": 147.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 103,
+    "angle": 192.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 103,
+    "angle": 237.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 103,
+    "angle": 282.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 103,
+    "angle": 327.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 103,
+    "angle": 372.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 103,
+    "angle": 417.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 103,
+    "angle": 462.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 105,
+    "angle": 104.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 105,
+    "angle": 149.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 105,
+    "angle": 194.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 105,
+    "angle": 239.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 105,
+    "angle": 284.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 105,
+    "angle": 329.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 105,
+    "angle": 374.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 105,
+    "angle": 419.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 105,
+    "angle": 464.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 107,
+    "angle": 106.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 107,
+    "angle": 151.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 107,
+    "angle": 196.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 107,
+    "angle": 241.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 107,
+    "angle": 286.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 107,
+    "angle": 331.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 107,
+    "angle": 376.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 107,
+    "angle": 421.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 107,
+    "angle": 466.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 109,
+    "angle": 108.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 109,
+    "angle": 153.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 109,
+    "angle": 198.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 109,
+    "angle": 243.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 109,
+    "angle": 288.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 109,
+    "angle": 333.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 109,
+    "angle": 378.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 109,
+    "angle": 423.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 109,
+    "angle": 468.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 111,
+    "angle": 110.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 111,
+    "angle": 155.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 111,
+    "angle": 200.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 111,
+    "angle": 245.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 111,
+    "angle": 290.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 111,
+    "angle": 335.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 111,
+    "angle": 380.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 111,
+    "angle": 425.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 111,
+    "angle": 470.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 113,
+    "angle": 112.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 113,
+    "angle": 157.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 113,
+    "angle": 202.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 113,
+    "angle": 247.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 113,
+    "angle": 292.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 113,
+    "angle": 337.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 113,
+    "angle": 382.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 113,
+    "angle": 427.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 113,
+    "angle": 472.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 115,
+    "angle": 114.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 115,
+    "angle": 159.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 115,
+    "angle": 204.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 115,
+    "angle": 249.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 115,
+    "angle": 294.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 115,
+    "angle": 339.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 115,
+    "angle": 384.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 115,
+    "angle": 429.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 115,
+    "angle": 474.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 117,
+    "angle": 116.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 117,
+    "angle": 161.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 117,
+    "angle": 206.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 117,
+    "angle": 251.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 117,
+    "angle": 296.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 117,
+    "angle": 341.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 117,
+    "angle": 386.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 117,
+    "angle": 431.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 117,
+    "angle": 476.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 119,
+    "angle": 118.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 119,
+    "angle": 163.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 119,
+    "angle": 208.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 119,
+    "angle": 253.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 119,
+    "angle": 298.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 119,
+    "angle": 343.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 119,
+    "angle": 388.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 119,
+    "angle": 433.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 119,
+    "angle": 478.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 121,
+    "angle": 120.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 121,
+    "angle": 165.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 121,
+    "angle": 210.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 121,
+    "angle": 255.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 121,
+    "angle": 300.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 121,
+    "angle": 345.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 121,
+    "angle": 390.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 121,
+    "angle": 435.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 121,
+    "angle": 480.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 123,
+    "angle": 122.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 123,
+    "angle": 167.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 123,
+    "angle": 212.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 123,
+    "angle": 257.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 123,
+    "angle": 302.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 123,
+    "angle": 347.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 123,
+    "angle": 392.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 123,
+    "angle": 437.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 123,
+    "angle": 482.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 125,
+    "angle": 124.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 125,
+    "angle": 169.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 125,
+    "angle": 214.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 125,
+    "angle": 259.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 125,
+    "angle": 304.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 125,
+    "angle": 349.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 125,
+    "angle": 394.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 125,
+    "angle": 439.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 125,
+    "angle": 484.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 127,
+    "angle": 126.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 127,
+    "angle": 171.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 127,
+    "angle": 216.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 127,
+    "angle": 261.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 127,
+    "angle": 306.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 127,
+    "angle": 351.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 127,
+    "angle": 396.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 127,
+    "angle": 441.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 127,
+    "angle": 486.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 129,
+    "angle": 128.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 129,
+    "angle": 173.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 129,
+    "angle": 218.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 129,
+    "angle": 263.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 129,
+    "angle": 308.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 129,
+    "angle": 353.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 129,
+    "angle": 398.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 129,
+    "angle": 443.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 129,
+    "angle": 488.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 131,
+    "angle": 130.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 131,
+    "angle": 175.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 131,
+    "angle": 220.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 131,
+    "angle": 265.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 131,
+    "angle": 310.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 131,
+    "angle": 355.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 131,
+    "angle": 400.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 131,
+    "angle": 445.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 131,
+    "angle": 490.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 133,
+    "angle": 132.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 133,
+    "angle": 177.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 133,
+    "angle": 222.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 133,
+    "angle": 267.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 133,
+    "angle": 312.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 133,
+    "angle": 357.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 133,
+    "angle": 402.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 133,
+    "angle": 447.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 133,
+    "angle": 492.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 135,
+    "angle": 134.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 135,
+    "angle": 179.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 135,
+    "angle": 224.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 135,
+    "angle": 269.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 135,
+    "angle": 314.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 135,
+    "angle": 359.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 135,
+    "angle": 404.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 135,
+    "angle": 449.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 135,
+    "angle": 494.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 137,
+    "angle": 136.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 137,
+    "angle": 181.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 137,
+    "angle": 226.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 137,
+    "angle": 271.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 137,
+    "angle": 316.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 137,
+    "angle": 361.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 137,
+    "angle": 406.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 137,
+    "angle": 451.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 137,
+    "angle": 496.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 139,
+    "angle": 138.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 139,
+    "angle": 183.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 139,
+    "angle": 228.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 139,
+    "angle": 273.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 139,
+    "angle": 318.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 139,
+    "angle": 363.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 139,
+    "angle": 408.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 139,
+    "angle": 453.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 139,
+    "angle": 498.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 141,
+    "angle": 140.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 141,
+    "angle": 185.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 141,
+    "angle": 230.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 141,
+    "angle": 275.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 141,
+    "angle": 320.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 141,
+    "angle": 365.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 141,
+    "angle": 410.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 141,
+    "angle": 455.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 141,
+    "angle": 500.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 143,
+    "angle": 142.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 143,
+    "angle": 187.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 143,
+    "angle": 232.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 143,
+    "angle": 277.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 143,
+    "angle": 322.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 143,
+    "angle": 367.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 143,
+    "angle": 412.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 143,
+    "angle": 457.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 143,
+    "angle": 502.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 145,
+    "angle": 144.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 145,
+    "angle": 189.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 145,
+    "angle": 234.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 145,
+    "angle": 279.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 145,
+    "angle": 324.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 145,
+    "angle": 369.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 145,
+    "angle": 414.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 145,
+    "angle": 459.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 145,
+    "angle": 504.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 147,
+    "angle": 146.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 147,
+    "angle": 191.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 147,
+    "angle": 236.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 147,
+    "angle": 281.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 147,
+    "angle": 326.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 147,
+    "angle": 371.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 147,
+    "angle": 416.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 147,
+    "angle": 461.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 147,
+    "angle": 506.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 149,
+    "angle": 148.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 149,
+    "angle": 193.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 149,
+    "angle": 238.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 149,
+    "angle": 283.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 149,
+    "angle": 328.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 149,
+    "angle": 373.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 149,
+    "angle": 418.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 149,
+    "angle": 463.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 149,
+    "angle": 508.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 151,
+    "angle": 150.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 151,
+    "angle": 195.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 151,
+    "angle": 240.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 151,
+    "angle": 285.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 151,
+    "angle": 330.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 151,
+    "angle": 375.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 151,
+    "angle": 420.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 151,
+    "angle": 465.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 151,
+    "angle": 510.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 153,
+    "angle": 152.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 153,
+    "angle": 197.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 153,
+    "angle": 242.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 153,
+    "angle": 287.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 153,
+    "angle": 332.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 153,
+    "angle": 377.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 153,
+    "angle": 422.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 153,
+    "angle": 467.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 153,
+    "angle": 512.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 155,
+    "angle": 154.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 155,
+    "angle": 199.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 155,
+    "angle": 244.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 155,
+    "angle": 289.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 155,
+    "angle": 334.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 155,
+    "angle": 379.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 155,
+    "angle": 424.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 155,
+    "angle": 469.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 155,
+    "angle": 514.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 157,
+    "angle": 156.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 157,
+    "angle": 201.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 157,
+    "angle": 246.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 157,
+    "angle": 291.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 157,
+    "angle": 336.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 157,
+    "angle": 381.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 157,
+    "angle": 426.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 157,
+    "angle": 471.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 157,
+    "angle": 516.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 159,
+    "angle": 158.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 159,
+    "angle": 203.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 159,
+    "angle": 248.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 159,
+    "angle": 293.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 159,
+    "angle": 338.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 159,
+    "angle": 383.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 159,
+    "angle": 428.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 159,
+    "angle": 473.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 159,
+    "angle": 518.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 161,
+    "angle": 160.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 161,
+    "angle": 205.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 161,
+    "angle": 250.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 161,
+    "angle": 295.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 161,
+    "angle": 340.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 161,
+    "angle": 385.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 161,
+    "angle": 430.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 161,
+    "angle": 475.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 161,
+    "angle": 520.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 163,
+    "angle": 162.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 163,
+    "angle": 207.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 163,
+    "angle": 252.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 163,
+    "angle": 297.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 163,
+    "angle": 342.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 163,
+    "angle": 387.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 163,
+    "angle": 432.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 163,
+    "angle": 477.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 163,
+    "angle": 522.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 165,
+    "angle": 164.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 165,
+    "angle": 209.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 165,
+    "angle": 254.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 165,
+    "angle": 299.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 165,
+    "angle": 344.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 165,
+    "angle": 389.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 165,
+    "angle": 434.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 165,
+    "angle": 479.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 165,
+    "angle": 524.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 167,
+    "angle": 166.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 167,
+    "angle": 211.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 167,
+    "angle": 256.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 167,
+    "angle": 301.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 167,
+    "angle": 346.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 167,
+    "angle": 391.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 167,
+    "angle": 436.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 167,
+    "angle": 481.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 167,
+    "angle": 526.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 169,
+    "angle": 168.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 169,
+    "angle": 213.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 169,
+    "angle": 258.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 169,
+    "angle": 303.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 169,
+    "angle": 348.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 169,
+    "angle": 393.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 169,
+    "angle": 438.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 169,
+    "angle": 483.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 169,
+    "angle": 528.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 171,
+    "angle": 170.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 171,
+    "angle": 215.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 171,
+    "angle": 260.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 171,
+    "angle": 305.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 171,
+    "angle": 350.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 171,
+    "angle": 395.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 171,
+    "angle": 440.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 171,
+    "angle": 485.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 171,
+    "angle": 530.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 173,
+    "angle": 172.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 173,
+    "angle": 217.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 173,
+    "angle": 262.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 173,
+    "angle": 307.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 173,
+    "angle": 352.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 173,
+    "angle": 397.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 173,
+    "angle": 442.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 173,
+    "angle": 487.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 173,
+    "angle": 532.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 175,
+    "angle": 174.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 175,
+    "angle": 219.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 175,
+    "angle": 264.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 175,
+    "angle": 309.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 175,
+    "angle": 354.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 175,
+    "angle": 399.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 175,
+    "angle": 444.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 175,
+    "angle": 489.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 175,
+    "angle": 534.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 177,
+    "angle": 176.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 177,
+    "angle": 221.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 177,
+    "angle": 266.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 177,
+    "angle": 311.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 177,
+    "angle": 356.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 177,
+    "angle": 401.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 177,
+    "angle": 446.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 177,
+    "angle": 491.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 177,
+    "angle": 536.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 179,
+    "angle": 178.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 179,
+    "angle": 223.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 179,
+    "angle": 268.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 179,
+    "angle": 313.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 179,
+    "angle": 358.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 179,
+    "angle": 403.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 179,
+    "angle": 448.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 179,
+    "angle": 493.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 179,
+    "angle": 538.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 181,
+    "angle": 180.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 181,
+    "angle": 225.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 181,
+    "angle": 270.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 181,
+    "angle": 315.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 181,
+    "angle": 360.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 181,
+    "angle": 405.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 181,
+    "angle": 450.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 181,
+    "angle": 495.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 181,
+    "angle": 540.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 183,
+    "angle": 182.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 183,
+    "angle": 227.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 183,
+    "angle": 272.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 183,
+    "angle": 317.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 183,
+    "angle": 362.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 183,
+    "angle": 407.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 183,
+    "angle": 452.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 183,
+    "angle": 497.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 183,
+    "angle": 542.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 185,
+    "angle": 184.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 185,
+    "angle": 229.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 185,
+    "angle": 274.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 185,
+    "angle": 319.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 185,
+    "angle": 364.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 185,
+    "angle": 409.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 185,
+    "angle": 454.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 185,
+    "angle": 499.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 185,
+    "angle": 544.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 187,
+    "angle": 186.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 187,
+    "angle": 231.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 187,
+    "angle": 276.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 187,
+    "angle": 321.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 187,
+    "angle": 366.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 187,
+    "angle": 411.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 187,
+    "angle": 456.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 187,
+    "angle": 501.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 187,
+    "angle": 546.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 189,
+    "angle": 188.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 189,
+    "angle": 233.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 189,
+    "angle": 278.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 189,
+    "angle": 323.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 189,
+    "angle": 368.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 189,
+    "angle": 413.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 189,
+    "angle": 458.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 189,
+    "angle": 503.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 189,
+    "angle": 548.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 191,
+    "angle": 190.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 191,
+    "angle": 235.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 191,
+    "angle": 280.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 191,
+    "angle": 325.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 191,
+    "angle": 370.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 191,
+    "angle": 415.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 191,
+    "angle": 460.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 191,
+    "angle": 505.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 191,
+    "angle": 550.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 193,
+    "angle": 192.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 193,
+    "angle": 237.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 193,
+    "angle": 282.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 193,
+    "angle": 327.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 193,
+    "angle": 372.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 193,
+    "angle": 417.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 193,
+    "angle": 462.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 193,
+    "angle": 507.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 193,
+    "angle": 552.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 195,
+    "angle": 194.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 195,
+    "angle": 239.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 195,
+    "angle": 284.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 195,
+    "angle": 329.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 195,
+    "angle": 374.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 195,
+    "angle": 419.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 195,
+    "angle": 464.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 195,
+    "angle": 509.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 195,
+    "angle": 554.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 197,
+    "angle": 196.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 197,
+    "angle": 241.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 197,
+    "angle": 286.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 197,
+    "angle": 331.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 197,
+    "angle": 376.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 197,
+    "angle": 421.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 197,
+    "angle": 466.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 197,
+    "angle": 511.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 197,
+    "angle": 556.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 199,
+    "angle": 198.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 199,
+    "angle": 243.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 199,
+    "angle": 288.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 199,
+    "angle": 333.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 199,
+    "angle": 378.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 199,
+    "angle": 423.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 199,
+    "angle": 468.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 199,
+    "angle": 513.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 199,
+    "angle": 558.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 201,
+    "angle": 200.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 201,
+    "angle": 245.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 201,
+    "angle": 290.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 201,
+    "angle": 335.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 201,
+    "angle": 380.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 201,
+    "angle": 425.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 201,
+    "angle": 470.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 201,
+    "angle": 515.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 201,
+    "angle": 560.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 203,
+    "angle": 202.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 203,
+    "angle": 247.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 203,
+    "angle": 292.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 203,
+    "angle": 337.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 203,
+    "angle": 382.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 203,
+    "angle": 427.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 203,
+    "angle": 472.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 203,
+    "angle": 517.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 203,
+    "angle": 562.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 205,
+    "angle": 204.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 205,
+    "angle": 249.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 205,
+    "angle": 294.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 205,
+    "angle": 339.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 205,
+    "angle": 384.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 205,
+    "angle": 429.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 205,
+    "angle": 474.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 205,
+    "angle": 519.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 205,
+    "angle": 564.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 207,
+    "angle": 206.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 207,
+    "angle": 251.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 207,
+    "angle": 296.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 207,
+    "angle": 341.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 207,
+    "angle": 386.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 207,
+    "angle": 431.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 207,
+    "angle": 476.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 207,
+    "angle": 521.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 207,
+    "angle": 566.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 209,
+    "angle": 208.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 209,
+    "angle": 253.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 209,
+    "angle": 298.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 209,
+    "angle": 343.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 209,
+    "angle": 388.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 209,
+    "angle": 433.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 209,
+    "angle": 478.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 209,
+    "angle": 523.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 209,
+    "angle": 568.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 211,
+    "angle": 210.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 211,
+    "angle": 255.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 211,
+    "angle": 300.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 211,
+    "angle": 345.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 211,
+    "angle": 390.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 211,
+    "angle": 435.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 211,
+    "angle": 480.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 211,
+    "angle": 525.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 211,
+    "angle": 570.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 213,
+    "angle": 212.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 213,
+    "angle": 257.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 213,
+    "angle": 302.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 213,
+    "angle": 347.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 213,
+    "angle": 392.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 213,
+    "angle": 437.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 213,
+    "angle": 482.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 213,
+    "angle": 527.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 213,
+    "angle": 572.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 215,
+    "angle": 214.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 215,
+    "angle": 259.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 215,
+    "angle": 304.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 215,
+    "angle": 349.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 215,
+    "angle": 394.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 215,
+    "angle": 439.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 215,
+    "angle": 484.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 215,
+    "angle": 529.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 215,
+    "angle": 574.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 217,
+    "angle": 216.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 217,
+    "angle": 261.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 217,
+    "angle": 306.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 217,
+    "angle": 351.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 217,
+    "angle": 396.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 217,
+    "angle": 441.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 217,
+    "angle": 486.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 217,
+    "angle": 531.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 217,
+    "angle": 576.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 219,
+    "angle": 218.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 219,
+    "angle": 263.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 219,
+    "angle": 308.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 219,
+    "angle": 353.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 219,
+    "angle": 398.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 219,
+    "angle": 443.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 219,
+    "angle": 488.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 219,
+    "angle": 533.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 219,
+    "angle": 578.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 221,
+    "angle": 220.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 221,
+    "angle": 265.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 221,
+    "angle": 310.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 221,
+    "angle": 355.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 221,
+    "angle": 400.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 221,
+    "angle": 445.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 221,
+    "angle": 490.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 221,
+    "angle": 535.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 221,
+    "angle": 580.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 223,
+    "angle": 222.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 223,
+    "angle": 267.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 223,
+    "angle": 312.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 223,
+    "angle": 357.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 223,
+    "angle": 402.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 223,
+    "angle": 447.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 223,
+    "angle": 492.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 223,
+    "angle": 537.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 223,
+    "angle": 582.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 225,
+    "angle": 224.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 225,
+    "angle": 269.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 225,
+    "angle": 314.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 225,
+    "angle": 359.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 225,
+    "angle": 404.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 225,
+    "angle": 449.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 225,
+    "angle": 494.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 225,
+    "angle": 539.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 225,
+    "angle": 584.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 227,
+    "angle": 226.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 227,
+    "angle": 271.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 227,
+    "angle": 316.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 227,
+    "angle": 361.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 227,
+    "angle": 406.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 227,
+    "angle": 451.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 227,
+    "angle": 496.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 227,
+    "angle": 541.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 227,
+    "angle": 586.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 229,
+    "angle": 228.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 229,
+    "angle": 273.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 229,
+    "angle": 318.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 229,
+    "angle": 363.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 229,
+    "angle": 408.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 229,
+    "angle": 453.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 229,
+    "angle": 498.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 229,
+    "angle": 543.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 229,
+    "angle": 588.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 231,
+    "angle": 230.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 231,
+    "angle": 275.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 231,
+    "angle": 320.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 231,
+    "angle": 365.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 231,
+    "angle": 410.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 231,
+    "angle": 455.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 231,
+    "angle": 500.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 231,
+    "angle": 545.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 231,
+    "angle": 590.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 233,
+    "angle": 232.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 233,
+    "angle": 277.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 233,
+    "angle": 322.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 233,
+    "angle": 367.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 233,
+    "angle": 412.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 233,
+    "angle": 457.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 233,
+    "angle": 502.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 233,
+    "angle": 547.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 233,
+    "angle": 592.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 235,
+    "angle": 234.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 235,
+    "angle": 279.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 235,
+    "angle": 324.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 235,
+    "angle": 369.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 235,
+    "angle": 414.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 235,
+    "angle": 459.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 235,
+    "angle": 504.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 235,
+    "angle": 549.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 235,
+    "angle": 594.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 237,
+    "angle": 236.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 237,
+    "angle": 281.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 237,
+    "angle": 326.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 237,
+    "angle": 371.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 237,
+    "angle": 416.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 237,
+    "angle": 461.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 237,
+    "angle": 506.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 237,
+    "angle": 551.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 237,
+    "angle": 596.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 239,
+    "angle": 238.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 239,
+    "angle": 283.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 239,
+    "angle": 328.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 239,
+    "angle": 373.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 239,
+    "angle": 418.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 239,
+    "angle": 463.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 239,
+    "angle": 508.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 239,
+    "angle": 553.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 239,
+    "angle": 598.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 241,
+    "angle": 240.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 241,
+    "angle": 285.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 241,
+    "angle": 330.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 241,
+    "angle": 375.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 241,
+    "angle": 420.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 241,
+    "angle": 465.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 241,
+    "angle": 510.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 241,
+    "angle": 555.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 241,
+    "angle": 600.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 243,
+    "angle": 242.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 243,
+    "angle": 287.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 243,
+    "angle": 332.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 243,
+    "angle": 377.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 243,
+    "angle": 422.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 243,
+    "angle": 467.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 243,
+    "angle": 512.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 243,
+    "angle": 557.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 243,
+    "angle": 602.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 245,
+    "angle": 244.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 245,
+    "angle": 289.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 245,
+    "angle": 334.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 245,
+    "angle": 379.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 245,
+    "angle": 424.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 245,
+    "angle": 469.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 245,
+    "angle": 514.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 245,
+    "angle": 559.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 245,
+    "angle": 604.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 247,
+    "angle": 246.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 247,
+    "angle": 291.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 247,
+    "angle": 336.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 247,
+    "angle": 381.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 247,
+    "angle": 426.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 247,
+    "angle": 471.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 247,
+    "angle": 516.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 247,
+    "angle": 561.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 247,
+    "angle": 606.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 249,
+    "angle": 248.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 249,
+    "angle": 293.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 249,
+    "angle": 338.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 249,
+    "angle": 383.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 249,
+    "angle": 428.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 249,
+    "angle": 473.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 249,
+    "angle": 518.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 249,
+    "angle": 563.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 249,
+    "angle": 608.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 251,
+    "angle": 250.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 251,
+    "angle": 295.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 251,
+    "angle": 340.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 251,
+    "angle": 385.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 251,
+    "angle": 430.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 251,
+    "angle": 475.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 251,
+    "angle": 520.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 251,
+    "angle": 565.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 251,
+    "angle": 610.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 253,
+    "angle": 252.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 253,
+    "angle": 297.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 253,
+    "angle": 342.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 253,
+    "angle": 387.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 253,
+    "angle": 432.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 253,
+    "angle": 477.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 253,
+    "angle": 522.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 253,
+    "angle": 567.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 253,
+    "angle": 612.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 255,
+    "angle": 254.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 255,
+    "angle": 299.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 255,
+    "angle": 344.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 255,
+    "angle": 389.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 255,
+    "angle": 434.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 255,
+    "angle": 479.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 255,
+    "angle": 524.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 255,
+    "angle": 569.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 255,
+    "angle": 614.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 257,
+    "angle": 256.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 257,
+    "angle": 301.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 257,
+    "angle": 346.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 257,
+    "angle": 391.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 257,
+    "angle": 436.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 257,
+    "angle": 481.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 257,
+    "angle": 526.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 257,
+    "angle": 571.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 257,
+    "angle": 616.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 259,
+    "angle": 258.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 259,
+    "angle": 303.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 259,
+    "angle": 348.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 259,
+    "angle": 393.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 259,
+    "angle": 438.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 259,
+    "angle": 483.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 259,
+    "angle": 528.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 259,
+    "angle": 573.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 259,
+    "angle": 618.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 261,
+    "angle": 260.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 261,
+    "angle": 305.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 261,
+    "angle": 350.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 261,
+    "angle": 395.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 261,
+    "angle": 440.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 261,
+    "angle": 485.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 261,
+    "angle": 530.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 261,
+    "angle": 575.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 261,
+    "angle": 620.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 263,
+    "angle": 262.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 263,
+    "angle": 307.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 263,
+    "angle": 352.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 263,
+    "angle": 397.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 263,
+    "angle": 442.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 263,
+    "angle": 487.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 263,
+    "angle": 532.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 263,
+    "angle": 577.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 263,
+    "angle": 622.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 265,
+    "angle": 264.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 265,
+    "angle": 309.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 265,
+    "angle": 354.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 265,
+    "angle": 399.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 265,
+    "angle": 444.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 265,
+    "angle": 489.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 265,
+    "angle": 534.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 265,
+    "angle": 579.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 265,
+    "angle": 624.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 267,
+    "angle": 266.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 267,
+    "angle": 311.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 267,
+    "angle": 356.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 267,
+    "angle": 401.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 267,
+    "angle": 446.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 267,
+    "angle": 491.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 267,
+    "angle": 536.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 267,
+    "angle": 581.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 267,
+    "angle": 626.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 269,
+    "angle": 268.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 269,
+    "angle": 313.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 269,
+    "angle": 358.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 269,
+    "angle": 403.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 269,
+    "angle": 448.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 269,
+    "angle": 493.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 269,
+    "angle": 538.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 269,
+    "angle": 583.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 269,
+    "angle": 628.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 271,
+    "angle": 270.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 271,
+    "angle": 315.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 271,
+    "angle": 360.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 271,
+    "angle": 405.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 271,
+    "angle": 450.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 271,
+    "angle": 495.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 271,
+    "angle": 540.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 271,
+    "angle": 585.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 271,
+    "angle": 630.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 273,
+    "angle": 272.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 273,
+    "angle": 317.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 273,
+    "angle": 362.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 273,
+    "angle": 407.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 273,
+    "angle": 452.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 273,
+    "angle": 497.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 273,
+    "angle": 542.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 273,
+    "angle": 587.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 273,
+    "angle": 632.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 275,
+    "angle": 274.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 275,
+    "angle": 319.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 275,
+    "angle": 364.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 275,
+    "angle": 409.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 275,
+    "angle": 454.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 275,
+    "angle": 499.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 275,
+    "angle": 544.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 275,
+    "angle": 589.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 275,
+    "angle": 634.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 277,
+    "angle": 276.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 277,
+    "angle": 321.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 277,
+    "angle": 366.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 277,
+    "angle": 411.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 277,
+    "angle": 456.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 277,
+    "angle": 501.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 277,
+    "angle": 546.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 277,
+    "angle": 591.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 277,
+    "angle": 636.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 279,
+    "angle": 278.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 279,
+    "angle": 323.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 279,
+    "angle": 368.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 279,
+    "angle": 413.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 279,
+    "angle": 458.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 279,
+    "angle": 503.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 279,
+    "angle": 548.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 279,
+    "angle": 593.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 279,
+    "angle": 638.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 281,
+    "angle": 280.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 281,
+    "angle": 325.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 281,
+    "angle": 370.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 281,
+    "angle": 415.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 281,
+    "angle": 460.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 281,
+    "angle": 505.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 281,
+    "angle": 550.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 281,
+    "angle": 595.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 281,
+    "angle": 640.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 283,
+    "angle": 282.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 283,
+    "angle": 327.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 283,
+    "angle": 372.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 283,
+    "angle": 417.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 283,
+    "angle": 462.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 283,
+    "angle": 507.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 283,
+    "angle": 552.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 283,
+    "angle": 597.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 283,
+    "angle": 642.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 285,
+    "angle": 284.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 285,
+    "angle": 329.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 285,
+    "angle": 374.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 285,
+    "angle": 419.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 285,
+    "angle": 464.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 285,
+    "angle": 509.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 285,
+    "angle": 554.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 285,
+    "angle": 599.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 285,
+    "angle": 644.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 287,
+    "angle": 286.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 287,
+    "angle": 331.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 287,
+    "angle": 376.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 287,
+    "angle": 421.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 287,
+    "angle": 466.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 287,
+    "angle": 511.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 287,
+    "angle": 556.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 287,
+    "angle": 601.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 287,
+    "angle": 646.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 289,
+    "angle": 288.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 289,
+    "angle": 333.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 289,
+    "angle": 378.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 289,
+    "angle": 423.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 289,
+    "angle": 468.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 289,
+    "angle": 513.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 289,
+    "angle": 558.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 289,
+    "angle": 603.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 289,
+    "angle": 648.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 291,
+    "angle": 290.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 291,
+    "angle": 335.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 291,
+    "angle": 380.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 291,
+    "angle": 425.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 291,
+    "angle": 470.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 291,
+    "angle": 515.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 291,
+    "angle": 560.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 291,
+    "angle": 605.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 291,
+    "angle": 650.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 293,
+    "angle": 292.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 293,
+    "angle": 337.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 293,
+    "angle": 382.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 293,
+    "angle": 427.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 293,
+    "angle": 472.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 293,
+    "angle": 517.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 293,
+    "angle": 562.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 293,
+    "angle": 607.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 293,
+    "angle": 652.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 295,
+    "angle": 294.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 295,
+    "angle": 339.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 295,
+    "angle": 384.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 295,
+    "angle": 429.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 295,
+    "angle": 474.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 295,
+    "angle": 519.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 295,
+    "angle": 564.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 295,
+    "angle": 609.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 295,
+    "angle": 654.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 297,
+    "angle": 296.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 297,
+    "angle": 341.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 297,
+    "angle": 386.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 297,
+    "angle": 431.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 297,
+    "angle": 476.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 297,
+    "angle": 521.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 297,
+    "angle": 566.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 297,
+    "angle": 611.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 297,
+    "angle": 656.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 299,
+    "angle": 298.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 299,
+    "angle": 343.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 299,
+    "angle": 388.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 299,
+    "angle": 433.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 299,
+    "angle": 478.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 299,
+    "angle": 523.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 299,
+    "angle": 568.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 299,
+    "angle": 613.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  },
+  {
+    "frame": 299,
+    "angle": 658.0,
+    "speed": 0.0,
+    "type": "fixed",
+    "exist_time": -3
+  }
+]
