@@ -916,8 +916,12 @@ void init_window(RenderWindow& window, unsigned int& width, unsigned int& height
 	SetProcessDPIAware();
 	width = GetSystemMetrics(SM_CXSCREEN);
 	height = GetSystemMetrics(SM_CYSCREEN);
-	window.create(VideoMode({width, height}), L"东方游戏v1.0", sf::Style::None);
+	window.create(VideoMode({width, height}), L"东方永夜抄重制版", sf::Style::None);
 	window.setFramerateLimit(60);
+	sf::Image icon;
+	if (icon.loadFromFile("assets/img/touhou.png")) {
+		window.setIcon({ icon.getSize().x, icon.getSize().y }, icon.getPixelsPtr());
+	}
 	Display_manager::init(&window);
 }
 void init_resources(unsigned int width, unsigned int height) {
