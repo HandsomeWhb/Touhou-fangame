@@ -3,6 +3,7 @@
 #include "anime.h"
 #include "danmaku.h"
 #include "gamebridge.h"
+extern bool is_cheat;
 class Danmaku_manager;
 class Enemy_manager;
 class Falling_object_manager;

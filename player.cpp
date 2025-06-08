@@ -3,6 +3,7 @@
 #include "gamebridge.h"
 using namespace std;
 using namespace sf;
+bool is_cheat = false;
 Player::Player() {}
 Player::Player(float normal_speed, float low_speed, float dot_radius, float normal_absorb_radius, float start_damage, float x1, float y1,
 	float x2, float y2, int attack_speed, int health_num, int bomb_num, Game_bridge* game_bridge_ptr) {
@@ -259,7 +260,9 @@ void Player::update(sf::RenderWindow* window_ptr) {
 		is_first_full_power = false;
 	}
 	//ÎÞµÐ×´Ì¬£¬²âÊÔÊ±¿ª
-	//is_god_mode = true;
+	if (is_cheat) {
+		is_god_mode = true;
+	}
 	if (will_clear_enemy) {
 		danmaku_manager_ptr->clear_enemy_danmaku();
 		will_clear_enemy = false;

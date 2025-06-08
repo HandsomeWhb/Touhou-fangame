@@ -101,8 +101,7 @@ void genshin_start(RenderWindow* window_ptr) {
 		}
 	}
 }
-
-void pause_page(RenderWindow* window_ptr,  bool& is_paused,string role,string bgm,string default_bgm) {
+void pause_page(RenderWindow* window_ptr,  bool& is_paused,string role,string bgm,string default_bgm,string mode) {
 	static int option = 0;
 	sf::RectangleShape dark_overlay(sf::Vector2f(window_ptr->getSize().x, window_ptr->getSize().y));
 	dark_overlay.setFillColor(sf::Color(0, 0, 0, 128));
@@ -142,7 +141,9 @@ void pause_page(RenderWindow* window_ptr,  bool& is_paused,string role,string bg
 			switch (option) {
 			case 0: is_paused = false; option = 0; Music_manager::play_music(bgm);  break;
 			case 1: Music_manager::stop_music(bgm); show_background("clear", nullptr, false); option = 0; main_menu.show_page(); break;
-			case 2: Music_manager::stop_music(bgm); show_background("clear", nullptr, false); option = 0; game_start(window_ptr, role, default_bgm);  break;
+			case 2: Music_manager::stop_music(bgm); show_background("clear", nullptr, false); option = 0; 
+				if (mode == "normal") { game_start(window_ptr, role, default_bgm); }
+				else { game_extrastart(window_ptr, role, default_bgm); };  break;
 			}
 			key_enter_ready = false;
 		}
@@ -178,6 +179,9 @@ float get_fps() {
 }
 string get_name(RenderWindow* window_ptr,bool is_win) {
 	string input;
+	if (is_cheat) {
+		return "Cheater";
+	}
 	while (window_ptr->isOpen()) {
 		window_ptr->clear();
 		window_ptr->draw(Image_manager::custom_image("result.jpg"));
@@ -714,6 +718,7 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 	string temp_bgm = bgm;
 	string default_back_ground = "bamboo_forest";
 	string back_ground = default_back_ground;
+	string mode = "normal";
 	//游戏数据,以后应实现传入难度选择对应文件
 	string save_file = "normal_score.dat";
 	bool is_win = false;
@@ -778,7 +783,7 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 			
 		}
 		else {
-			pause_page(window_ptr,  is_paused,role,bgm,default_bgm);
+			pause_page(window_ptr,  is_paused,role,bgm,default_bgm,mode);
 		}
 		show_game_info(window_ptr,boss);
 		window_ptr->display();
@@ -793,6 +798,115 @@ void game_start(RenderWindow* window_ptr, string role,string default_bgm)
 			show_background("clear", nullptr, false);
 			Music_manager::stop_music(bgm);
 			(Score_center::search(save_file))->add_new_score(get_name(window_ptr,is_win), player_ptr->score * 10);
+			main_menu.show_page();
+		}
+	}
+	return;
+}
+void game_extrastart(RenderWindow* window_ptr, string role, string default_bgm)
+{
+	unsigned Screen_width = window_ptr->getSize().x;
+	unsigned Screen_height = window_ptr->getSize().y;
+	float start_x = 0.625f - (Screen_height * 4.0f / 5.0f) / Screen_width;
+	int bg_change_interval = 60;
+	/*main_menu.add_button();*/
+	/*main_menu.show_page();*/
+	//320,48,1600,1520
+	Enemy_manager enemy_manager;
+	Player* player_ptr = nullptr;
+	Falling_object_manager falling_object_manager;
+	Danmaku_manager danmaku_manager(player_ptr, start_x * Screen_width, 0 * Screen_height, 0.625 * Screen_width, 1 * Screen_height);
+	game_bridge = Game_bridge(player_ptr, &enemy_manager, &danmaku_manager, &falling_object_manager, window_ptr);
+	player_ptr = create_role(role);
+	player_ptr->is_full_power = true;
+	player_ptr->is_first_full_power = false;
+	player_ptr->power = 128;
+	danmaku_manager.player_ptr = player_ptr;
+	game_bridge.player_ptr = player_ptr;
+	bool is_paused = false;
+	string bgm = default_bgm;
+	string temp_bgm = bgm;
+	string default_back_ground = "real_moon";
+	string back_ground = default_back_ground;
+	//游戏数据,以后应实现传入难度选择对应文件
+	string save_file = "extra_score.dat";
+	bool is_win = false;
+	string mode = "extra";
+	player_ptr->highscore = Score_center::search(save_file)->get_highest_score();
+	enemy_manager = Enemy_manager(player_ptr, start_x * Screen_width, 0 * Screen_height, 0.625 * Screen_width, 1 * Screen_height);
+	falling_object_manager = Falling_object_manager(player_ptr, start_x * Screen_width, 0 * Screen_height, 0.625 * Screen_width, 1 * Screen_height);
+
+	//敌人数据,以后应实现传入关卡自动加载
+	load_all_enemies(&game_bridge, "assets/data/enemy/v1/");
+	enemy_manager.frame_count = 10900;
+	Music_manager::play_music(bgm);
+	while (window_ptr->isOpen()) {
+		window_ptr->clear();
+		//背景板,以后应传入背景自动加载
+		show_background(back_ground, window_ptr, is_paused, bg_change_interval);
+		while (const optional event = window_ptr->pollEvent()) {
+			if (event->is<Event::Closed>()) {
+				cout << "窗口关闭" << endl;
+				window_ptr->close();
+			}
+			if (event->is<Event::KeyPressed>()) {
+				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape)) {
+					if (!is_paused) {
+						Music_manager::pause_music(bgm);
+						Music_manager::play_music("se_pause.wav");
+					}
+					else {
+						Music_manager::play_music(bgm);
+					}
+					is_paused = !is_paused;
+				}
+			}
+		}
+		Boss* boss = enemy_manager.get_current_boss();
+		if (boss) {
+			if (player_ptr->is_using_bomb || player_ptr->is_death) {
+				boss->able_get_bonus = false;
+			}
+			if (boss->bgm != bgm) {
+				Music_manager::stop_music(bgm);
+				bgm = boss->bgm;
+				Music_manager::play_music(bgm);
+			}
+			show_boss_info(boss, window_ptr, is_paused);
+			back_ground = boss->current_action_ptr->back_ground_name;
+		}
+		else {
+			if (bgm != default_bgm) {
+				Music_manager::stop_music(bgm);
+				Music_manager::play_music(default_bgm);
+				bgm = default_bgm;
+			}
+			back_ground = default_back_ground;
+		}
+		if (!is_paused) {
+			player_ptr->update(window_ptr);
+			danmaku_manager.update_all_danmaku(player_ptr, &enemy_manager, window_ptr, false);
+			enemy_manager.update(window_ptr, &danmaku_manager, player_ptr->damage);
+			falling_object_manager.update(window_ptr);
+			Display_manager::update();
+
+		}
+		else {
+			pause_page(window_ptr, is_paused, role, bgm, default_bgm,mode);
+		}
+		show_game_info(window_ptr, boss);
+		window_ptr->display();
+		if (enemy_manager.frame_count == 11100) {
+			player_ptr->add_score(20000000);
+		}
+		if (enemy_manager.frame_count == 11200) {
+			is_win = true;
+			player_ptr->is_game_over = true;
+		}
+		if (player_ptr->is_game_over) {
+			show_background("clear", nullptr, false);
+			Music_manager::stop_music(bgm);
+			(Score_center::search(save_file))->add_new_score(get_name(window_ptr, is_win), player_ptr->score * 10);
 			main_menu.show_page();
 		}
 	}
@@ -883,13 +997,25 @@ void role_select(int type, Page& menu, RenderWindow* window_ptr) {
 				|| (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Z)) {
 				Music_manager::play_music("button1.mp3");
 				Music_manager::stop_music("menu.mp3");
-				switch (option)
-				{
-				case 0:game_start(window_ptr, "Reimu"); break;
-				case 1:game_start(window_ptr, "Morisa"); break;
-				case 2:game_start(window_ptr, "Remilia"); break;
-				case 3:game_start(window_ptr, "Yoyoko"); break;
-				default:game_start(window_ptr, "Reimu"); break;
+				if (type == 1) {
+					switch (option)
+					{
+					case 0:game_start(window_ptr, "Reimu"); break;
+					case 1:game_start(window_ptr, "Morisa"); break;
+					case 2:game_start(window_ptr, "Remilia"); break;
+					case 3:game_start(window_ptr, "Yoyoko"); break;
+					default:game_start(window_ptr, "Reimu"); break;
+					}
+				}
+				else {
+					switch (option)
+					{
+					case 0:game_extrastart(window_ptr, "Reimu"); break;
+					case 1:game_extrastart(window_ptr, "Morisa"); break;
+					case 2:game_extrastart(window_ptr, "Remilia"); break;
+					case 3:game_extrastart(window_ptr, "Yoyoko"); break;
+					default:game_extrastart(window_ptr, "Reimu"); break;
+					}
 				}
 			}
 		}
@@ -901,6 +1027,9 @@ void show_option_page(Page& menu, RenderWindow* window_ptr) {
 	int sound_volumn = Music_manager::sound_volumn;
 	int music_volumn = Music_manager::music_volumn;
 	int once_change = 5;
+
+	std::deque<char> cheat_buffer; 
+	const std::string cheat_code = "ILOVEYOUMU"; 
 	while ((*window_ptr).isOpen()) {
 		window_ptr->clear();
 		if ((*Music_manager::search_music("menu.mp3")).getStatus() != Music::Status::Playing) {
@@ -911,6 +1040,28 @@ void show_option_page(Page& menu, RenderWindow* window_ptr) {
 			if (event->is<Event::Closed>()) {
 				cout << "窗口关闭" << endl;
 				(*window_ptr).close();
+			}
+			if (event->is<Event::TextEntered>()) {
+				char c = event->getIf<sf::Event::TextEntered>()->unicode;
+				if (isalpha(c)) {
+					c = toupper(c); // 转为大写
+					cheat_buffer.push_back(c);
+					if (cheat_buffer.size() > cheat_code.size())
+						cheat_buffer.pop_front(); // 保持长度一致
+
+					std::string current_input(cheat_buffer.begin(), cheat_buffer.end());
+					if (current_input == cheat_code) {
+						if (is_cheat) {
+							is_cheat = false;
+							std::cout << "[提示] 作弊模式已关闭！" << std::endl;
+						}
+						else {
+							is_cheat = true;
+							std::cout << "[提示] 作弊模式已开启！" << std::endl;
+						}
+						Music_manager::play_music("se_extend.wav");
+					}
+				}
 			}
 			if ((event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::W)
 				|| (event->is<Event::KeyPressed>() && event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Up)) {

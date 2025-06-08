@@ -1,4 +1,5 @@
 #include "score.h"
+#include "player.h"
 using namespace std;
 using namespace sf;
 using namespace filesystem;
@@ -56,6 +57,9 @@ Score_manager* Score_center::search(std::string file_path) {
 	return nullptr;
 }
 void Score_manager::add_new_score(string name, int score) {
+	if (is_cheat) {
+		return;
+	}
 	time_t now = time(0);
 	tm ltm;
 	localtime_s(&ltm, &now);
